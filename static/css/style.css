@@ -1,0 +1,228 @@
+         .wrapper {
+        width: 800px;
+        position: relative;
+        top: 100%;
+        left: 30%; 
+        display: inline-block; 
+      }
+
+    
+      .rang {
+        text-align: center;
+        color: white;
+
+      }
+
+      .rang-title {
+        display: inline-block;
+        width: 200px;
+      }
+      .rang-title2 {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+      }
+      .rang-title3 {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+      }
+      .rang-title4 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        
+      }
+
+   .rang-number {
+        width: 50%;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        border-radius: 50px;
+      }
+    .rang-number2 {
+        width: 50%;
+        height: 50%;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+      }
+      .rang-number3 {
+        width: 50%;
+        height: 50%;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(160, 145, 145);
+        color: rgb(248, 246, 246);
+      }
+      .rang-number4 {
+        width: 50%;
+        height: 35%;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(46, 43, 43);
+        color: rgb(255, 255, 255);
+        border-radius: 40px;
+      }
+
+
+      .meter {
+        display: block;
+        width: 283px;
+        height: 155px;
+        margin: 0px auto
+
+      }
+
+      .meter-shape {
+        -webkit-transform: skewX(-2deg) skewY(1deg);
+                transform: skewX(-2deg) skewY(1deg);
+        stroke-width: 18;
+        stroke-dashoffset: 253;
+        stroke: blue;
+        fill: none;
+      }
+
+      .meter-clock {
+        -webkit-transform: rotate(297deg);
+                transform: rotate(297deg);
+        -webkit-transform-origin: 137px 146px;
+                transform-origin: 137px 146px;
+        fill: red;
+      }
+
+      .meter-clock2 {
+        -webkit-transform: rotate(297deg);
+                transform: rotate(297deg);
+        -webkit-transform-origin: 137 px 146px;
+                transform-origin: 137px 146px;
+        fill: red;
+      }
+      .meter-clock3 {
+        -webkit-transform: rotate(297deg);
+                transform: rotate(297deg);
+        -webkit-transform-origin: 137 px 146px;
+                transform-origin: 137px 146px;
+        fill: red;
+      }
+
+
+      #range {
+        margin-bottom: 50px;
+        width: 112px;
+      }
+
+      .meter1 {
+        margin-top:130px;
+      }
+
+      .meter2 {
+       margin-top:130px;
+      }
+      .meter-clock2{
+      width: 20px;
+       margin-top:-500px;
+      }
+      .meter3 {
+
+       margin-top:130px;
+      }
+
+      .other {
+        text-align: center;
+         margin-top: 0px;
+      }
+
+    .container{
+    width: 20%; 
+  }
+
+  .box{
+    
+    background: none;
+    margin: 0px 10px;
+    transition: 1s;
+
+  }
+  .box:hover{
+    transform: scale(1.2);
+    background: none;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+    
+  }
+  #table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#table1 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#table2 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #customers th {
+ 
+  padding: 0;
+}
+
+
+
+#table tr:hover {background-color: #27D447;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: linen;
+  color: black;
+}
+#table1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: linen;
+  color: black;
+}
+#table2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: linen;
+  color: black;
+}
+
+
+@media print {
+  .noPrint { display: none; }
+} 
+ @page 
+  {
+      size: auto A4;   
+      margin: 1mm;  
+  }
+
+  body 
+  {
+      background-color:#FFFFFF; 
+      border: solid 1px black ;
+      margin: 0px;  
+  }

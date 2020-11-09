@@ -1,0 +1,331 @@
+body {
+    background-color: white;
+
+}
+  
+.demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+}
+/** JSPLUMB ARTEFACTS **/
+.jtk-overlay {
+    z-index: 51;
+}
+
+.jtk-endpoint {
+    z-index: 50;
+    cursor: move;
+}
+
+.jtk-connector {
+    z-index: 1;
+}
+
+/** ELEMENTS **/
+.littledot
+{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url("/static/images/littledot.png");
+    z-index: 5;
+    position: absolute;
+    border-radius: 31px;
+}
+
+
+
+.littledot-hover-hover {
+    border: 2px solid orange;
+}
+
+.dropHover {
+    border: 1px solid orange;
+}
+
+/** ELEMENT POSITIONS **/
+/* MCB switches */
+#ld1 {
+    top: 12.1em;
+    left: 1.5em;
+}
+#ld2 {
+    top: 12.1em;
+    left: 3.5em;
+}
+#ld3 {
+    top: 12.1em;
+    left: 5.5em;
+}
+/* 3 phase variac */
+#ld4 {
+    top: 22.1em;
+    left: 3em;
+}
+#ld5 {
+    top: 26.1em;
+    left: 3em;
+}
+#ld6 {
+    top: 30.1em;
+    left: 3em;
+}
+#ld7 {
+    top: 22.1em;
+    left: 13em;
+}
+#ld8 {
+    top: 26.1em;
+    left: 13em;
+}
+#ld9 {
+    top: 30.1em;
+    left: 13em;
+}
+/* voltmeter */
+#ld10 {
+    top: 12.1em;
+    left: 14.5em;
+}
+#ld11 {
+    top: 12.1em;
+    left: 21em;
+}
+/* Ammeter */
+#ld12 {
+    top: 12.1em;
+    left: 29em;
+}
+#ld13 {
+    top: 12.1em;
+    left: 35.4em;
+}
+/* 3 phase induction motor */
+#ld14 {
+    top: 4.65em;
+    left: 46em;
+}
+#ld15 {
+    top: 8em;
+    left: 46em;
+}
+#ld16 {
+    top: 11.77em;
+    left: 46em;
+}
+
+path, .jtk-endpoint {
+    cursor: pointer;
+}
+
+
+#wrapper {
+    width:100%;
+  }
+  div
+  {
+    box-sizing: border-box;
+    resize: both;
+  }
+  .column50 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32; 
+  }
+  .column42 {
+    float: left;
+    width: 42%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32; 
+  }
+  .column48 {
+    float: left;
+    width: 48%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32; 
+  }
+  .column40 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32; 
+  }
+  .column20 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column17 {
+    float: left;
+    width: 17%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column23 {
+    float: left;
+    width: 23%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column24 {
+    float: left;
+    width: 24%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column14 {
+    float: left;
+    width: 14%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column30 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column33 {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column34 {
+    float: left;
+    width: 34%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column18 {
+    float: left;
+    width: 18%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column41 {
+    float: left;
+    width: 41%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .column10 {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 300px;
+    border-style: solid;
+    color:#222d32;
+  }
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 67%;
+    height: 7px;
+    border-radius: 5px;
+    background: grey;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90px;
+    height: 15px;
+    opacity: 1;
+    border-radius: 10%;
+    background: black;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .rotorOuter
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  .rotorInner
+    {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+    }
+    @keyframes rotations {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }
+  .rotate {
+    animation: rotation 0s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }

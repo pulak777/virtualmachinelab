@@ -1,0 +1,176 @@
+ body {
+    background-color: linen;
+
+}
+  
+.demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+}
+/** JSPLUMB ARTEFACTS **/
+.jtk-overlay {
+    z-index: 51;
+}
+
+.jtk-endpoint {
+    z-index: 50;
+    cursor: move;
+}
+
+.jtk-connector {
+    z-index: 1;
+}
+
+/** ELEMENTS **/
+.littledot
+{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url(littledot.png);
+    z-index: 5;
+    position: absolute;
+    border-radius: 31px;
+}
+
+
+
+.littledot-hover-hover {
+    border: 2px solid orange;
+}
+
+.dropHover {
+    border: 1px solid orange;
+}
+
+/** ELEMENT POSITIONS **/
+#ld1 {
+    top: 12.1em;
+    left: 1.5em;
+}
+
+#ld2 {
+    top: 12.1em;
+    left: 3.5em;
+}
+
+#ld3 {
+    top: 12.1em;
+    left: 5.5em;
+}
+
+#ld4 {
+    top: 12.1em;
+    left: 14.9em;
+}
+#ld5 {
+    top: 12.1em;
+    left: 21em;
+}
+#ld6 {
+    top: 12.1em;
+    left: 30.2em;
+}
+#ld7 {
+    top: 12.1em;
+    left: 36.7em;
+}
+#ld8 {
+    top: 12.1em;
+    left: 44.55em;
+}
+#ld9 {
+    top: 12.1em;
+    left: 47.55em;
+}
+#ld10 {
+    top: 12.1em;
+    left: 50.55em;
+}
+#ld11 {
+    top: 12.1em;
+    left: 53.55em;
+}
+#ld18 {
+    top: 20.72em;
+    left: 20em;
+}
+
+#ld19 {
+    top: 20.72em;
+    left: 24em;
+}
+
+#ld20 {
+    top: 20.72em;
+    left: 28em;
+}
+#ld15 {
+    top: 24.5em;
+    left: 37.5em;
+}
+
+#ld16 {
+    top: 24.5em;
+    left: 40.5em;
+}
+
+#ld17 {
+    top: 24.5em;
+    left: 43.5em;
+}
+#ld21 {
+    top: 29.8em;
+    left: 3em;
+}
+
+#ld22 {
+    top: 29.8em;
+    left: 7em;
+}
+
+#ld23 {
+    top: 29.8em;
+    left: 11em;
+}
+#ld12 {
+    top: 33.77em;
+    left: 20em;
+}
+
+#ld13 {
+    top: 33.77em;
+    left: 24em;
+}
+
+#ld14 {
+    top: 33.77em;
+    left: 28em;
+}
+#ld24 {
+    top: 31.9em;
+    left: 37.5em;
+}
+
+#ld25 {
+    top: 31.9em;
+    left: 40.5em;
+}
+
+#ld26 {
+    top: 31.9em;
+    left: 43.5em;
+}
+
+
+
+
+
+
+
+
+
+
+path, .jtk-endpoint {
+    cursor: pointer;
+}

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Speed Control of Slip Ring Induction Motor by Rotor Resistance Control. </title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="exp5.css">
+        
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="graph.ob.js"></script>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ #wrapper {
+  width:100%;
+}
+div
+{
+  box-sizing: border-box;
+  resize: both;
+}
+.column60 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 300px;
+  border-top: solid;
+  color:#222d32; 
+}
+.column40 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color:#222d32; 
+}
+.column20 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  border-right: none;
+  color:#222d32;
+}
+.column17 {
+  float: left;
+  width: 17%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  border-right: none;
+  color:#222d32;
+}
+.column23 {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  border-right: none;
+  color:#222d32;
+}
+.column30 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color:#222d32;
+}
+.column30l {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+  border-left: none;
+  border-top:none;
+  border-bottom: solid;
+  border-right:solid;
+  color:#222d32;
+}
+.column10 {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  border-bottom: none;
+  color:#222d32;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 67%;
+  height: 7px;
+  border-radius: 5px;
+  background: grey;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90px;
+  height: 15px;
+  opacity: 1;
+  border-radius: 10%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.rotorOuter
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+.rotorInner
+  {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+.autoTrasformerouter
+  {
+    position: relative;
+  }
+.autoTransformerinner
+  {
+    position: absolute;
+    animation: rotations 0s infinite linear;
+
+  }
+  @keyframes rotations {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+img.autoTrasformerouter
+{
+  width:58%; 
+}
+img.autoTransformerinner
+{
+  transform:rotate(270deg);
+  width:41%; 
+}
+.rotate {
+  animation: rotation 0s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+</style>
+</head>
+<body>
+  <div class="jtk-demo-main" data-demo-id="animation" >
+    <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+      <div id="wrapper" style="position:absolute; top:10px;width:1310px;left:20px">
+        <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a>
+        </div>
+        <div class="littledot" id="ld2"></br><a href="#" class="cmdLink detach" rel="ld2">2</a>
+        </div>
+        <div class="littledot" id="ld3"></br><a href="#" class="cmdLink detach" rel="ld3">3</a>
+        </div>
+        <div class="littledot" id="ld4"></br><a href="#" class="cmdLink detach" rel="ld4">4</a>
+        </div>
+        <div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5">5</a>
+        </div>
+        <div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6">6</a>
+        </div>
+        <div class="littledot" id="ld7"></br><a href="#" class="cmdLink detach" rel="ld7">7</a>
+        </div>
+        <div class="littledot" id="ld8"></br><a href="#" class="cmdLink detach" rel="ld8">8</a>
+        </div>
+        <div class="littledot" id="ld9"></br><a href="#" class="cmdLink detach" rel="ld9">9</a>
+        </div>
+        <div class="littledot" id="ld10"></br><a href="#" class="cmdLink detach" rel="ld10">10</a>
+        </div>
+        <div class="littledot" id="ld11"></br><a href="#" class="cmdLink detach" rel="ld11">11</a>
+        </div>
+        <div class="littledot" id="ld12"></br><a href="#" class="cmdLink detach" rel="ld12">21</a>
+        </div>
+        <div class="littledot" id="ld13"></br><a href="#" class="cmdLink detach" rel="ld13">22</a>
+        </div>
+        <div class="littledot" id="ld14"></br><a href="#" class="cmdLink detach" rel="ld14">23</a>
+        </div>
+        <div class="littledot" id="ld15"></br><a href="#" class="cmdLink detach" rel="ld15">15</a>
+        </div>
+        <div class="littledot" id="ld16"></br><a href="#" class="cmdLink detach" rel="ld16">16</a>
+        </div>
+        <div class="littledot" id="ld17"></br><a href="#" class="cmdLink detach" rel="ld17">17</a>
+        </div>
+        <div class="littledot" id="ld18"></br><a href="#" class="cmdLink detach" rel="ld18">12</a>
+        </div>
+        <div class="littledot" id="ld19"></br><a href="#" class="cmdLink detach" rel="ld19">13</a>
+        </div>
+        <div class="littledot" id="ld20"></br><a href="#" class="cmdLink detach" rel="ld20">14</a>
+        </div>
+        <div class="littledot" id="ld21"></br><a href="#" class="cmdLink detach" rel="ld21">18</a>
+        </div>
+        <div class="littledot" id="ld22"></br><a href="#" class="cmdLink detach" rel="ld22">19</a>
+        </div>
+        <div class="littledot" id="ld23"></br><a href="#" class="cmdLink detach" rel="ld23">20</a>
+        </div>
+        <div class="littledot" id="ld24"></br><a href="#" class="cmdLink detach" rel="ld24">24</a>
+        </div>
+        <div class="littledot" id="ld25"></br><a href="#" class="cmdLink detach" rel="ld25">25</a>
+        </div>
+        <div class="littledot" id="ld26"></br><a href="#" class="cmdLink detach" rel="ld26">26</a>
+        </div>
+        <div class="row">
+          <div class="column10"> 
+            <p style="position: absolute;top:-0.7em;"><b>MCB</b></p>
+            
+          <div style="position:absolute;top:1.8em;left:1.5em;">
+            <img id="myimage1" class="mcbSwitch" src="push1.png" alt="MCB Switch" width="25" height="25">
+            <img id="myimage2" class="mcbSwitch" src="push1.png" alt="MCB Switch" width="25" height="25">
+            <img id="myimage3" class="mcbSwitch" src="push1.png" alt="MCB Switch" width="25" height="25">
+          </div>
+          <div style="position:absolute;top:4em;left:1.5em;">
+            <img id="myimage" class="mcbSwitch" src="mcboff.png" alt="MCB Switch" onclick="mcbonoff();" width="80" height="120">
+          </div>
+          </div>
+          
+          <div class="column60" id="movers-row" > 
+            <img style="padding-left: 70px" class="voltMeter" src="Voltmeter.png" alt="Voltmeter" width="170" height="200" style="position: absolute;left: 0; top: 0;">
+            <div class="meter1" style="position: absolute;top: 0;left: 0;">
+              <div class="rang" style="position: absolute;top: -1em;left: 12em;">
+                <div class="rang-title">
+                  <input class="rang-number" id="show" type="text" value="0" disabled="disabled"/>
+                </div>
+                <br>Voltmeter
+              </div>
+              <div style="position: absolute;top:-10.5em;left: 10em;">
+                <svg class="meter">
+                  <polygon class="meter-clock" points="129,145 137,90 145,145"></polygon>
+                  <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
+                </svg>
+              </div>
+            </div>
+            <img style="padding-left: 70px" class="amMeter" src="Ammeter.png" alt="Ammeter" width="170" height="200" style="position: absolute;left: 0; top: 0;">
+            <div class="meter2" style="position: absolute;top: 0;left: 0;">
+              <div class="rang" style="position: absolute;top: -1em;left: 28em;">
+                <div class="rang-title" >
+                  <input class="rang-number" id="show2" type="text" value="0" disabled="disabled"/>
+                </div>
+                <br>Ammeter
+              </div>
+              <div>
+                <svg class="meter" style="position: absolute;top: -10.5em;left: 25.225em;">
+                  <polygon class="meter-clock2" points="129,145 137,90 145,145"></polygon>
+                  <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
+                </svg>
+              </div>
+            </div>
+            <img style="padding-left: 70px" class="amMeter" src="Wattmeter.png" alt="Ammeter" width="170" height="200" style="position: absolute;left: 0; top: 0;">
+            <div class="meter3" style="position: absolute;top: 0;left: 0;">
+              <div class="rang" style="position: absolute;top: -1em;left: 42.8em;">
+                <div class="rang-title">
+                  <input class="rang-number" id="show3" type="text" value="0" disabled="disabled"/>
+                </div>
+                <br/>
+                Watt-meter
+              </div>
+              <div style="position: absolute;top: -10.5em;left: 40.5em;">
+                <svg class="meter">
+                  <polygon class="meter-clock3" points="129,145 137,90 145,145"></polygon>
+                  <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
+                </svg>
+              </div>
+            </div>
+            <div >
+            <div style="position:absolute;left:77em;top:10em;">
+              <button id="check-button" style="color:white;background-color:#27D447; border:none; margin:4px 2px; padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;border-radius:10px" >Check</button>
+            </div>
+            <div style="position:absolute;left:77em;top:7em;">
+              <button id="reset" type="reset" onclick=" window.location.href = 'main.html';" style="color:white;background-color:#27D447; border:none; margin:4px 2px; padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;border-radius:10px" >Reset</button>
+              
+              </div>
+            </div>
+          </div>
+
+
+          <div class="column30" >
+            <div style="position:absolute;left:72em;top:5em;">
+              <table id="table" class="table" style="position: relative;right:13em;top:-4em; ">
+              <tr>
+              <th>SN</th>
+              <th>Ammeter</th>
+              <th>WattMeter</th>
+              <th>Speed</th>
+              </tr>
+              </table>
+            </div> 
+
+                          <style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: blue;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: linen;
+  color: black;
+  text-align: left;
+  left: -20em;  
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
+
+
+<div style="text-align:right;">
+
+<div class="tooltip" ><u><B>Instruction</B></u>
+  <span class="tooltiptext">
+          <B>Step 1: </B>Make the proper connection by clicking the node as instructed below. If the wire is misplaced, click the node number to deattach the nodes' wire. <br/>
+                    
+                    <table>
+                        <tr>
+                            <td><B>From</B></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                        <td><B>To</B></td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>12</td>
+                            <td>8</td>
+                            <td>15</td>
+                            <td>12</td>
+                            <td>17</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                        </tr>
+                    </table>
+                    
+                    <B>Step 2: </B>Click "Check" button.
+                    <li>if connection is correct, an alert appers. Click ok. Now, go to step 4.</li>
+                    <li>if connection is wrong, an alert appers. Click ok. Now, go to step 3.</li>
+                    <B>Step 3: </B>Check the connection and either deattach the incorrect wire connection or Click on reset button and start from step 1.<br/>
+                    <B>Step 4: </B>Switch on the MCB.<br/>
+                    <B>Step 5: </B>Click anywhere on the autotransformer.<br/>
+                    <B>Step 6: </B>Slide the knob of the Rheostat to change the resistance.<br/>
+                    <B>Step 7: </B>Take readings from Rotor, Voltmeter, Ammeter and Watt-meter.<br/>
+                    <B>Step 8: </B>Click "Add to table" button to insert the values in the table.<br/>
+                    <B>Step 9: </B>Follow the procedure from step 6 to step 8, till you have the 6 readings on the table.<br/>  
+                    <B>Step 10: </B> After taking minimum 6 readings, click the "Graph" button.<br/>
+                    <B>Step 11: </B> Click "Print" button, to print the full connections with graph and table.
+
+</span>
+</div>
+</div>
+              
+        </div>
+        </div>
+        <div class="row">
+          
+          <div class="column17" >
+            <img style=" position:relative; top:0em; left:0px; width:100%;" class="resistanceBox" src="Rheostat.png" alt="Rheostat" >
+            <div style="position: relative;top:-13em"><b>Resistance Box</b></div>
+            <div class="slidecontainer" style=" position:relative; top:-132px; left:40px">
+              <input class="rang-slider" disabled="true" id="range" type="range" min="0" max="9" value="0"/>
+            </div> 
+            <div class="rang" style="position: absolute;top: 30em;left: 46.4em;">
+              <div class="rang-title">
+                <input class="rang-number" id="show4" type="text" value="0" disabled="disabled"/>
+              </div>
+            </div>
+          </div>
+          <div class="column23">
+            <br/>
+            <br/>
+            <br/>
+            <div style="position: relative; left: 1em; top:-3em; ">
+              <img style="height:250px; width:250px;" src="Autotransformerouter.png" class="autoTrasformerouter" />
+            </div>
+            <div style="position: relative; left: 4.5em; top:-14em;">
+              <img style="height:140px; width:140px;" src="Autotransformerinner.png" id="cirmover1" onclick="rotaronoff();" class="autoTransformerinner"/>
+             <div style="position: absolute;top:-5.7em;"><b>Autotransformer</b></div>
+            </div>
+          </div>
+        <div class="column30" >
+          <br/>
+          <br/>
+          <div>
+            <img src="Machine.png" style="position: absolute;top:24em;left: 35.7em ;width:175px;">
+          </div>
+          <div  style="position: relative; left:0em; top:1em;">
+            <img src="Rotorouter.png" class="rotate1" style="position: absolute;top:35px;left: 255px;width:100px ;">
+            <img src="Rotorinner.png" class="rotate" id="cirmover2" style="position: absolute;top: 60px;left: 280px;width:50px;">
+          </div>
+           <div style="position: relative;top:-2.5em; left: -5em;"><b>3 &#934 Induction Motor</b></div>
+              <div style="position: relative;top:-3.65em; left: 7em;"><b>Rotor View</b></div>
+        </div>
+        <div style="position: relative;top:0.8em;"><b>Graph</b></div>
+      <div class="column30l">
+            <div style="position:absolute;left:75em;top:16em;">
+            <button id="addToTable" disabled="true" style="color:white;background-color:#27D447; border:none; margin:4px 2px; padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;border-radius:10px" >Add to table</button>
+              
+            </div>
+            <br><br><br><br>
+            <div>
+              <div style="position:absolute;left:77em;top:13em; ">
+                <button id="graph" onclick="drawgraph();" disabled="true" style="color:white;background-color:#27D447; border:none; margin:4px 2px; padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;border-radius:10px">Graph
+                </button>
+              </div>
+              <div style="position:absolute;left:74em;top:4em;">
+                <button id="print"  onclick="window.print();" style="color:white;background-color:#27D447; border:none; margin:4px 2px; padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;border-radius:10px">Print this page
+                </button>
+              </div>
+            </div>
+            <div class="container"  style="position:absolute; top:18.8em;left:56.7em;">
+              <div   class="box" id="myDiv" style="width:390px;height:300px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="jsplumb1.js"></script>
+<script src="exp5.js"></script>
+</body>
+</html>

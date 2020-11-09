@@ -1,0 +1,7 @@
+click
+flask
+gunicorn
+MarkupSafe
+Werkzeug
+itsdangerous
+Jinja2
