@@ -713,7 +713,7 @@ function rotaronoff()
         var rotateClock =  rangeMeter.value;
         
         rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
-        if(rotateClock == 2){
+        if(rotateClock == 1){
             rangeClock2.style.transform = 'rotate(' + (-62 + ((9 * 1000) / 102)) + 'deg)';
         }
         else{
