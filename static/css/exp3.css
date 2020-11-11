@@ -159,14 +159,6 @@ div
   border-style: solid;
   color:#222d32; 
 }
-.column20 {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  height: 300px;
-  border-style: solid;
-  color:#222d32;
-}
 .column17 {
   float: left;
   width: 17%;
@@ -199,6 +191,22 @@ div
   border-style: solid;
   color:#222d32;
 }
+.column15 {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color:#222d32;
+}
+.column16 {
+  float: left;
+  width: 16%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color:#222d32;
+}
 .column30 {
   float: left;
   width: 30%;
@@ -223,9 +231,9 @@ div
   border-style: solid;
   color:#222d32;
 }
-.column18 {
+.column20 {
   float: left;
-  width: 18%;
+  width: 20%;
   padding: 10px;
   height: 300px;
   border-style: solid;

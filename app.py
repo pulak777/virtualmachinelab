@@ -15,5 +15,9 @@ def exp9():
 def exp2():
     return render_template('simulations/sim2.html')
 
+@app.route('/speed_control_of_3-phase_squirrel_cage_induction_motor_by_frequency_control/simulation')
+def exp3():
+    return render_template('simulations/sim3.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

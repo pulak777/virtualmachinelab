@@ -104,15 +104,8 @@
       }
 
       .meter-clock2 {
-        -webkit-transform: rotate(297deg);
-                transform: rotate(297deg);
-        -webkit-transform-origin: 137 px 146px;
-                transform-origin: 137px 146px;
-        fill: red;
-      }
-      .meter-clock3 {
-        -webkit-transform: rotate(297deg);
-                transform: rotate(297deg);
+        -webkit-transform: rotate(200deg);
+                transform: rotate(214deg);
         -webkit-transform-origin: 137 px 146px;
                 transform-origin: 137px 146px;
         fill: red;
@@ -131,10 +124,7 @@
       .meter2 {
        margin-top:130px;
       }
-      .meter-clock2{
-      width: 20px;
-       margin-top:-500px;
-      }
+      
       .meter3 {
 
        margin-top:130px;

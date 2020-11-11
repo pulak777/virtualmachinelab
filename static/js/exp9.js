@@ -647,9 +647,9 @@ function rotaronoff()
     var rangeShow6 = document.querySelector("#show6");
     var rangeShow7 = document.querySelector("#show7");
 
-    var rangeClock =  document.querySelector('.meter-clock');
-    var rangeClock2 =  document.querySelector('.meter-clock2');
-    var rangeClock3 =  document.querySelector('.meter-clock3');
+    var rangeClock =  document.querySelector('#meter');
+    var rangeClock2 =  document.querySelector('#meter2');
+    var rangeClock3 =  document.querySelector('#meter3');
 
     var meterColor = document.querySelector('.meter-shape');
     var meterColor2 = document.querySelector('.meter-shape2');
