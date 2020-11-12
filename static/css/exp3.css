@@ -57,62 +57,161 @@ body {
   top: 12.1em;
   left: 5.5em;
 }
-/* 3 phase variac */
+/* Rectifier */
 #ld4 {
-  top: 22.1em;
-  left: 3em;
+  top: 5.1em;
+  left: 9em;
 }
 #ld5 {
-  top: 26.1em;
-  left: 3em;
+  top: 8.6em;
+  left: 9em;
 }
 #ld6 {
-  top: 30.1em;
-  left: 3em;
-}
-#ld7 {
-  top: 22.1em;
-  left: 13em;
-}
-#ld8 {
-  top: 26.1em;
-  left: 13em;
-}
-#ld9 {
-  top: 30.1em;
-  left: 13em;
-}
-/* voltmeter */
-#ld10 {
   top: 12.1em;
+  left: 9em;
+}
+
+#ld7 {
+  top: 6.5em;
   left: 14.5em;
 }
-#ld11 {
-  top: 12.1em;
+#ld8 {
+  top: 10.4em;
+  left: 14.5em;
+}
+
+/* armature voltage regulator */
+#ld9 {
+  top: 16.1em;
   left: 21em;
 }
-/* Ammeter */
-#ld12 {
-  top: 12.1em;
-  left: 29em;
+#ld10 {
+  top: 16.1em;
+  left: 26.5em;
 }
-#ld13 {
-  top: 12.1em;
+
+/* DC motor */
+#ld11 {
+  top: 13.1em;
   left: 35.4em;
 }
-/* 3 phase induction motor */
-#ld14 {
-  top: 4.65em;
-  left: 46em;
+#ld12 {
+  top: 13.1em;
+  left: 40.4em;
 }
+#ld13 {
+  top: 16.1em;
+  left: 35.4em;
+}
+#ld14 {
+  top: 16.1em;
+  left: 40.4em;
+}
+
+/* 3 ph alternator */
 #ld15 {
-  top: 8em;
-  left: 46em;
+  top: 4.5em;
+  left: 55em;
 }
 #ld16 {
-  top: 11.77em;
-  left: 46em;
+  top: 8.5em;
+  left: 55em;
 }
+#ld17 {
+  top: 12.5em;
+  left: 55em;
+}
+
+#ld18 {
+  top: 15em;
+  left: 48em;
+}
+#ld19 {
+  top: 15em;
+  left: 52em;
+}
+
+/* 3 ph induction motor */
+#ld20 {
+  top: 15em;
+  left: 60em;
+}
+#ld21 {
+  top: 15em;
+  left: 63em;
+}
+#ld22 {
+  top: 15em;
+  left: 66em;
+}
+
+/* voltmeter */
+#ld23 {
+  top: 32.5em;
+  left: 62em;
+}
+#ld24 {
+  top: 32.5em;
+  left: 68em;
+}
+
+/* frequency meter */
+#ld25 {
+  top: 33em;
+  left: 42.5em;
+}
+#ld26 {
+  top: 33em;
+  left: 54.5em;
+}
+
+/* ammeter */
+#ld27 {
+  top: 32.5em;
+  left: 29em;
+}
+#ld28 {
+  top: 32.5em;
+  left: 36em;
+}
+
+
+#ld29 {
+  top: 19.5em;
+  left: 15em;
+}
+#ld30 {
+  top: 19.5em;
+  left: 21em;
+}
+#ld31 {
+  top: 32.5em;
+  left: 15em;
+}
+#ld32 {
+  top: 32.5em;
+  left: 21em;
+}
+
+
+#ld33 {
+  top: 19.5em;
+  left: 3em;
+}
+#ld34 {
+  top: 19.5em;
+  left: 9em;
+}
+#ld35 {
+  top: 32.5em;
+  left: 3em;
+}
+#ld36 {
+  top: 32.5em;
+  left: 9em;
+}
+
+
 
 path, .jtk-endpoint {
   cursor: pointer;
