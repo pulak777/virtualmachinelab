@@ -195,36 +195,58 @@ jsPlumb.ready(function () {
                 "target": "ld6"
             }
         ];
-        var correct_connections_7_10 = [
+        var correct_connections_7_9 = [
             {
-                "source": "ld10",
+                "source": "ld9",
                 "target": "ld7"
             },
     
             {
                 "source": "ld7",
-                "target": "ld10"
+                "target": "ld9"
             }
         ];
-        var correct_connections_8_11 = [
+        var correct_connections_7_35 = [
             {
-                "source": "ld11",
-                "target": "ld8"
+                "source": "ld7",
+                "target": "ld35"
             },
     
+            {
+                "source": "ld35",
+                "target": "ld7"
+            }
+        ];
+        var correct_connections_8_10 = [
             {
                 "source": "ld8",
-                "target": "ld11"
-            }
-        ];
-        var correct_connections_9_16 = [
-            {
-                "source": "ld9",
-                "target": "ld16"
+                "target": "ld10"
             },
     
             {
-                "source": "ld16",
+                "source": "ld10",
+                "target": "ld8"
+            }
+        ];
+        var correct_connections_8_36 = [
+            {
+                "source": "ld8",
+                "target": "ld36"
+            },
+    
+            {
+                "source": "ld36",
+                "target": "ld8"
+            }
+        ];
+        var correct_connections_9_11 = [
+            {
+                "source": "ld9",
+                "target": "ld11"
+            },
+    
+            {
+                "source": "ld11",
                 "target": "ld9"
             }
         ];
@@ -239,29 +261,149 @@ jsPlumb.ready(function () {
                 "target": "ld10"
             }
         ];
-        var correct_connections_11_15 = [
-            {
-                "source": "ld11",
-                "target": "ld15"
-            },
-    
-            {
-                "source": "ld15",
-                "target": "ld11"
-            }
-        ];
-        var correct_connections_13_14 = [
+        var correct_connections_13_33 = [
             {
                 "source": "ld13",
-                "target": "ld14"
+                "target": "ld33"
             },
     
             {
-                "source": "ld14",
+                "source": "ld33",
                 "target": "ld13"
             }
         ];
-        
+        var correct_connections_14_34 = [
+            {
+                "source": "ld14",
+                "target": "ld34"
+            },
+    
+            {
+                "source": "ld34",
+                "target": "ld14"
+            }
+        ];
+        var correct_connections_15_24 = [
+            {
+                "source": "ld15",
+                "target": "ld24"
+            },
+    
+            {
+                "source": "ld24",
+                "target": "ld15"
+            }
+        ];
+        var correct_connections_16_23 = [
+            {
+                "source": "ld16",
+                "target": "ld23"
+            },
+    
+            {
+                "source": "ld23",
+                "target": "ld16"
+            }
+        ];
+        var correct_connections_16_26 = [
+            {
+                "source": "ld16",
+                "target": "ld26"
+            },
+    
+            {
+                "source": "ld26",
+                "target": "ld16"
+            }
+        ];
+        var correct_connections_17_25 = [
+            {
+                "source": "ld17",
+                "target": "ld25"
+            },
+    
+            {
+                "source": "ld25",
+                "target": "ld17"
+            }
+        ];
+        var correct_connections_18_29 = [
+            {
+                "source": "ld18",
+                "target": "ld29"
+            },
+    
+            {
+                "source": "ld29",
+                "target": "ld18"
+            }
+        ];
+        var correct_connections_19_28 = [
+            {
+                "source": "ld19",
+                "target": "ld28"
+            },
+    
+            {
+                "source": "ld28",
+                "target": "ld19"
+            }
+        ];
+        var correct_connections_20_25 = [
+            {
+                "source": "ld20",
+                "target": "ld25"
+            },
+    
+            {
+                "source": "ld25",
+                "target": "ld20"
+            }
+        ];
+        var correct_connections_21_23 = [
+            {
+                "source": "ld21",
+                "target": "ld23"
+            },
+    
+            {
+                "source": "ld23",
+                "target": "ld21"
+            }
+        ];
+        var correct_connections_21_26 = [
+            {
+                "source": "ld21",
+                "target": "ld26"
+            },
+    
+            {
+                "source": "ld26",
+                "target": "ld21"
+            }
+        ];
+        var correct_connections_22_24 = [
+            {
+                "source": "ld22",
+                "target": "ld24"
+            },
+    
+            {
+                "source": "ld24",
+                "target": "ld22"
+            }
+        ];
+        var correct_connections_27_30 = [
+            {
+                "source": "ld27",
+                "target": "ld30"
+            },
+    
+            {
+                "source": "ld30",
+                "target": "ld27"
+            }
+        ];
 
         //a connection outside this will invalidate the circuit
         var allowed_connections = [
@@ -292,60 +434,197 @@ jsPlumb.ready(function () {
                 "source": "ld3",
                 "target": "ld6"
             },
-            {
-                "source": "ld10",
-                "target": "ld7"
-            },
-    
-            {
-                "source": "ld7",
-                "target": "ld10"
-            },
-            {
-                "source": "ld11",
-                "target": "ld8"
-            },
-    
-            {
-                "source": "ld8",
-                "target": "ld11"
-            },
-            {
-                "source": "ld9",
-                "target": "ld16"
-            },
-    
-            {
-                "source": "ld16",
-                "target": "ld9"
-            },
-            {
-                "source": "ld10",
-                "target": "ld12"
-            },
-    
-            {
-                "source": "ld12",
-                "target": "ld10"
-            },
-            {
-                "source": "ld11",
-                "target": "ld15"
-            },
-    
-            {
-                "source": "ld15",
-                "target": "ld11"
-            },
-            {
-                "source": "ld13",
-                "target": "ld14"
-            },
-    
-            {
-                "source": "ld14",
-                "target": "ld13"
-            }
+            
+                {
+                    "source": "ld9",
+                    "target": "ld7"
+                },
+        
+                {
+                    "source": "ld7",
+                    "target": "ld9"
+                },
+            
+                {
+                    "source": "ld7",
+                    "target": "ld35"
+                },
+        
+                {
+                    "source": "ld35",
+                    "target": "ld7"
+                },
+           
+                {
+                    "source": "ld8",
+                    "target": "ld10"
+                },
+        
+                {
+                    "source": "ld10",
+                    "target": "ld8"
+                },
+            
+                {
+                    "source": "ld8",
+                    "target": "ld36"
+                },
+        
+                {
+                    "source": "ld36",
+                    "target": "ld8"
+                },
+        
+                {
+                    "source": "ld9",
+                    "target": "ld11"
+                },
+        
+                {
+                    "source": "ld11",
+                    "target": "ld9"
+                },
+            
+                {
+                    "source": "ld10",
+                    "target": "ld12"
+                },
+        
+                {
+                    "source": "ld12",
+                    "target": "ld10"
+                },
+            
+                {
+                    "source": "ld13",
+                    "target": "ld33"
+                },
+        
+                {
+                    "source": "ld33",
+                    "target": "ld13"
+                },
+           
+                {
+                    "source": "ld14",
+                    "target": "ld34"
+                },
+        
+                {
+                    "source": "ld34",
+                    "target": "ld14"
+                },
+           
+                {
+                    "source": "ld15",
+                    "target": "ld24"
+                },
+        
+                {
+                    "source": "ld24",
+                    "target": "ld15"
+                },
+           
+                {
+                    "source": "ld16",
+                    "target": "ld23"
+                },
+        
+                {
+                    "source": "ld23",
+                    "target": "ld16"
+                },
+            
+                {
+                    "source": "ld16",
+                    "target": "ld26"
+                },
+        
+                {
+                    "source": "ld26",
+                    "target": "ld16"
+                },
+           
+                {
+                    "source": "ld17",
+                    "target": "ld25"
+                },
+        
+                {
+                    "source": "ld25",
+                    "target": "ld17"
+                },
+           
+                {
+                    "source": "ld18",
+                    "target": "ld29"
+                },
+        
+                {
+                    "source": "ld29",
+                    "target": "ld18"
+                },
+           
+                {
+                    "source": "ld19",
+                    "target": "ld28"
+                },
+        
+                {
+                    "source": "ld28",
+                    "target": "ld19"
+                },
+           
+                {
+                    "source": "ld20",
+                    "target": "ld25"
+                },
+        
+                {
+                    "source": "ld25",
+                    "target": "ld20"
+                },
+          
+                {
+                    "source": "ld21",
+                    "target": "ld23"
+                },
+        
+                {
+                    "source": "ld23",
+                    "target": "ld21"
+                },
+           
+                {
+                    "source": "ld21",
+                    "target": "ld26"
+                },
+        
+                {
+                    "source": "ld26",
+                    "target": "ld21"
+                },
+           
+                {
+                    "source": "ld22",
+                    "target": "ld24"
+                },
+        
+                {
+                    "source": "ld24",
+                    "target": "ld22"
+                },
+           
+                {
+                    "source": "ld27",
+                    "target": "ld30"
+                },
+        
+                {
+                    "source": "ld30",
+                    "target": "ld27"
+                }
+        
         ];
 
         var actual_connections = instance.getAllConnections();
@@ -353,12 +632,25 @@ jsPlumb.ready(function () {
         var is_connected_1_4= false;
         var is_connected_2_5 = false;
         var is_connected_3_6 = false;
-        var is_connected_7_10 = false;
-        var is_connected_8_11= false;
-        var is_connected_9_16 = false;
-        var is_connected_11_15 = false;
+        var is_connected_7_9 = false;
+        var is_connected_7_35= false;
+        var is_connected_8_10 = false;
+        var is_connected_8_36 = false;
+        var is_connected_9_11 = false;
         var is_connected_10_12 = false;
-        var is_connected_13_14 = false;
+        var is_connected_13_33= false;
+        var is_connected_14_34 = false;
+        var is_connected_15_24 = false;
+        var is_connected_16_23 = false;
+        var is_connected_16_26 = false;
+        var is_connected_17_25 = false;
+        var is_connected_18_29 = false;
+        var is_connected_19_28 = false;
+        var is_connected_20_25 = false;
+        var is_connected_21_23 = false;
+        var is_connected_21_26 = false;
+        var is_connected_22_24 = false;
+        var is_connected_27_30 = false;
         var unallowed_connection_present = false;
 
         actual_connections.forEach(function (connection) {
@@ -424,8 +716,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_7_10){
-                is_connected_7_10 = correct_connections_7_10.find(function (conn) {
+            if(!is_connected_7_9){
+                is_connected_7_9 = correct_connections_7_9.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -443,8 +735,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_8_11){
-                is_connected_8_11 = correct_connections_8_11.find(function (conn) {
+            if(!is_connected_7_35){
+                is_connected_7_35 = correct_connections_7_35.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
@@ -461,8 +753,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_9_16){
-                is_connected_9_16= correct_connections_9_16.find(function (conn) {
+            if(!is_connected_8_10){
+                is_connected_8_10= correct_connections_8_10.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -480,8 +772,26 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_11_15){
-                is_connected_11_15= correct_connections_11_15.find(function (conn) {
+            if(!is_connected_8_36){
+                is_connected_8_36 = correct_connections_8_36.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_9_11){
+                is_connected_9_11 = correct_connections_9_11.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -516,8 +826,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_13_14){
-                is_connected_13_14 = correct_connections_13_14.find(function (conn) {
+            if(!is_connected_13_33){
+                is_connected_13_33 = correct_connections_13_33.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -528,9 +838,225 @@ jsPlumb.ready(function () {
                 }));
             }
         });
-        //is_connected_2_5 && is_connected_3_6 && is_connected_7_10 && is_connected_8_11 && is_connected_9_16 && is_connected_11_15 && is_connected_10_12 && is_connected_13_14 &&
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_14_34){
+                is_connected_14_34 = correct_connections_14_34.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_15_24){
+                is_connected_15_24 = correct_connections_15_24.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_16_23){
+                is_connected_16_23 = correct_connections_16_23.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_16_26){
+                is_connected_16_26 = correct_connections_16_26.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_17_25){
+                is_connected_17_25 = correct_connections_17_25.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_18_29){
+                is_connected_18_29 = correct_connections_18_29.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_19_28){
+                is_connected_19_28 = correct_connections_19_28.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_20_25){
+                is_connected_20_25 = correct_connections_20_25.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_21_23){
+                is_connected_21_23 = correct_connections_21_23.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_21_26){
+                is_connected_21_26 = correct_connections_21_26.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_22_24){
+                is_connected_22_24 = correct_connections_22_24.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_27_30){
+                is_connected_27_30 = correct_connections_27_30.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        //is_connected_2_5 && is_connected_3_6 && is_connected_7_10 && is_connected_7_35 && is_connected_9_16 && is_connected_11_15 && is_connected_10_12 && is_connected_13_14 &&
         //short cut can be used for debugging
-        if ( is_connected_13_14 && !unallowed_connection_present) 
+        if ( is_connected_27_30 && !unallowed_connection_present) 
         {
             alert("Alert ! Correct connection proceed to take reading.");
             document.getElementById("check-button").disabled=true;

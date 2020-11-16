@@ -76,6 +76,17 @@
         color: rgb(255, 255, 255);
         border-radius: 40px;
       }
+      .rang-number5 {
+        width: 70%;
+        height: 35%;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(46, 43, 43);
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+      }
 
 
       .meter {
