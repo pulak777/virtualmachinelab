@@ -98,7 +98,7 @@
             <img id="myimage3" class="mcbSwitch" src="/static/images/push1.png" alt="MCB Switch" width="25" height="25">
           </div>
           <div style="position:absolute;top:4em;left:1.5em;">
-            <img id="myimage" class="mcbSwitch" src="/static/images/mcboff.png" alt="MCB Switch" onclick="mcbonoff(); rotaronoff();" width="78px" height="120px">
+            <img id="myimage" class="mcbSwitch" src="/static/images/mcboff.png" alt="MCB Switch" onclick="mcbonoff();" width="78px" height="120px">
           </div>
           </div>
 
@@ -113,15 +113,12 @@
           <div class="column20" id="movers-row" > 
             <img style="padding-left: 30px" class="voltMeter" src="/static/images/Voltmeter.png" alt="Voltmeter" width="170" height="220">
             <div class="meter1" style="position: absolute;top: -2px;left: 160px;">
-              <div class="rang" style="position: absolute;top: 0em;left: 8em;">
-                <div class="rang-title">
-                  <input class="rang-number" id="show" type="text" value="0" disabled="disabled"/>
-                </div>
+              <div class="rang" style="position: absolute;top: 1em;left: 12.5em;">
                 <br>Voltmeter
               </div>
               <div style="position: absolute;top:-10.5em;left: 5.8em;">
                 <svg class="meter">
-                  <polygon class="meter-clock" points="129,145 137,90 145,145"></polygon>
+                  <polygon class="meter-clock" id="meter1" points="129,145 137,90 145,145"></polygon>
                   <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
                 </svg>
               </div>
@@ -154,9 +151,9 @@
               <img style="height:140px; width:150px;" src="/static/images/alternator_final.png"/>
              <div style="position: absolute;top:-3.4em; left: 1.5em;"><b>3 Phase Alternator</b></div>
              <div class="rang" style="position: absolute;top: 2.5em;left: 2.3em;">
-              <img style="height:25px; width:40px;" src="/static/images/switchoff.png"/>
+              <img style="height:25px; width:40px;" src="/static/images/switchoff.png" onclick=" rotaronoff();"/>
               <div class="rang-title4">
-                <input class="rang-number5" id="show3" type="text" value="1000 RPM" disabled="disabled"/>
+                <input class="rang-number5" id="show3" type="text" value="0 RPM" disabled="disabled"/>
               </div>
             </div>
              <div style="background-color: silver; height: 10px; width: 10px; position: absolute;top: 4.7em; left: -0.5em;"></div>
@@ -167,7 +164,7 @@
             <br>
             <br>
             <div style="position: relative; left: 1.1em; top:-2.8em;">
-              <img style="height:240px; width:160px;" src="/static/images/Machine.png" id="cirmover1"/>
+              <img style="height:240px; width:160px;" src="/static/images/Machine.png"/>
              <div style="position: absolute;top:-1.2em; left: -1em;"><b>3 Phase Induction Motor</b></div>
             </div>
           </div>
@@ -296,6 +293,12 @@
                     <button id="reset" type="reset" onclick="window.location.reload();" style="background-color:#f82d12; border:none; padding: 5px; border-radius:5px" >Reset</button>
                   </div>
           </div>
+        </div>
+
+        <div class="row"> 
+          <div class="column30"></div>
+          <div class="column40"></div>
+          <div class="column30"></div>
         </div>
   
   <script src="/static/js/jsplumb1.js"></script>

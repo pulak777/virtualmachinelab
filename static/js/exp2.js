@@ -688,9 +688,6 @@ function rotaronoff()
     }
 }
 
-    var xx = [];
-    var yy = [];
-    var zz =[];
     var rangeMeter = document.querySelector('#range');
 
     var rangeShow = document.querySelector("#show");
@@ -707,8 +704,7 @@ function rotaronoff()
     var table = document.querySelector('#table');
 
 
-      // console.log(values[i]);
-    for (var i = 0; i < 100; i++) {
+    
       function rangeChange() {
         var rotateClock =  rangeMeter.value;
         
@@ -795,8 +791,7 @@ function rotaronoff()
               }
             }
           }
-        }
-      }     
+        }  
       rangeMeter.addEventListener('input', rangeChange);
     
     

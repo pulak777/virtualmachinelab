@@ -1190,8 +1190,7 @@ jsPlumb.ready(function () {
 
 
 
-var isrotating=false;
-var rotoroffstate=true;
+
 var mcboffstate=true;
 var were=270;
 function mcbonoff()
@@ -1205,7 +1204,9 @@ function mcbonoff()
             document.getElementById('myimage').src='/static/images/mcbon.png';
             document.getElementById('myimage1').src='/static/images/push2.png';
             document.getElementById('myimage2').src='/static/images/push2.png';
-            document.getElementById('myimage3').src='/static/images/push2.png';            
+            document.getElementById('myimage3').src='/static/images/push2.png';    
+            document.getElementById("range").disabled=false;
+            document.getElementById("range2").disabled=false;        
         }
         else{
             return;
@@ -1217,7 +1218,36 @@ function mcbonoff()
 }
 
 
+var rangeMeter = document.querySelector('#range');
+var rangeMeter2 = document.querySelector('#range2');
 
+var rangeShow3 = document.querySelector("#show3");
+var rangeShow2 = document.querySelector("#show2");
+var rangeShow5 = document.querySelector("#show5");
+
+var rangeClock =  document.querySelector('#meter1');
+
+    function rangeChange() {
+      var rotateClock =  rangeMeter.value;
+      rangeShow2.value=rangeMeter.value;
+      rangeShow5.value=rangeMeter2.value;
+      
+      rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
+      
+      // rangeShow.value = rotateClock;
+      var rpm = (rangeMeter.value * 100) + (rangeMeter2.value * 75);
+        rangeShow3.value = String(rpm) + " RPM"
+
+    }
+    rangeMeter.addEventListener('input', rangeChange);
+    rangeMeter2.addEventListener('input', rangeChange);
+
+
+
+
+
+var isrotating=false;
+var rotoroffstate=true;
 function rotaronoff()
 {   
     
@@ -1227,7 +1257,7 @@ function rotaronoff()
         {
             isrotating=true;
             rotoroffstate=false;
-            document.getElementById('cirmover2').style.animation="rotation 3s infinite linear";
+            document.getElementById('cirmover1').style.animation="rotation 3s infinite linear";
             document.getElementById("graph").disabled=false;
             document.getElementById("addToTable").disabled=false;
             document.getElementById("range").disabled=false;
@@ -1254,10 +1284,7 @@ function rotaronoff()
     }
 }
 
-    var xx = [];
-    var yy = [];
-    var zz =[];
-    var rangeMeter = document.querySelector('#range');
+   /* var rangeMeter3 = document.querySelector('#range3');
 
     var rangeShow = document.querySelector("#show");
     var rangeShow2 = document.querySelector("#show2");
@@ -1265,17 +1292,12 @@ function rotaronoff()
     var rangeShow4 = document.querySelector("#show4");
     var rangeShow5 = document.querySelector("#show5");
 
-    var rangeClock =  document.querySelector('#meter');
-    var rangeClock2 =  document.querySelector('#meter2');
-
     var addToTable1 = document.querySelector('#addToTable');
 
     var table = document.querySelector('#table');
 
 
-      // console.log(values[i]);
-    for (var i = 0; i < 100; i++) {
-      function rangeChange() {
+      function rangeChange2() {
         var rotateClock =  rangeMeter.value;
         
         rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
@@ -1362,8 +1384,7 @@ function rotaronoff()
             }
           }
         }
-      }     
-      rangeMeter.addEventListener('input', rangeChange);
+      rangeMeter.addEventListener('input', rangeChange2); */
     
     
     var clickcounter=0;
