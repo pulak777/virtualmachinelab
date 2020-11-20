@@ -226,9 +226,9 @@ div
   box-sizing: border-box;
   resize: both;
 }
-.column50 {
+.column60 {
   float: left;
-  width: 50%;
+  width: 60%;
   padding: 10px;
   height: 300px;
   border-style: solid;

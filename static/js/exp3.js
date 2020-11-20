@@ -1192,7 +1192,8 @@ jsPlumb.ready(function () {
 
 
 var mcboffstate=true;
-var were=270;
+var isrotating=false;
+var rotoroffstate=true;
 function mcbonoff()
 {   
    if(rightconnection==true)
@@ -1206,7 +1207,12 @@ function mcbonoff()
             document.getElementById('myimage2').src='/static/images/push2.png';
             document.getElementById('myimage3').src='/static/images/push2.png';    
             document.getElementById("range").disabled=false;
-            document.getElementById("range2").disabled=false;        
+            //document.getElementById("range2").disabled=false;  
+            rangeMeter.value = 1;
+            //rangeMeter2.value = 1;      
+            rangeShow2.value=rangeMeter.value;
+            rangeShow5.value=rangeMeter2.value;
+            rangeShow3.value = "1000 RPM";
         }
         else{
             return;
@@ -1220,12 +1226,22 @@ function mcbonoff()
 
 var rangeMeter = document.querySelector('#range');
 var rangeMeter2 = document.querySelector('#range2');
+var rangeMeter3 = document.querySelector('#range3');
 
 var rangeShow3 = document.querySelector("#show3");
 var rangeShow2 = document.querySelector("#show2");
 var rangeShow5 = document.querySelector("#show5");
+var rangeShow4 = document.querySelector("#show4");
+var rangeShow6 = document.querySelector("#show6");
+var rangeShow7 = document.querySelector("#show7");
+var rangeShow8 = document.querySelector("#show8");
+var rangeShow9 = document.querySelector("#show9");
+var rpm = 0;
 
 var rangeClock =  document.querySelector('#meter1');
+var rangeClock2 =  document.querySelector('#meter2');
+var rangeClock3 =  document.querySelector('#meter3');
+var rangeClock4 =  document.querySelector('#meter4');
 
     function rangeChange() {
       var rotateClock =  rangeMeter.value;
@@ -1234,20 +1250,50 @@ var rangeClock =  document.querySelector('#meter1');
       
       rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
       
-      // rangeShow.value = rotateClock;
-      var rpm = (rangeMeter.value * 100) + (rangeMeter2.value * 75);
-        rangeShow3.value = String(rpm) + " RPM"
+      
+      var rpm = 925 + (rangeMeter.value * 75) + (rangeMeter2.value * 50);
+        rangeShow3.value = String(rpm) + " RPM";
+
+      if(rpm == 1450 && isrotating == false){
+        document.getElementById("range").disabled=true;
+        document.getElementById("range2").disabled=false;
+        setTimeout(function(){
+            alert("Now increase DC Motor Field value");
+        }, 1000);
+        
+      }
+      if(rpm == 1500 && isrotating == false){
+        document.getElementById("range").disabled=true;
+        document.getElementById("range2").disabled=true;
+        setTimeout(function(){
+        alert("Required speed achived! Turn on the alternator by clicking on the red switch!");
+        }, 1000);
+      }
 
     }
-    rangeMeter.addEventListener('input', rangeChange);
+    
+    rangeMeter.addEventListener('input', function(){
+        if(isrotating == true){
+            document.getElementById("range").disabled=true;
+            rangeChange2();
+            if(rangeMeter3.value != 7){
+                document.getElementById("range3").disabled=false;
+            }   
+        }
+        else{
+
+            rangeChange();
+        }
+    }
+    );
     rangeMeter2.addEventListener('input', rangeChange);
+    rangeMeter3.addEventListener('input', function(){
+        document.getElementById("range3").disabled=true;
+        rangeChange3();
+        document.getElementById("range").disabled=false;
+    });
 
 
-
-
-
-var isrotating=false;
-var rotoroffstate=true;
 function rotaronoff()
 {   
     
@@ -1257,22 +1303,23 @@ function rotaronoff()
         {
             isrotating=true;
             rotoroffstate=false;
-            document.getElementById('cirmover1').style.animation="rotation 3s infinite linear";
+            document.getElementById('altonoff').src='/static/images/switchon.png';
+            document.getElementById('cirmover1').style.animation="rotation 0.5s infinite linear";
             document.getElementById("graph").disabled=false;
             document.getElementById("addToTable").disabled=false;
             document.getElementById("range").disabled=false;
-            var intervalId=setInterval(function()
-            {
-                if(were===390)
-                {
-                    clearInterval(intervalId);
-                    were=400;
-                    isrotating=false;
-                }
-                were++;
-            },15);
-            rangeMeter.value=1;
-            rangeChange();
+            document.getElementById("range2").disabled=true;  
+            document.getElementById("range3").disabled=false;
+            rangeMeter3.value=1;
+            rangeShow6.value = 1;
+            rangeShow7.value = 0.3;
+            rangeShow8.value = 54;
+            rangeShow9.value = 250;
+            rangeShow4.value = 1497;
+            rangeClock2.style.transform = 'rotate(' + -50 + 'deg)';
+            rangeClock3.style.transform = 'rotate(' + -95 + 'deg)';
+            rangeClock4.style.transform = 'rotate(' + -20 + 'deg)';
+            //rangeChange();
         }
         else
         {
@@ -1284,108 +1331,97 @@ function rotaronoff()
     }
 }
 
-   /* var rangeMeter3 = document.querySelector('#range3');
-
-    var rangeShow = document.querySelector("#show");
-    var rangeShow2 = document.querySelector("#show2");
-    var rangeShow3 = document.querySelector("#show3");
-    var rangeShow4 = document.querySelector("#show4");
-    var rangeShow5 = document.querySelector("#show5");
-
-    var addToTable1 = document.querySelector('#addToTable');
-
-    var table = document.querySelector('#table');
-
-
-      function rangeChange2() {
-        var rotateClock =  rangeMeter.value;
-        
-        rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
-        if(rotateClock == 1){
-            rangeClock2.style.transform = 'rotate(' + (-62 + ((9 * 1000) / 102)) + 'deg)';
-        }
-        else{
-            rangeClock2.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 102)) + 'deg)';
-        }
-        
-        
-        // rangeShow.value = rotateClock;
-          if(rangeMeter.value <= 8) {
-            rangeShow.value = 400;
-            rangeShow2.value = 2.3;
-            rangeShow3.value = 1498;
-            rangeShow4.value=rangeMeter.value;
-            rangeShow5.value= "400 V";
-            document.getElementById('cirmover2').style.animation="rotation 0.5s infinite linear";
-            if (rangeMeter.value <= 7) {
-              rangeShow.value = 350;
-              rangeShow2.value = 1.8;
-              rangeShow3.value = 1497;
-              rangeShow4.value=rangeMeter.value;
-              rangeShow5.value= "350 V";
-              document.getElementById('cirmover2').style.animation="rotation 1s infinite linear";
-              if (rangeMeter.value <= 6) {
-                rangeShow.value = 300;
-                rangeShow2.value = 1.5;
-                rangeShow3.value = 1496;
-                rangeShow4.value=rangeMeter.value;
-                rangeShow5.value= "300 V";
-                document.getElementById('cirmover2').style.animation="rotation 1.4s infinite linear";
-                if (rangeMeter.value <= 5) {
-                  rangeShow.value = 250;
-                  rangeShow2.value = 1.2;
-                  rangeShow3.value = 1495;
-                  rangeShow4.value=rangeMeter.value;
-                  rangeShow5.value= "250 V";
-                  document.getElementById('cirmover2').style.animation="rotation 1.7s infinite linear";
-                  if (rangeMeter.value <= 4) {
-                    rangeShow.value = 200;
-                    rangeShow2.value = 1;
-                    rangeShow3.value = 1494;
-                    rangeShow4.value=rangeMeter.value;
-                    rangeShow5.value= "200 V";
-                    document.getElementById('cirmover2').style.animation="rotation 2s infinite linear";
-                    if (rangeMeter.value <= 3) {
-                      rangeShow.value = 150;
-                      rangeShow2.value = 0.8;
-                      rangeShow3.value = 1490;
-                      rangeShow4.value=rangeMeter.value;
-                      rangeShow5.value= "150 V";
-                      document.getElementById('cirmover2').style.animation="rotation 2.4s infinite linear";;
-                      if (rangeMeter.value <= 2) {
-                        rangeShow.value = 100;
-                        rangeShow2.value = 0.6;
-                        rangeShow3.value = 1480;
-                        rangeShow4.value=rangeMeter.value;
-                        rangeShow5.value= "100 V";
-                        document.getElementById('cirmover2').style.animation="rotation 2.7s infinite linear";
-                        if (rangeMeter.value <= 1) {
-                          rangeShow.value = 50;
-                          rangeShow2.value = 2.8;
-                          rangeShow3.value = 0;
-                          rangeShow4.value=rangeMeter.value;
-                          rangeShow5.value= "50 V";
-                          document.getElementById('cirmover2').style.animation="rotation 3s infinite linear";
-                          if (rangeMeter.value <= 0) {
-                            document.getElementById('cirmover2').style.animation="rotation 0s infinite linear";
-                            rangeShow.value = 0;
-                            rangeShow2.value = 0;
-                            rangeShow3.value = 0;
-                            rangeShow4.value=rangeMeter.value;
-                            rangeShow5.value= "0 V";
-                           
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      rangeMeter.addEventListener('input', rangeChange2); */
+function rangeChange2() {
+    var rotateClock =  rangeMeter.value;
+    rangeShow2.value=rangeMeter.value;
     
+    
+    rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
+    
+    // rangeShow.value = rotateClock;
+    if(rangeMeter.value == 7){
+        rangeShow3.value = 1500;
+        rangeShow4.value = 1497;
+    }
+    else if(rangeMeter.value == 6){
+        rangeShow3.value = 1387;
+        rangeShow4.value = 1383;
+    }
+    else if(rangeMeter.value == 5){
+        rangeShow3.value = 1308;
+        rangeShow4.value = 1303;
+    }
+    else if(rangeMeter.value == 4){
+        rangeShow3.value = 1225;
+        rangeShow4.value = 1220;
+    }
+    else if(rangeMeter.value == 3){
+        rangeShow3.value = 1208;
+        rangeShow4.value = 1200;
+    }
+    else if(rangeMeter.value == 2){
+        rangeShow3.value = 1165;
+        rangeShow4.value = 1160;
+    }
+    else if(rangeMeter.value == 1){
+        rangeShow3.value = 1000;
+        rangeShow4.value = 990;
+    }
+    else{
+        rangeShow3.value = 0;
+        rangeShow4.value = 0;
+    }
+  }
+
+  function rangeChange3(){
+    var rotateClock2 =  rangeMeter3.value;
+    rangeShow6.value = rangeMeter3.value;
+
+    rangeClock2.style.transform = 'rotate(' + ( -50 + (rotateClock2 - 1)*5 ) + 'deg)';
+    rangeClock3.style.transform = 'rotate(' + ( -95 - (rotateClock2 - 1)*5 ) + 'deg)';
+    rangeClock4.style.transform = 'rotate(' + -15 + 'deg)';
+
+    if(rangeMeter3.value == 2){
+        rangeShow7.value = 0.5;
+        rangeShow8.value = 50;
+        rangeShow9.value = 325;
+        setTimeout(function(){
+        alert("Start taking readings/ click 'Add to table' button");
+        }, 1000);
+    }
+    else if(rangeMeter3.value == 3){
+        rangeShow7.value = 0.6;
+        rangeShow8.value = 46.25;
+        rangeShow9.value = 325;
+    }
+    else if(rangeMeter3.value == 4){
+        rangeShow7.value = 0.7;
+        rangeShow8.value = 43.6;
+        rangeShow9.value = 325;
+    }
+    else if(rangeMeter3.value == 5){
+        rangeShow7.value = 0.8;
+        rangeShow8.value = 40.83;
+        rangeShow9.value = 325;
+    }
+    else if(rangeMeter3.value == 6){
+        rangeShow7.value = 0.9;
+        rangeShow8.value = 40.27;
+        rangeShow9.value = 325;
+    }
+    else if(rangeMeter3.value == 7){
+        rangeShow7.value = 1.0;
+        rangeShow8.value = 38.83;
+        rangeShow9.value = 325;
+    }
+    else{
+        rangeShow7.value = 0;
+        rangeShow8.value = 0;
+        rangeShow9.value = 0;
+    }
+  }
+  
+            
     
     var clickcounter=0;
     var count = 1;
@@ -1400,32 +1436,39 @@ function rotaronoff()
     addToTable.addEventListener('click', () => {
         clickcounter++;
   
-        if(clickcounter<=10)
+        if(clickcounter<=6)
         {
           var y = table.insertRow(clickcounter);
           var cell1 = y.insertCell(0);
           var cell2 = y.insertCell(1);
           var cell3 = y.insertCell(2);
           var cell4 = y.insertCell(3);
+          var cell5 = y.insertCell(4);
+          var cell6 = y.insertCell(5);
     
           cell1.innerHTML = "SN";
-          cell2.innerHTML = "Supply Voltage (V)";
-          cell3.innerHTML = "Current (A)";
-          cell4.innerHTML = "Speed (RPM)";
+          cell2.innerHTML = "Alternator field current";
+          cell3.innerHTML = "Alternator output voltage";
+          cell4.innerHTML = "Alternator Speed (RPM)";
+          cell5.innerHTML = "observed frequency";
+          cell6.innerHTML = "Induction motor speed (RPM)";
 
           cell1.innerHTML = count++;
-          cell2.innerHTML = rangeShow.value;
-          cell3.innerHTML = rangeShow2.value;
-          cell4.innerHTML = rangeShow3.value
+          cell2.innerHTML = rangeShow7.value;
+          cell3.innerHTML = rangeShow9.value;
+          cell4.innerHTML = rangeShow2.value;
+          cell5.innerHTML = rangeShow8.value;
+          cell6.innerHTML = rangeShow4.value;
         }
         else
         {
-          alert("Only maximum 10 readings are allowed.");
+          alert("Only 6 readings are allowed.");
         } 
         if(clickcounter!=1){
-        trace.y.push(cell4.innerHTML);
-        trace.x.push(cell2.innerHTML);
+        trace.y.push(cell6.innerHTML);
+        trace.x.push(cell5.innerHTML);
         }
+        
        })
 
 
@@ -1433,9 +1476,9 @@ function rotaronoff()
 
    function drawgraph(){
 
-     if(clickcounter<8)
+     if(clickcounter<6)
      {
-        alert("Alert ! Please take atleast 8 readings.");
+        alert("Alert ! Please take 6 readings.");
      }
      else
      {
@@ -1443,7 +1486,7 @@ function rotaronoff()
         var layout={
             xaxis:{
                 title:{
-                    text:'Torque',
+                    text:'Frequency',
                     font:
                     {
                         family:'Courier New, monoscope',
@@ -1454,7 +1497,7 @@ function rotaronoff()
             },
             yaxis:{
                 title:{
-                    text:'Speed',
+                    text:'Induction Motor Speed',
                     font:
                     {
                         family:'Courier New, monoscope',

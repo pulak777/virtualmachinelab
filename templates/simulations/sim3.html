@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Speed control of 3-phase squirrel cage induction motor by voltage control</title>
+      <title>Speed control of 3-phase squirrel cage induction motor by voltage control</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
          <link rel="stylesheet" href="/static/css/style.css">
         <link rel="stylesheet" href="/static/css/exp3.css">
-        
+      
       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="/static/js/graph.ob.js"></script>
+      <script src="/static/js/graph.ob.js"></script>
 </head>
 <body style="background-color: rgb(236, 228, 180);">
       <div id="wrapper" style="position:absolute; top:10px; width:1300px; left:100px; background-color: white;">
+
         <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a>
         </div>
         <div class="littledot" id="ld2"></br><a href="#" class="cmdLink detach" rel="ld2">2</a>
         </div>
         <div class="littledot" id="ld3"></br><a href="#" class="cmdLink detach" rel="ld3">3</a>
         </div>
+
         <div class="littledot" id="ld4"></br><a href="#" class="cmdLink detach" rel="ld4">4</a>
         </div>
         <div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5">5</a>
@@ -29,10 +31,12 @@
         </div>
         <div class="littledot" id="ld8"></br><a href="#" class="cmdLink detach" rel="ld8">8</a>
         </div>
+
         <div class="littledot" id="ld9"></br><a href="#" class="cmdLink detach" rel="ld9">9</a>
         </div>
         <div class="littledot" id="ld10"></br><a href="#" class="cmdLink detach" rel="ld10">10</a>
         </div>
+
         <div class="littledot" id="ld11"></br><a href="#" class="cmdLink detach" rel="ld11">11</a>
         </div>
         <div class="littledot" id="ld12"></br><a href="#" class="cmdLink detach" rel="ld12">12</a>
@@ -41,6 +45,7 @@
         </div>
         <div class="littledot" id="ld14"></br><a href="#" class="cmdLink detach" rel="ld14">14</a>
         </div>
+
         <div class="littledot" id="ld15"></br><a href="#" class="cmdLink detach" rel="ld15">15</a>
         </div>
         <div class="littledot" id="ld16"></br><a href="#" class="cmdLink detach" rel="ld16">16</a>
@@ -51,20 +56,24 @@
         </div>
         <div class="littledot" id="ld19"></br><a href="#" class="cmdLink detach" rel="ld19">19</a>
         </div>
+
         <div class="littledot" id="ld20"></br><a href="#" class="cmdLink detach" rel="ld20">20</a>
         </div>
         <div class="littledot" id="ld21"></br><a href="#" class="cmdLink detach" rel="ld21">21</a>
         </div>
         <div class="littledot" id="ld22"></br><a href="#" class="cmdLink detach" rel="ld22">22</a>
         </div>
+
         <div class="littledot" id="ld23"></br><a href="#" class="cmdLink detach" rel="ld24">23</a>
         </div>
         <div class="littledot" id="ld24"></br><a href="#" class="cmdLink detach" rel="ld24">24</a>
         </div>
+
         <div class="littledot" id="ld25"></br><a href="#" class="cmdLink detach" rel="ld25">25</a>
         </div>
         <div class="littledot" id="ld26"></br><a href="#" class="cmdLink detach" rel="ld26">26</a>
         </div>
+
         <div class="littledot" id="ld27"></br><a href="#" class="cmdLink detach" rel="ld27">27</a>
         </div>
         <div class="littledot" id="ld28"></br><a href="#" class="cmdLink detach" rel="ld28">28</a>
@@ -128,9 +137,9 @@
                 <input class="rang-number" id="show2" type="text" value="0" disabled="disabled"/>
               </div>
             </div>
-            <div style="position: relative;left: 3.2em; top: -2.6em; color: black;"><b>Move the slider ➤</b></div>
+            <div style="position: relative;left: 3.2em; top: -2.6em; color: black;"><b>Move the slider</b></div>
             <div class="slidecontainer" style=" position:relative; top:-2.2em; left:3.3em">
-              <input class="rang-slider" disabled="true" id="range" type="range" min="0" max="10" value="0"/>
+              <input class="rang-slider" disabled="true" id="range" type="range" min="0" max="7" value="0"/>
             </div>
           </div>
             
@@ -139,7 +148,7 @@
             <br>
             <br>
             <div style="position: relative; top:0em;">
-              <img style="height:140px; width:190px;" src="/static/images/dc_motor1.jpg"/>
+              <img style="height:140px; width:190px;" src="/static/images/dc_motor1.jpg" alt="DC Motor"/>
              <div style="position: absolute;top:-3.4em; left: 2.5em;"><b>DC Motor</b></div>
             </div> 
           </div>
@@ -151,7 +160,7 @@
               <img style="height:140px; width:150px;" src="/static/images/alternator_final.png"/>
              <div style="position: absolute;top:-3.4em; left: 1.5em;"><b>3 Phase Alternator</b></div>
              <div class="rang" style="position: absolute;top: 2.5em;left: 2.3em;">
-              <img style="height:25px; width:40px;" src="/static/images/switchoff.png" onclick=" rotaronoff();"/>
+              <img style="height:25px; width:40px;" id="altonoff" src="/static/images/switchoff.png" alt="Alternator off/on" onclick=" rotaronoff();"/>
               <div class="rang-title4">
                 <input class="rang-number5" id="show3" type="text" value="0 RPM" disabled="disabled"/>
               </div>
@@ -197,7 +206,7 @@
               </div>
               <div style="position: relative;left: 0.2em; top: -1em; color: black;"><b>Move the slider ➤</b></div>
             <div class="slidecontainer" style=" position:relative; top:-0.5em; left:3px">
-              <input class="rang-slider" disabled="true" id="range2" type="range" min="0" max="10" value="0"/>
+              <input class="rang-slider" disabled="true" id="range2" type="range" min="0" max="2" value="0"/>
             </div>
              </div>
           </div>
@@ -213,7 +222,7 @@
               </div>
               <div style="position: relative;left: 0.2em; top: -1em; color: black;"><b>Move the slider ➤</b></div>
             <div class="slidecontainer" style=" position:relative; top:-0.5em; left:3px">
-              <input class="rang-slider" disabled="true" id="range3" type="range" min="0" max="10" value="0"/>
+              <input class="rang-slider" disabled="true" id="range3" type="range" min="0" max="7" value="0"/>
             </div>
              </div>
           </div>
@@ -229,7 +238,7 @@
               </div>
               <div>
                 <svg class="meter" style="position: absolute;top: -10.5em;left: 16.7em;">
-                  <polygon class="meter-clock" points="129,145 137,90 145,145"></polygon>
+                  <polygon class="meter-clock" id="meter2" points="129,145 137,90 145,145"></polygon>
                   <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
                 </svg>
               </div>
@@ -247,7 +256,7 @@
               </div>
               <div>
                 <svg class="meter" style="position: absolute;top: -7em;left: 35.8em;">
-                  <polygon class="meter-clock2" points="129,145 237,90 145,145"></polygon>
+                  <polygon class="meter-clock2" id="meter3" points="129,145 237,90 145,145"></polygon>
                   <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
                 </svg>
               </div>
@@ -265,7 +274,7 @@
               </div>
               <div>
                 <svg class="meter" style="position: absolute;top: -10.5em;left: 49.25em;">
-                  <polygon class="meter-clock" points="129,145 137,90 145,145"></polygon>
+                  <polygon class="meter-clock" id="meter4" points="129,145 137,90 145,145"></polygon>
                   <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
                 </svg>
               </div>
@@ -296,9 +305,26 @@
         </div>
 
         <div class="row"> 
-          <div class="column30"></div>
-          <div class="column40"></div>
-          <div class="column30"></div>
+          <div class="column60" >
+            <div style="position:absolute;left:16em;top:42em;">
+              <table id="table" class="table"; style="position: relative;right:11.5em;top:-4.6em; ">
+              <tr>
+              <th>SN</th>
+              <th>Alternator <br> field current</th>
+              <th>Alternator <br> output voltage</th>
+              <th>Alternator <br> Speed (RPM)</th>
+              <th>observed <br> frequency</th>
+              <th>Induction motor <br> speed (RPM)</th>
+              </tr>
+              </table>
+            </div> 
+          </div>
+          <div class="column40" >
+            <div style="position: relative; top: -0.8em;"><b>Frequency vs Ind. motor Speed Graph</b></div>
+            <div class="container" style="position:absolute; top: 40.5em; left: 51.1em;">
+                <div class="box" id="myDiv" style="width:440px;height:300px;"></div>
+            </div>
+          </div>
         </div>
   
   <script src="/static/js/jsplumb1.js"></script>
