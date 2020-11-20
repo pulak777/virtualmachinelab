@@ -1278,7 +1278,7 @@ var rangeClock4 =  document.querySelector('#meter4');
             rangeChange2();
             if(rangeMeter3.value != 7){
                 document.getElementById("range3").disabled=false;
-            }   
+            }  
         }
         else{
 
@@ -1291,6 +1291,9 @@ var rangeClock4 =  document.querySelector('#meter4');
         document.getElementById("range3").disabled=true;
         rangeChange3();
         document.getElementById("range").disabled=false;
+        if(rangeMeter.value == 2){
+            document.getElementById("range").disabled=true;
+        }
     });
 
 
@@ -1346,30 +1349,44 @@ function rangeChange2() {
     else if(rangeMeter.value == 6){
         rangeShow3.value = 1387;
         rangeShow4.value = 1383;
+        rangeShow9.value = 312;
+        document.getElementById('cirmover1').style.animation="rotation 0.7s infinite linear";
     }
     else if(rangeMeter.value == 5){
         rangeShow3.value = 1308;
         rangeShow4.value = 1303;
+        rangeShow9.value = 306;
+        document.getElementById('cirmover1').style.animation="rotation 1s infinite linear";
     }
     else if(rangeMeter.value == 4){
         rangeShow3.value = 1225;
         rangeShow4.value = 1220;
+        rangeShow9.value = 295;
+        document.getElementById('cirmover1').style.animation="rotation 1.5s infinite linear";
     }
     else if(rangeMeter.value == 3){
         rangeShow3.value = 1208;
         rangeShow4.value = 1200;
+        rangeShow9.value = 293;
+        document.getElementById('cirmover1').style.animation="rotation 1.6s infinite linear";
     }
     else if(rangeMeter.value == 2){
         rangeShow3.value = 1165;
         rangeShow4.value = 1160;
+        rangeShow9.value = 288;
+        document.getElementById('cirmover1').style.animation="rotation 1.8s infinite linear";
     }
     else if(rangeMeter.value == 1){
         rangeShow3.value = 1000;
         rangeShow4.value = 990;
+        rangeShow9.value = 283;
+        document.getElementById('cirmover1').style.animation="rotation 2.2s infinite linear";
     }
     else{
         rangeShow3.value = 0;
         rangeShow4.value = 0;
+        rangeShow9.value = 0;
+        document.getElementById('cirmover1').style.animation="rotation 0s infinite linear";
     }
   }
 
