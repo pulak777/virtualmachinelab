@@ -1298,8 +1298,7 @@ var rangeClock4 =  document.querySelector('#meter4');
 
 
 function rotaronoff()
-{   
-    
+{       
     if(mcboffstate==false)
     {
         if(isrotating==false)
