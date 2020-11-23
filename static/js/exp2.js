@@ -711,6 +711,9 @@ function rotaronoff()
         rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
         if(rotateClock == 1){
             rangeClock2.style.transform = 'rotate(' + (-62 + ((9 * 1000) / 102)) + 'deg)';
+            setTimeout(function(){
+                rangeClock2.style.transform = 'rotate(' + (-62 + ((800 / 102))) + 'deg)';
+                }, 2000);
         }
         else{
             rangeClock2.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 102)) + 'deg)';
@@ -770,6 +773,9 @@ function rotaronoff()
                         if (rangeMeter.value <= 1) {
                           rangeShow.value = 50;
                           rangeShow2.value = 2.8;
+                          setTimeout(function(){
+                            rangeShow2.value = 0.5;
+                            }, 1000);
                           rangeShow3.value = 0;
                           rangeShow4.value=rangeMeter.value;
                           rangeShow5.value= "50 V";
