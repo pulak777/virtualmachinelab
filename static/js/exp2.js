@@ -775,7 +775,7 @@ function rotaronoff()
                           rangeShow2.value = 2.8;
                           setTimeout(function(){
                             rangeShow2.value = 0.5;
-                            }, 1000);
+                            }, 2000);
                           rangeShow3.value = 0;
                           rangeShow4.value=rangeMeter.value;
                           rangeShow5.value= "50 V";
