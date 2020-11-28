@@ -83,8 +83,8 @@
         text-align: center;
         font-size: 15px;
         font-weight: bold;
-        background-color: rgb(46, 43, 43);
-        color: rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         border-radius: 50px;
       }
 
@@ -179,6 +179,16 @@
   border-collapse: collapse;
   width: 100%;
 }
+#table3 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#table4 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
 #table td, #customers th {
  
@@ -211,6 +221,20 @@
   color: black;
 }
 
+#table3 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: linen;
+  color: black;
+}
+#table4 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: linen;
+  color: black;
+}
 
 @media print {
   .noPrint { display: none; }

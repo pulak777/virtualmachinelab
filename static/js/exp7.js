@@ -1,3 +1,5 @@
+var sctest = false;
+
 var rightconnection=false;
 var datapoints1 = [];
 jsPlumb.ready(function () {
@@ -136,9 +138,7 @@ jsPlumb.ready(function () {
         e30 = prepare3("ld30"),
         e31 = prepare3("ld31"),
         e32 = prepare3("ld32"),
-        e33 = prepare3("ld33"),
-
-            
+        e33 = prepare3("ld33"),            
             clearBtn = jsPlumb.getSelector("#anim-clear"),
             addBtn = jsPlumb.getSelector("#add");
 
@@ -610,24 +610,23 @@ jsPlumb.ready(function () {
         var is_connected_2_5 = false;
         var is_connected_3_6 = false;
         var is_connected_7_9 = false;
-        var is_connected_7_35= false;
+        var is_connected_7_32= false;
         var is_connected_8_10 = false;
-        var is_connected_8_36 = false;
+        var is_connected_8_33 = false;
         var is_connected_9_11 = false;
         var is_connected_10_12 = false;
-        var is_connected_13_33= false;
-        var is_connected_14_34 = false;
-        var is_connected_15_24 = false;
-        var is_connected_16_23 = false;
-        var is_connected_16_26 = false;
-        var is_connected_17_25 = false;
-        var is_connected_18_29 = false;
-        var is_connected_19_28 = false;
-        var is_connected_20_25 = false;
-        var is_connected_21_23 = false;
-        var is_connected_21_26 = false;
-        var is_connected_22_24 = false;
-        var is_connected_27_30 = false;
+        var is_connected_13_30= false;
+        var is_connected_14_31 = false;
+        var is_connected_15_21 = false;
+        var is_connected_15_23 = false;
+        var is_connected_16_20 = false;
+        var is_connected_16_22 = false;
+        var is_connected_17_16 = false;
+        var is_connected_18_26 = false;
+        var is_connected_19_25 = false;
+        var is_connected_24_27 = false;
+        var is_connected_32_28 = false;
+        var is_connected_33_29 = false;
         var unallowed_connection_present = false;
 
         actual_connections.forEach(function (connection) {
@@ -712,8 +711,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_7_35){
-                is_connected_7_35 = correct_connections_7_35.find(function (conn) {
+            if(!is_connected_7_32){
+                is_connected_7_32 = correct_connections_7_32.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
@@ -749,8 +748,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_8_36){
-                is_connected_8_36 = correct_connections_8_36.find(function (conn) {
+            if(!is_connected_8_33){
+                is_connected_8_33 = correct_connections_8_33.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -803,8 +802,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_13_33){
-                is_connected_13_33 = correct_connections_13_33.find(function (conn) {
+            if(!is_connected_13_30){
+                is_connected_13_30 = correct_connections_13_30.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -821,8 +820,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_14_34){
-                is_connected_14_34 = correct_connections_14_34.find(function (conn) {
+            if(!is_connected_14_31){
+                is_connected_14_31 = correct_connections_14_31.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -839,8 +838,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_15_24){
-                is_connected_15_24 = correct_connections_15_24.find(function (conn) {
+            if(!is_connected_15_21){
+                is_connected_15_21 = correct_connections_15_21.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -857,8 +856,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_16_23){
-                is_connected_16_23 = correct_connections_16_23.find(function (conn) {
+            if(!is_connected_15_23){
+                is_connected_15_23 = correct_connections_15_23.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -875,8 +874,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_16_26){
-                is_connected_16_26 = correct_connections_16_26.find(function (conn) {
+            if(!is_connected_16_20){
+                is_connected_16_20 = correct_connections_16_20.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -893,8 +892,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_17_25){
-                is_connected_17_25 = correct_connections_17_25.find(function (conn) {
+            if(!is_connected_16_22){
+                is_connected_16_22 = correct_connections_16_22.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -911,8 +910,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_18_29){
-                is_connected_18_29 = correct_connections_18_29.find(function (conn) {
+            if(!is_connected_17_16){
+                is_connected_17_16 = correct_connections_17_16.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -929,8 +928,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_19_28){
-                is_connected_19_28 = correct_connections_19_28.find(function (conn) {
+            if(!is_connected_18_26){
+                is_connected_18_26 = correct_connections_18_26.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -947,8 +946,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_20_25){
-                is_connected_20_25 = correct_connections_20_25.find(function (conn) {
+            if(!is_connected_19_25){
+                is_connected_19_25 = correct_connections_19_25.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -965,8 +964,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_21_23){
-                is_connected_21_23 = correct_connections_21_23.find(function (conn) {
+            if(!is_connected_24_27){
+                is_connected_24_27 = correct_connections_24_27.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -983,8 +982,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_21_26){
-                is_connected_21_26 = correct_connections_21_26.find(function (conn) {
+            if(!is_connected_32_28){
+                is_connected_32_28 = correct_connections_32_28.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -1001,8 +1000,8 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_22_24){
-                is_connected_22_24 = correct_connections_22_24.find(function (conn) {
+            if(!is_connected_33_29){
+                is_connected_33_29 = correct_connections_33_29.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -1013,27 +1012,11 @@ jsPlumb.ready(function () {
                 }));
             }
         });
-        actual_connections.forEach(function (connection) {
-            var this_connection = {
-                "source": connection.sourceId,
-                "target": connection.targetId
-            };
-
-            if(!is_connected_27_30){
-                is_connected_27_30 = correct_connections_27_30.find(function (conn) {
-                    return conn.source === this_connection.source && conn.target === this_connection.target;
-                  });
-            }
-
-           if(!unallowed_connection_present){
-                unallowed_connection_present = !(allowed_connections.find(function (conn) {
-                    return conn.source === this_connection.source && conn.target === this_connection.target;
-                }));
-            }
-        });
-        //is_connected_2_5 && is_connected_3_6 && is_connected_7_10 && is_connected_7_35 && is_connected_9_16 && is_connected_11_15 && is_connected_10_12 && is_connected_13_14 &&
+        
+        
         //short cut can be used for debugging
-        if ( is_connected_27_30 && !unallowed_connection_present) 
+        if(sctest == false){
+            if ( is_connected_33_29 && !is_connected_15_23 && !is_connected_16_22 && !is_connected_17_16 && !unallowed_connection_present) 
         {
             alert("Alert ! Correct connection proceed to take reading.");
             document.getElementById("check-button").disabled=true;
@@ -1047,6 +1030,24 @@ jsPlumb.ready(function () {
             
             return;
         } 
+        }
+        else{
+            if ( is_connected_33_29 && !is_connected_15_21 && !is_connected_16_20 && !unallowed_connection_present) 
+        {
+            alert("Alert ! Correct connection proceed to take reading.");
+            document.getElementById("check-button").disabled=true;
+            rightconnection=true;
+            return;
+        } 
+        else 
+        {
+            alert("Alert ! Incorrect connection.");
+            
+            return;
+        } 
+        }
+
+        
     });
 });
 
@@ -1137,9 +1138,9 @@ jsPlumb.ready(function () {
         e12 = prepare1("ld12"),
         e13 = prepare2("ld13"),
         e14 = prepare2("ld14"),
-        e15 = prepare3("ld15"),
-        e16 = prepare3("ld16"),
-        e17 = prepare3("ld17"),
+        //e15 = prepare3("ld15"),
+        //e16 = prepare3("ld16"),
+        //e17 = prepare3("ld17"),
         e18 = prepare3("ld18"),
         e19 = prepare3("ld19"),
         e20 = prepare3("ld20"),
@@ -1155,38 +1156,80 @@ jsPlumb.ready(function () {
         e30 = prepare3("ld30"),
         e31 = prepare3("ld31"),
         e32 = prepare3("ld32"),
-        e33 = prepare3("ld33"),
-            clearBtn = jsPlumb.getSelector("#anim-clear"),
-            addBtn = jsPlumb.getSelector("#add");
+        e33 = prepare3("ld33");
+            
     });
  });
 }
 
 
-
-
 var mcboffstate=true;
-var isrotating=false;
-var rotoroffstate=true;
+var isalternatoron=false;
+var alternatoroffstate=true;
 function mcbonoff()
 {   
-   if(rightconnection==true)
+    if(rightconnection==true)
     {
         if (mcboffstate==true)
         {
-            
             mcboffstate=false;
             document.getElementById('myimage').src='/static/images/mcbon.png';
             document.getElementById('myimage1').src='/static/images/push2.png';
             document.getElementById('myimage2').src='/static/images/push2.png';
             document.getElementById('myimage3').src='/static/images/push2.png';    
             document.getElementById("range").disabled=false;
-            //document.getElementById("range2").disabled=false;  
+            rangeClock.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
             rangeMeter.value = 1;
-            //rangeMeter2.value = 1;      
-            rangeShow2.value=rangeMeter.value;
-            rangeShow5.value=rangeMeter2.value;
-            rangeShow3.value = "1000 RPM";
+             
+            rangeShow.value=rangeMeter.value;
+            rangeShow2.value = "1200 RPM";
+            if(sctest == false){
+                var y = table1.insertRow(1);
+                var cell1 = y.insertCell(0);
+                cell1.setAttribute('style', 'text-align: center;');
+                cell1.innerHTML = 1200;
+            }
+            else{
+                var y = table2.insertRow(1);
+                var cell1 = y.insertCell(0);
+                cell1.setAttribute('style', 'text-align: center;');
+                cell1.innerHTML = 1200;
+            }
+
+            document.getElementById("check-button").disabled=true;
+        }
+        else if(mcboffstate == false && sctest == false){
+            rightconnection = false;
+            mcboffstate = true;
+            isalternatoron = false;
+            sctest = true;
+            document.getElementById('myimage').src='/static/images/mcboff.png';
+            document.getElementById('myimage1').src='/static/images/push1.png';
+            document.getElementById('myimage2').src='/static/images/push1.png';
+            document.getElementById('myimage3').src='/static/images/push1.png';  
+            document.getElementById('altonoff').src='/static/images/switchoff.png';
+
+            rangeMeter.value = 0;
+            rangeMeter2.value = 0;
+            rangeMeter3.value = 0;
+
+            rangeShow.value = 0;
+            rangeShow2.value = 0;
+            rangeShow3.value = 0;
+            rangeShow4.value = 0;
+            rangeShow5.value = 0;
+            rangeShow6.value = 0;
+            rangeShow7.value = 0;
+
+            rangeClock.style.transform = 'rotate(' + (-62) + 'deg)';
+            rangeClock2.style.transform = 'rotate(' + (-62) + 'deg)';
+            rangeClock4.style.transform = 'rotate(' + (-62) + 'deg)';
+
+            document.getElementById("graph").disabled=true;
+            document.getElementById("addToTable").disabled=true;
+
+            document.getElementById("check-button").disabled=false;
+            document.getElementById("range3").disabled=true;
         }
         else{
             return;
@@ -1197,105 +1240,51 @@ function mcbonoff()
     }
 }
 
-
-var rangeMeter = document.querySelector('#range');
-var rangeMeter2 = document.querySelector('#range2');
-var rangeMeter3 = document.querySelector('#range3');
-
-var rangeShow3 = document.querySelector("#show3");
-var rangeShow2 = document.querySelector("#show2");
-var rangeShow5 = document.querySelector("#show5");
-var rangeShow4 = document.querySelector("#show4");
-var rangeShow6 = document.querySelector("#show6");
-var rangeShow7 = document.querySelector("#show7");
-var rangeShow8 = document.querySelector("#show8");
-var rangeShow9 = document.querySelector("#show9");
-var rpm = 0;
-
-var rangeClock =  document.querySelector('#meter1');
-var rangeClock2 =  document.querySelector('#meter2');
-var rangeClock3 =  document.querySelector('#meter3');
-var rangeClock4 =  document.querySelector('#meter4');
-
-    function rangeChange() {
-      var rotateClock =  rangeMeter.value;
-      rangeShow2.value=rangeMeter.value;
-      rangeShow5.value=rangeMeter2.value;
-      
-      rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
-      
-      
-      var rpm = 925 + (rangeMeter.value * 75) + (rangeMeter2.value * 50);
-        rangeShow3.value = String(rpm) + " RPM";
-
-      if(rpm == 1450 && isrotating == false){
-        document.getElementById("range").disabled=true;
-        document.getElementById("range2").disabled=false;
-        setTimeout(function(){
-            alert("Now increase DC Motor Field value");
-        }, 1000);
-        
-      }
-      if(rpm == 1500 && isrotating == false){
-        document.getElementById("range").disabled=true;
-        document.getElementById("range2").disabled=true;
-        setTimeout(function(){
-        alert("Required speed achived! Turn on the alternator by clicking on the red switch!");
-        }, 1000);
-      }
-
-    }
-    
-    rangeMeter.addEventListener('input', function(){
-        if(isrotating == true){
-            document.getElementById("range").disabled=true;
-            rangeChange2();
-            if(rangeMeter3.value != 7){
-                document.getElementById("range3").disabled=false;
-            }  
-        }
-        else{
-
-            rangeChange();
-        }
-    }
-    );
-    rangeMeter2.addEventListener('input', rangeChange);
-    rangeMeter3.addEventListener('input', function(){
-        document.getElementById("range3").disabled=true;
-        rangeChange3();
-        document.getElementById("range").disabled=false;
-        if(rangeMeter.value == 2){
-            document.getElementById("range").disabled=true;
-        }
-    });
-
-
-function rotaronoff()
+function alternatoronoff()
 {       
     if(mcboffstate==false)
     {
-        if(isrotating==false)
+        if(isalternatoron==false)
         {
-            isrotating=true;
-            rotoroffstate=false;
+            if(sctest == false){
+            isalternatoron=true;
+            alternatoroffstate=false;
             document.getElementById('altonoff').src='/static/images/switchon.png';
-            document.getElementById('cirmover1').style.animation="rotation 0.5s infinite linear";
-            document.getElementById("graph").disabled=false;
+            document.getElementById("graph").disabled=true;
             document.getElementById("addToTable").disabled=false;
-            document.getElementById("range").disabled=false;
-            document.getElementById("range2").disabled=true;  
+            document.getElementById("range").disabled=true;
+            document.getElementById("range2").disabled=true;
             document.getElementById("range3").disabled=false;
             rangeMeter3.value=1;
-            rangeShow6.value = 1;
-            rangeShow7.value = 0.3;
-            rangeShow8.value = 54;
-            rangeShow9.value = 250;
-            rangeShow4.value = 1497;
-            rangeClock2.style.transform = 'rotate(' + -50 + 'deg)';
-            rangeClock3.style.transform = 'rotate(' + -95 + 'deg)';
-            rangeClock4.style.transform = 'rotate(' + -20 + 'deg)';
-            //rangeChange();
+
+            rangeShow4.value = 1;
+            rangeShow5.value = 0.4;
+            rangeShow7.value = 150;
+        
+            rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
+            rangeClock4.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
+            alert("Start taking readings by clicking 'Add to table' button");
+            }
+            else{
+            isalternatoron=true;
+            alternatoroffstate=false;
+            document.getElementById('altonoff').src='/static/images/switchon.png';
+            document.getElementById("graph").disabled=false;
+            document.getElementById("addToTable").disabled=false;
+            document.getElementById("range").disabled=true;
+            document.getElementById("range2").disabled=true;
+            document.getElementById("range3").disabled=false;
+            rangeMeter3.value=1;
+
+            rangeShow4.value = 1;
+            rangeShow5.value = 0.4;
+            rangeShow6.value = 0.5;
+        
+            rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
+            rangeClock3.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
+            alert("Start taking readings by clicking 'Add to table' button");
+            }
+
         }
         else
         {
@@ -1307,176 +1296,276 @@ function rotaronoff()
     }
 }
 
-function rangeChange2() {
-    var rotateClock =  rangeMeter.value;
-    rangeShow2.value=rangeMeter.value;
-    
-    
-    rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
-    
-    // rangeShow.value = rotateClock;
-    if(rangeMeter.value == 7){
-        rangeShow3.value = 1500;
-        rangeShow4.value = 1497;
-    }
-    else if(rangeMeter.value == 6){
-        rangeShow3.value = 1387;
-        rangeShow4.value = 1383;
-        rangeShow9.value = 312;
-        document.getElementById('cirmover1').style.animation="rotation 0.7s infinite linear";
-    }
-    else if(rangeMeter.value == 5){
-        rangeShow3.value = 1308;
-        rangeShow4.value = 1303;
-        rangeShow9.value = 306;
-        document.getElementById('cirmover1').style.animation="rotation 1s infinite linear";
-    }
-    else if(rangeMeter.value == 4){
-        rangeShow3.value = 1225;
-        rangeShow4.value = 1220;
-        rangeShow9.value = 295;
-        document.getElementById('cirmover1').style.animation="rotation 1.5s infinite linear";
-    }
-    else if(rangeMeter.value == 3){
-        rangeShow3.value = 1208;
-        rangeShow4.value = 1200;
-        rangeShow9.value = 293;
-        document.getElementById('cirmover1').style.animation="rotation 1.6s infinite linear";
-    }
-    else if(rangeMeter.value == 2){
-        rangeShow3.value = 1165;
-        rangeShow4.value = 1160;
-        rangeShow9.value = 288;
-        document.getElementById('cirmover1').style.animation="rotation 1.8s infinite linear";
-    }
-    else if(rangeMeter.value == 1){
-        rangeShow3.value = 1000;
-        rangeShow4.value = 990;
-        rangeShow9.value = 283;
-        document.getElementById('cirmover1').style.animation="rotation 2.2s infinite linear";
+var rangeMeter = document.querySelector('#range');
+var rangeMeter2 = document.querySelector('#range2');
+var rangeMeter3 = document.querySelector('#range3');
+
+var rangeShow = document.querySelector("#show");
+var rangeShow2 = document.querySelector("#show2");
+var rangeShow3 = document.querySelector("#show3");
+var rangeShow4 = document.querySelector("#show4");
+var rangeShow5 = document.querySelector("#show5");
+var rangeShow6 = document.querySelector("#show6");
+var rangeShow7 = document.querySelector("#show7");
+var rangeShow8 = document.querySelector("#show8");
+var rpm = 0;
+
+var rangeClock =  document.querySelector('#meter');
+var rangeClock2 =  document.querySelector('#meter2');
+var rangeClock3 =  document.querySelector('#meter3');
+var rangeClock4 =  document.querySelector('#meter4');
+
+rangeMeter.addEventListener('input', rangeChange);
+rangeMeter2.addEventListener('input', rangeChange);
+
+rangeMeter3.addEventListener('input', function(){
+    if(sctest == false){
+        rangeChange2();
     }
     else{
-        rangeShow3.value = 0;
-        rangeShow4.value = 0;
-        rangeShow9.value = 0;
-        document.getElementById('cirmover1').style.animation="rotation 0s infinite linear";
+        rangeChange3();
+    }
+    
+});
+var ocCounter = 1;
+var scCounter = 1;
+
+function rangeChange() {
+      var rotateClock =  rangeMeter.value;
+      rangeShow.value=rangeMeter.value;
+      rangeShow3.value = rangeMeter2.value;
+    
+      rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
+      
+      var rpm = 1150 + (rangeMeter.value * 50) + (rangeMeter2.value * 50);
+      rangeShow2.value = String(rpm) + " RPM";
+
+      if(rpm == 1450 && isalternatoron == false){
+        document.getElementById("range").disabled=true;
+        document.getElementById("range2").disabled=false;
+        setTimeout(function(){
+            alert("Now increase DC Motor Field value");
+        }, 500);
+        rangeShow2.value = String(rpm) + " RPM";
+      }
+      if(rpm == 1500 && isalternatoron == false){
+        document.getElementById("range").disabled=true;
+        document.getElementById("range2").disabled=true;
+        setTimeout(function(){
+        alert("Required speed achived! Turn on the alternator by clicking on the red switch!");
+        }, 500);
+      }
+      if(sctest == false){
+        ocCounter++;
+        var y = table1.insertRow(ocCounter);
+        var cell1 = y.insertCell(0);
+        cell1.setAttribute('style', 'text-align: center;');
+        cell1.innerHTML = rpm;
+     }
+     else{
+        scCounter++;
+        var y = table2.insertRow(scCounter);
+        var cell1 = y.insertCell(0);
+        cell1.setAttribute('style', 'text-align: center;');
+        cell1.innerHTML = rpm;
+     }
+
+}
+
+function rangeChange2() {
+
+    var rotateClock = rangeMeter3.value;
+    rangeShow4.value=rangeMeter3.value;
+    
+    rangeClock2.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
+    rangeClock4.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
+    
+    // rangeShow.value = rotateClock;
+    if(rangeMeter3.value == 8){
+        rangeShow5.value = 3.2;
+        rangeShow7.value = 390;
+    }
+    else if(rangeMeter3.value == 7){
+        rangeShow5.value = 2.8;
+        rangeShow7.value = 375;
+    }
+    else if(rangeMeter3.value == 6){
+        rangeShow5.value = 2.4;
+        rangeShow7.value = 360;
+    }
+    else if(rangeMeter3.value == 5){
+        rangeShow5.value = 2.0;
+        rangeShow7.value = 345;
+    }
+    else if(rangeMeter3.value == 4){
+        rangeShow5.value = 1.6;
+        rangeShow7.value = 330;
+    }
+    else if(rangeMeter3.value == 3){
+        rangeShow5.value = 1.2;
+        rangeShow7.value = 300;
+    }
+    else if(rangeMeter3.value == 2){
+        rangeShow5.value = 0.8;
+        rangeShow7.value = 255;
+    }
+    else if(rangeMeter3.value == 1){
+        rangeShow5.value = 0.4;
+        rangeShow7.value = 150;
+    }
+    else{
+        rangeShow5.value = 0;
+        rangeShow7.value = 0;
     }
   }
 
-  function rangeChange3(){
-    var rotateClock2 =  rangeMeter3.value;
-    rangeShow6.value = rangeMeter3.value;
+function rangeChange3(){
+    var rotateClock =  rangeMeter3.value;
+    rangeShow4.value = rangeMeter3.value;
 
-    rangeClock2.style.transform = 'rotate(' + ( -50 + (rotateClock2 - 1)*5 ) + 'deg)';
-    rangeClock3.style.transform = 'rotate(' + ( -95 - (rotateClock2 - 1)*5 ) + 'deg)';
-    rangeClock4.style.transform = 'rotate(' + -15 + 'deg)';
+    rangeClock2.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
+    rangeClock3.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
 
-    if(rangeMeter3.value == 2){
-        rangeShow7.value = 0.5;
-        rangeShow8.value = 50;
-        rangeShow9.value = 325;
-        setTimeout(function(){
-        alert("Start taking readings/ click 'Add to table' button");
-        }, 1000);
-    }
-    else if(rangeMeter3.value == 3){
-        rangeShow7.value = 0.6;
-        rangeShow8.value = 46.25;
-        rangeShow9.value = 325;
-    }
-    else if(rangeMeter3.value == 4){
-        rangeShow7.value = 0.7;
-        rangeShow8.value = 43.6;
-        rangeShow9.value = 325;
-    }
-    else if(rangeMeter3.value == 5){
-        rangeShow7.value = 0.8;
-        rangeShow8.value = 40.83;
-        rangeShow9.value = 325;
-    }
-    else if(rangeMeter3.value == 6){
-        rangeShow7.value = 0.9;
-        rangeShow8.value = 40.27;
-        rangeShow9.value = 325;
+    if(rangeMeter3.value == 8){
+        rangeShow5.value = 3.2;
+        rangeShow6.value = 9.2;
     }
     else if(rangeMeter3.value == 7){
-        rangeShow7.value = 1.0;
-        rangeShow8.value = 38.83;
-        rangeShow9.value = 325;
+        rangeShow5.value = 2.8;
+        rangeShow6.value = 8.3;
+    }
+    else if(rangeMeter3.value == 6){
+        rangeShow5.value = 2.4;
+        rangeShow6.value = 6.6;
+    }
+    else if(rangeMeter3.value == 5){
+        rangeShow5.value = 2.0;
+        rangeShow6.value = 6.0;
+    }
+    else if(rangeMeter3.value == 4){
+        rangeShow5.value = 1.6;
+        rangeShow6.value = 4.4;
+    }
+    else if(rangeMeter3.value == 3){
+        rangeShow5.value = 1.2;
+        rangeShow6.value = 3.2;
+    }
+    else if(rangeMeter3.value == 2){
+        rangeShow5.value = 0.8;
+        rangeShow6.value = 2.1;
+    }
+    else if(rangeMeter3.value == 1){
+        rangeShow5.value = 0.4;
+        rangeShow6.value = 0.5;
     }
     else{
-        rangeShow7.value = 0;
-        rangeShow8.value = 0;
-        rangeShow9.value = 0;
+        rangeShow5.value = 0;
+        rangeShow6.value = 0;
     }
   }
   
             
     
-    var clickcounter=0;
+    var clickcounteroc=0;
+    var clickcountersc=0;
     var count = 1;
-    var trace = {
+    var count2 = 1;
+    var trace1 = {
         x: [],
         y: [],
         z: [],
         type: 'scatter'
-      };
+    };
+
+    var trace2 = {
+        x: [],
+        y: [],
+        z: [],
+        type: 'scatter'
+    }
 
     var resistance=0;
     addToTable.addEventListener('click', () => {
-        clickcounter++;
-  
-        if(clickcounter<=6)
+        if(sctest == false){
+        clickcounteroc++;
+        if(clickcounteroc<=8)
         {
-          var y = table.insertRow(clickcounter);
+          var y = table3.insertRow(clickcounteroc);
           var cell1 = y.insertCell(0);
+          cell1.setAttribute('style', 'text-align: center;');
           var cell2 = y.insertCell(1);
+          cell2.setAttribute('style', 'text-align: center;');
           var cell3 = y.insertCell(2);
+          cell3.setAttribute('style', 'text-align: center;');
           var cell4 = y.insertCell(3);
-          var cell5 = y.insertCell(4);
-          var cell6 = y.insertCell(5);
-    
-          cell1.innerHTML = "SN";
-          cell2.innerHTML = "Alternator field current";
-          cell3.innerHTML = "Alternator output voltage";
-          cell4.innerHTML = "Alternator Speed (RPM)";
-          cell5.innerHTML = "observed frequency";
-          cell6.innerHTML = "Induction motor speed (RPM)";
+          cell4.setAttribute('style', 'text-align: center;');
 
           cell1.innerHTML = count++;
-          cell2.innerHTML = rangeShow7.value;
-          cell3.innerHTML = rangeShow9.value;
-          cell4.innerHTML = rangeShow2.value;
-          cell5.innerHTML = rangeShow8.value;
-          cell6.innerHTML = rangeShow4.value;
+          cell2.innerHTML = 1500;
+          cell3.innerHTML = rangeShow5.value;
+          cell4.innerHTML = rangeShow7.value;
         }
         else
         {
-          alert("Only 6 readings are allowed.");
+          alert("Only 8 readings are allowed.");
+          
         } 
-        if(clickcounter!=1){
-        trace.y.push(cell6.innerHTML);
-        trace.x.push(cell5.innerHTML);
+        if(clickcounteroc!=1){
+        trace1.y.push(cell4.innerHTML);
+        trace1.x.push(cell3.innerHTML);
+        }
+        if(clickcounteroc == 8){
+            alert("Now turn off the MCB and make new connection for short circuit test \n Click on number '20' and '21' to remove these connections. And then follow further instructions");
+        }
+    }
+        else{
+            clickcountersc++;
+        if(clickcountersc<=8)
+        {
+            var y = table4.insertRow(clickcountersc);
+          var cell1 = y.insertCell(0);
+          cell1.setAttribute('style', 'text-align: center;');
+          var cell2 = y.insertCell(1);
+          cell2.setAttribute('style', 'text-align: center;');
+          var cell3 = y.insertCell(2);
+          cell3.setAttribute('style', 'text-align: center;');
+          var cell4 = y.insertCell(3);
+          cell4.setAttribute('style', 'text-align: center;');
+
+          cell1.innerHTML = count2++;
+          cell2.innerHTML = 1500;
+          cell3.innerHTML = rangeShow5.value;
+          cell4.innerHTML = rangeShow6.value;
+         }
+        else
+        {
+            alert("Only 8 readings are allowed.");
+        } 
+        if(clickcountersc!=1){
+            trace2.y.push(cell4.innerHTML);
+            trace2.x.push(cell3.innerHTML);
+        }
         }
         
-       })
+        
+ })
 
 
 
 
    function drawgraph(){
 
-     if(clickcounter<6)
+     if(clickcounteroc<8 || clickcountersc<8)
      {
-        alert("Alert ! Please take 6 readings.");
+        alert("Alert ! Please take 8 readings for each experiment.");
      }
      else
      {
-        var data = [trace];
+        var data = [trace1];
         var layout={
             xaxis:{
                 title:{
-                    text:'Frequency',
+                    text:'Field Current',
                     font:
                     {
                         family:'Courier New, monoscope',
@@ -1487,7 +1576,7 @@ function rangeChange2() {
             },
             yaxis:{
                 title:{
-                    text:'Induction Motor Speed',
+                    text:'Induced EMF',
                     font:
                     {
                         family:'Courier New, monoscope',
@@ -1497,7 +1586,33 @@ function rangeChange2() {
                 },
             }
         };
-
         Plotly.newPlot('myDiv', data, layout, {showSendToCloud: true});
+
+        var data2 = [trace2];
+        var layout2={
+            xaxis:{
+                title:{
+                    text:'Field Current',
+                    font:
+                    {
+                        family:'Courier New, monoscope',
+                        size:18,
+                        color:'#ff0000'
+                    }
+                },
+            },
+            yaxis:{
+                title:{
+                    text:'Armature Current',
+                    font:
+                    {
+                        family:'Courier New, monoscope',
+                        size:18,
+                        color:'#ff0000'
+                    }
+                },
+            }
+        };
+        Plotly.newPlot('myDiv2', data2, layout2, {showSendToCloud: true});
      }
    }
