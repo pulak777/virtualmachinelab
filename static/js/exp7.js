@@ -1037,6 +1037,7 @@ jsPlumb.ready(function () {
             alert("Alert ! Correct connection proceed to take reading.");
             document.getElementById("check-button").disabled=true;
             rightconnection=true;
+            disable_all_final();
             return;
         } 
         else 
@@ -1162,6 +1163,114 @@ jsPlumb.ready(function () {
  });
 }
 
+function disable_all_final()
+{
+jsPlumb.ready(function () {
+
+    var instance,
+
+        initAnimation = function (elId) {
+            var el = document.getElementById(elId);
+
+            instance.on(el, 'click', function (e, ui) {
+                if (el.className.indexOf("jsPlumb_dragged") > -1) {
+                    jsPlumb.removeClass(elId, "jsPlumb_dragged");
+                    return;
+                }
+               
+            });
+        },
+        endpoint1 = {
+            anchor: [0.5, 0.5, 0, -1],
+            connectorStyle: { strokeWidth: 4, stroke: "rgba(0,0,255)" },
+            endpointsOnTop: true,
+            isSource: false,
+            maxConnections: 10,
+            isTarget: true,
+            dropOptions: { tolerance: "touch", hoverClass: "dropHover" }
+        },
+        endpoint2 = {
+            anchor: [0.5, 0.5, 0, -1],
+            connectorStyle: { strokeWidth: 4, stroke: "rgba(255,0,0)" },
+            endpointsOnTop: true,
+            isSource: false,
+            maxConnections: 10,
+            isTarget: true,
+            dropOptions: { tolerance: "touch", hoverClass: "dropHover" }
+        },
+        endpoint3 = {
+            anchor: [0.5, 0.5, 0, -1],
+            connectorStyle: { strokeWidth: 4, stroke: "rgba(0,255,0)" },
+            endpointsOnTop: true,
+            isSource: false,
+            maxConnections: 10,
+            isTarget: true,
+            dropOptions: { tolerance: "touch", hoverClass: "dropHover" }
+        },
+        prepare1 = function (elId) {
+            initAnimation(elId);
+
+            return instance.addEndpoint(elId, endpoint1);
+        },
+        prepare2 = function (elId) {
+            initAnimation(elId);
+
+            return instance.addEndpoint(elId, endpoint2);
+        },
+        prepare3 = function (elId) {
+            initAnimation(elId);
+
+            return instance.addEndpoint(elId, endpoint3);
+        },
+
+    // get a jsPlumb instance, setting some appropriate defaults and a Container.
+    instance = jsPlumb.getInstance({
+        DragOptions: { cursor: 'wait', zIndex: 20 },
+        Endpoint: [ "Image", { url: "/static/images/littledot.png" } ],
+        Connector: [ "Bezier", { curviness: +90 } ],
+        Container: "canvas"
+    });
+
+    // suspend drawing and initialise.
+    instance.batch(function () {
+        var e1 = prepare1("ld1"),
+        e2 = prepare2("ld2"),
+        e3 = prepare3("ld3"),
+        e4 = prepare1("ld4"),
+        e5 = prepare2("ld5"),
+        e6 = prepare3("ld6"),
+        e7 = prepare3("ld7"),
+        e8 = prepare2("ld8"),
+        e9 = prepare1("ld9"),
+        e10 = prepare1("ld10"),
+        e11 = prepare3("ld11"),
+        e12 = prepare1("ld12"),
+        e13 = prepare2("ld13"),
+        e14 = prepare2("ld14"),
+        e15 = prepare3("ld15"),
+        e16 = prepare3("ld16"),
+        e17 = prepare3("ld17"),
+        e18 = prepare3("ld18"),
+        e19 = prepare3("ld19"),
+        e20 = prepare3("ld20"),
+        e21 = prepare3("ld21"),
+        e22 = prepare3("ld22"),
+        e23 = prepare2("ld23"),
+        e24 = prepare1("ld24"),
+        e25 = prepare1("ld25"),
+        e26 = prepare3("ld26"),
+        e27 = prepare1("ld27"),
+        e28 = prepare2("ld28"),
+        e29 = prepare2("ld29"),
+        e30 = prepare3("ld30"),
+        e31 = prepare3("ld31"),
+        e32 = prepare3("ld32"),
+        e33 = prepare3("ld33");
+            
+    });
+ });
+}
+
 
 var mcboffstate=true;
 var isalternatoron=false;
@@ -1263,8 +1372,10 @@ function alternatoronoff()
         
             rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 90)) + 'deg)';
             rangeClock4.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
-            alert("Start taking readings by clicking 'Add to table' button");
-
+            setTimeout(function(){
+                alert("Start taking readings by clicking 'Add to table' button");
+            }, 500);
+            
             rpm = 0;
             }
             else{
@@ -1284,7 +1395,10 @@ function alternatoronoff()
         
             rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 90)) + 'deg)';
             rangeClock3.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
-            alert("Start taking readings by clicking 'Add to table' button");
+            setTimeout(function(){
+                alert("Start taking readings by clicking 'Add to table' button");
+            }, 500);
+            
             }
 
         }
@@ -1518,7 +1632,10 @@ function rangeChange3(){
         trace1.x.push(cell3.innerHTML);
         }
         if(clickcounteroc == 8){
-            alert("Now turn off the MCB and make new connection for short circuit test \n Click on number '20' and '21' to remove these connections. And then follow further instructions");
+            setTimeout(function(){
+                alert("Now turn off the MCB and make new connection for short circuit test \n Click on number '20' and '21' to remove these connections. And then follow further instructions");
+            }, 500);
+            
         }
     }
         else{
