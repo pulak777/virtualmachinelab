@@ -1198,7 +1198,7 @@ function mcbonoff()
 
             document.getElementById("check-button").disabled=true;
         }
-        else if(mcboffstate == false && sctest == false){
+        else if(mcboffstate == false && sctest == false && alternatoroffstate == false){
             rightconnection = false;
             mcboffstate = true;
             isalternatoron = false;
@@ -1244,7 +1244,7 @@ function alternatoronoff()
 {       
     if(mcboffstate==false)
     {
-        if(isalternatoron==false)
+        if(isalternatoron==false && rpm == 1500)
         {
             if(sctest == false){
             isalternatoron=true;
@@ -1261,9 +1261,11 @@ function alternatoronoff()
             rangeShow5.value = 0.4;
             rangeShow7.value = 150;
         
-            rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
+            rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 90)) + 'deg)';
             rangeClock4.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
             alert("Start taking readings by clicking 'Add to table' button");
+
+            rpm = 0;
             }
             else{
             isalternatoron=true;
@@ -1280,7 +1282,7 @@ function alternatoronoff()
             rangeShow5.value = 0.4;
             rangeShow6.value = 0.5;
         
-            rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
+            rangeClock2.style.transform = 'rotate(' + (-62 + (1000 / 90)) + 'deg)';
             rangeClock3.style.transform = 'rotate(' + (-62 + (1000 / 70)) + 'deg)';
             alert("Start taking readings by clicking 'Add to table' button");
             }
@@ -1329,6 +1331,7 @@ rangeMeter3.addEventListener('input', function(){
 });
 var ocCounter = 1;
 var scCounter = 1;
+var rpm = 0;
 
 function rangeChange() {
       var rotateClock =  rangeMeter.value;
@@ -1337,7 +1340,7 @@ function rangeChange() {
     
       rangeClock.style.transform = 'rotate(' + (-62 + ((rotateClock * 1000) / 70)) + 'deg)';
       
-      var rpm = 1150 + (rangeMeter.value * 50) + (rangeMeter2.value * 50);
+      rpm = 1150 + (rangeMeter.value * 50) + (rangeMeter2.value * 50);
       rangeShow2.value = String(rpm) + " RPM";
 
       if(rpm == 1450 && isalternatoron == false){
@@ -1377,7 +1380,7 @@ function rangeChange2() {
     var rotateClock = rangeMeter3.value;
     rangeShow4.value=rangeMeter3.value;
     
-    rangeClock2.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
+    rangeClock2.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 90)) + 'deg)';
     rangeClock4.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
     
     // rangeShow.value = rotateClock;
@@ -1423,7 +1426,7 @@ function rangeChange3(){
     var rotateClock =  rangeMeter3.value;
     rangeShow4.value = rangeMeter3.value;
 
-    rangeClock2.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
+    rangeClock2.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 90)) + 'deg)';
     rangeClock3.style.transform = 'rotate(' + (-62 + (((rotateClock) * 1000) / 70)) + 'deg)';
 
     if(rangeMeter3.value == 8){
