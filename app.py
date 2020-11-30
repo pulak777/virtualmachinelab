@@ -28,6 +28,9 @@ def exp3():
     return render_template('simulations/sim3.html')
 
 @app.route('/determination_of_regulation_of_synchronous_machine_by_synchronous_impedance_method')
+def theo7():
+    return render_template('theories/theo7.html')
+@app.route('/determination_of_regulation_of_synchronous_machine_by_synchronous_impedance_method/simulation')
 def exp7():
     return render_template('simulations/sim7.html')
 

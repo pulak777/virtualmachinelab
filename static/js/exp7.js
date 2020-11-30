@@ -1633,7 +1633,7 @@ function rangeChange3(){
         }
         if(clickcounteroc == 8){
             setTimeout(function(){
-                alert("Now turn off the MCB and make new connection for short circuit test \n Click on number '20' and '21' to remove these connections. And then follow further instructions");
+                alert("Now turn off the MCB and make new connection for short circuit test. \n Click on number '20' and '21' to remove these connections. And then follow further instructions");
             }, 500);
             
         }
