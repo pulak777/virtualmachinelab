@@ -1553,7 +1553,7 @@ function rangeChange2() {
           cell1.innerHTML = count++;
           cell2.innerHTML = rangeShow7.value;
           cell3.innerHTML = rangeShow9.value;
-          cell4.innerHTML = rangeShow2.value;
+          cell4.innerHTML = rangeShow3.value;
           cell5.innerHTML = rangeShow8.value;
           cell6.innerHTML = rangeShow4.value;
         }
