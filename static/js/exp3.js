@@ -404,6 +404,28 @@ jsPlumb.ready(function () {
                 "target": "ld27"
             }
         ];
+        var correct_connections_35_31 = [
+            {
+                "source": "ld35",
+                "target": "ld31"
+            },
+    
+            {
+                "source": "ld35",
+                "target": "ld31"
+            }
+        ];
+        var correct_connections_36_32 = [
+            {
+                "source": "ld36",
+                "target": "ld32"
+            },
+    
+            {
+                "source": "ld36",
+                "target": "ld32"
+            }
+        ];
 
         //a connection outside this will invalidate the circuit
         var allowed_connections = [
@@ -623,6 +645,25 @@ jsPlumb.ready(function () {
                 {
                     "source": "ld30",
                     "target": "ld27"
+                },
+                {
+                    "source": "ld35",
+                    "target": "ld31"
+                },
+        
+                {
+                    "source": "ld35",
+                    "target": "ld31"
+                },
+            
+                {
+                    "source": "ld36",
+                    "target": "ld32"
+                },
+        
+                {
+                    "source": "ld36",
+                    "target": "ld32"
                 }
         
         ];
@@ -651,6 +692,9 @@ jsPlumb.ready(function () {
         var is_connected_21_26 = false;
         var is_connected_22_24 = false;
         var is_connected_27_30 = false;
+
+        var is_connected_35_31 = false;
+        var is_connected_36_32 = false;
         var unallowed_connection_present = false;
 
         actual_connections.forEach(function (connection) {
@@ -1044,6 +1088,43 @@ jsPlumb.ready(function () {
 
             if(!is_connected_27_30){
                 is_connected_27_30 = correct_connections_27_30.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_35_31){
+                is_connected_35_31 = correct_connections_22_24.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                  });
+            }
+
+           if(!unallowed_connection_present){
+                unallowed_connection_present = !(allowed_connections.find(function (conn) {
+                    return conn.source === this_connection.source && conn.target === this_connection.target;
+                }));
+            }
+        });
+        actual_connections.forEach(function (connection) {
+            var this_connection = {
+                "source": connection.sourceId,
+                "target": connection.targetId
+            };
+
+            if(!is_connected_36_32){
+                is_connected_36_32 = correct_connections_27_30.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
