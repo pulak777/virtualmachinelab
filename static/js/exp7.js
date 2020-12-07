@@ -1297,12 +1297,15 @@ function mcbonoff()
                 var cell1 = y.insertCell(0);
                 cell1.setAttribute('style', 'text-align: center;');
                 cell1.innerHTML = 1200;
+                document.getElementById("show6").style.color="white";
             }
             else{
                 var y = table2.insertRow(1);
                 var cell1 = y.insertCell(0);
                 cell1.setAttribute('style', 'text-align: center;');
                 cell1.innerHTML = 1200;
+                document.getElementById("show6").style.color="black";
+                document.getElementById("show7").style.color="white";
             }
 
             document.getElementById("check-button").disabled=true;
@@ -1317,6 +1320,8 @@ function mcbonoff()
             document.getElementById('myimage2').src='/static/images/push1.png';
             document.getElementById('myimage3').src='/static/images/push1.png';  
             document.getElementById('altonoff').src='/static/images/switchoff.png';
+
+            document.getElementById("show6").style.color="black";
 
             rangeMeter.value = 0;
             rangeMeter2.value = 0;
@@ -1364,6 +1369,7 @@ function alternatoronoff()
             document.getElementById("range").disabled=true;
             document.getElementById("range2").disabled=true;
             document.getElementById("range3").disabled=false;
+            
             rangeMeter3.value=1;
 
             rangeShow4.value = 1;
@@ -1387,6 +1393,7 @@ function alternatoronoff()
             document.getElementById("range").disabled=true;
             document.getElementById("range2").disabled=true;
             document.getElementById("range3").disabled=false;
+            
             rangeMeter3.value=1;
 
             rangeShow4.value = 1;
@@ -1423,7 +1430,6 @@ var rangeShow4 = document.querySelector("#show4");
 var rangeShow5 = document.querySelector("#show5");
 var rangeShow6 = document.querySelector("#show6");
 var rangeShow7 = document.querySelector("#show7");
-var rangeShow8 = document.querySelector("#show8");
 var rpm = 0;
 
 var rangeClock =  document.querySelector('#meter');
