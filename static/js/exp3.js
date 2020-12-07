@@ -1137,7 +1137,7 @@ jsPlumb.ready(function () {
         });
         //is_connected_2_5 && is_connected_3_6 && is_connected_7_10 && is_connected_7_35 && is_connected_9_16 && is_connected_11_15 && is_connected_10_12 && is_connected_13_14 &&
         //short cut can be used for debugging
-        if ( is_connected_27_30 && !unallowed_connection_present) 
+        if ( is_connected_36_32 && !unallowed_connection_present) 
         {
             alert("Alert ! Correct connection proceed to take reading.");
             document.getElementById("check-button").disabled=true;
