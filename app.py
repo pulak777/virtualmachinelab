@@ -34,5 +34,17 @@ def theo7():
 def exp7():
     return render_template('simulations/sim7.html')
 
+@app.route('/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test')
+def theo8():
+    return render_template('theories/theo8.html')
+@app.route('/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test/simulation')
+def exp8():
+    return render_template('simulations/sim8.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+
+    
