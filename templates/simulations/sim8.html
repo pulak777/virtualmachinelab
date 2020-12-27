@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <title>Speed control of 3-phase squirrel cage induction motor by voltage control</title>
+      <title>To determine the direct axis reactance [Xd] & quadrature axis reactance [Xq] of a 3 phase synchronous machine by slip test</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
          <link rel="stylesheet" href="/static/css/style.css">
-        <link rel="stylesheet" href="/static/css/exp3.css">
+        <link rel="stylesheet" href="/static/css/exp8.css">
       
       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
       <script src="/static/js/graph.ob.js"></script>
@@ -87,15 +87,7 @@
         </div>
         <div class="littledot" id="ld32"></br><a href="#" class="cmdLink detach" rel="ld32">32</a>
         </div>
-    
-        <div class="littledot" id="ld33"></br><a href="#" class="cmdLink detach" rel="ld33">33</a>
-        </div>
-        <div class="littledot" id="ld34"></br><a href="#" class="cmdLink detach" rel="ld34">34</a>
-        </div>
-        <div class="littledot" id="ld35"></br><a href="#" class="cmdLink detach" rel="ld35">35</a>
-        </div>
-        <div class="littledot" id="ld36"></br><a href="#" class="cmdLink detach" rel="ld36">36</a>
-        </div>
+      
         
         
         <div class="row">
@@ -123,23 +115,23 @@
             <img style="padding-left: 30px" class="voltMeter" src="/static/images/Voltmeter.png" alt="Voltmeter" width="170" height="220">
             <div class="meter1" style="position: absolute;top: -2px;left: 160px;">
               <div class="rang" style="position: absolute;top: 1em;left: 12.5em;">
-                <br>Voltmeter
+                <br>Voltage Regulator
               </div>
-              <div style="position: absolute;top:-10.5em;left: 5.8em;">
+              <div style="position: absolute;top:-10em;left: 5.8em;">
                 <svg class="meter">
                   <polygon class="meter-clock" id="meter1" points="129,145 137,90 145,145"></polygon>
                   <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
                 </svg>
               </div>
             </div>
-            <div class="rang" style="position: absolute;top: 7em;left: 27.6em;">
+            <div class="rang" style="position: absolute;top: 7.1em;left: 27.5em;">
               <div class="rang-title2">
-                <input class="rang-number" id="show2" type="text" value="0" disabled="disabled"/>
+                <input class="rang-number4" id="show1" type="text" value="0" disabled="disabled"/>
               </div>
             </div>
             <div style="position: relative;left: 3.7em; top: -7.9em; color: rgb(0, 0, 0);"><b>Move the slider</b></div>
-            <div class="slidecontainer" style=" position:relative; top:-7.8em; left:3.3em">
-              <input class="rang-slider" disabled="true" id="range" type="range" min="0" max="7" value="0"/>
+            <div class="slidecontainer" style=" position:relative; top:-7.8em; left:2.3em">
+              <input class="rang-slider" disabled="true" id="range1" type="range" min="0" max="7" value="0"/>
             </div>
           </div>
             
@@ -150,6 +142,11 @@
             <div style="position: relative; top:0em;">
               <img style="height:140px; width:190px;" src="/static/images/dc_motor1.jpg" alt="DC Motor"/>
              <div style="position: absolute;top:-3.4em; left: 2.5em;"><b>DC Motor</b></div>
+             <div class="rang" style="position: absolute;top: 2.5em;left: 1em;">
+              <div class="rang-title4">
+                <input class="rang-number5" id="show2" type="text" value="0 RPM" disabled="disabled"/>
+              </div>
+            </div>
             </div> 
           </div>
           <div class="column15" style="padding-left: 0px; padding-right: 10px;">
@@ -159,82 +156,95 @@
             <div style="position: relative; top:0em;">
               <img style="height:140px; width:150px;" src="/static/images/alternator_final.png"/>
              <div style="position: absolute;top:-3.4em; left: 1.5em;"><b>3 Phase Alternator</b></div>
-             <div class="rang" style="position: absolute;top: 2.5em;left: 2.3em;">
-              <img style="height:25px; width:40px;" id="altonoff" src="/static/images/switchoff.png" alt="Alternator off/on" onclick=" rotaronoff();"/>
-              <div class="rang-title4">
-                <input class="rang-number5" id="show3" type="text" value="0 RPM" disabled="disabled"/>
-              </div>
-            </div>
              <div style="background-color: silver; height: 10px; width: 10px; position: absolute;top: 4.7em; left: -0.5em;"></div>
             </div>
           </div>
-          <div class="column15">
-            <br>
-            <br>
-            <br>
-            <div style="position: relative; left: 1.1em; top:-2.8em;">
-              <img style="height:240px; width:160px;" src="/static/images/Machine.png"/>
-             <div style="position: absolute;top:-1.2em; left: -1em;"><b>3 Phase Induction Motor</b></div>
+
+          <div class="column30" style="border-bottom: 0px;">
+
+            <div>
+                <img src="/static/images/3ph_variac_diagram.jpg" alt="diagram" height="250px" style="padding-left:30px; padding-top: 40px;">
             </div>
-          </div>
-        <div class="column15" >
-          <br>
-          <br>
-          <div  style="position: relative;  top:1em;">
-            <img src="/static/images/Rotorouter.png" class="rotate1" style="position: absolute;top:3.1px;left: 10px;width:150px ;">
-            <img src="/static/images/Rotorinner.png" class="rotate" id="cirmover1" style="position: absolute;top: 40px;left: 47.5px;width:75px;">
-          </div>
-              <div style="position: relative;top:-2.65em; left: 3em;"><b>Rotor View</b></div>
-              <div style="background-color: black; height: 10px; width: 50px; position: absolute;top: 9em; left: 67.5em;"></div>
-            
-              <div class="rang" style="position: absolute;top: 14em;left: 69em;">
-                <div class="rang-title">
-                  <input class="rang-number" id="show4" type="text" value="0" disabled="disabled"/>
+        <div>
+            <div class="slidecontainer" style=" position:relative; top:-12.8em; left:8em">
+                <input class="rang-slider" disabled="true" id="range3" type="range" min="0" max="5" value="0"/>
+            </div>
+            <div class="rang" style="position: absolute;top: 3.2em;left: 68em;">
+                <div class="rang-title2">
+                  <input class="rang-number5" id="show3" type="text" value="0" disabled="disabled"/>
                 </div>
-              </div> 
-           </div>
+            </div>
         </div>
+
+        <div>
+            <div class="slidecontainer" style=" position:relative; top:-4.6em; left:1.3em">
+                <input class="rang-slider" disabled="true" id="range4" type="range" min="0" max="5" value="0"/>
+            </div>
+            <div class="rang" style="position: absolute;top: 17em;left: 59em;">
+                <div class="rang-title2">
+                  <input class="rang-number5" id="show4" type="text" value="0" disabled="disabled"/>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slidecontainer" style=" position:relative; top:-6em; left:13.3em">
+                <input class="rang-slider" disabled="true" id="range5" type="range" min="0" max="5" value="0"/>
+            </div>
+            <div class="rang" style="position: absolute;top: 17em;left: 76em;">
+                <div class="rang-title2">
+                  <input class="rang-number5" id="show5" type="text" value="0" disabled="disabled"/>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-left: 5em; font-size: 20px;">3 PHASE VARIAC</div>
+            
+          </div>
+
+        </div>
+
+
         <div class="row"> 
+            <div class="column10" >
+                <div style="position:absolute;left:2em;top:20.7em;">
+                  <button id="check-button" style="background-color:#27D447; border:none; padding: 5px; border-radius:5px" >Check</button>
+                </div>
+                    <br><br>
+                      <div style="position:absolute;left:2em;top:29.7em; ">
+                        <button id="print"  onclick="window.print();" style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Print
+                        </button>
+                      </div>
+                      
+                      <div style="position:absolute;left:2em;top:33.2em;">
+                        <button id="reset" type="reset" onclick="window.location.reload();" style="background-color:#f82d12; border:none; padding: 5px; border-radius:5px" >Reset</button>
+                      </div>
+              </div>
           <div class="column15" >
-            <div style="text-align: center; background-color: rgb(84, 75, 75); color: aliceblue; height: 150px; width: 150px; position: absolute;top: 22em; left: 1.5em;">
+            <div style="text-align: center; background-color: rgb(84, 75, 75); color: aliceblue; height: 150px; width: 150px; position: absolute;top: 22em; left: 9.5em;">
               <h4>Field Regulator <br> ( DC Motor )</h4>
               <br>
-              <div class="rang" style="position: absolute;top: 7em;left: 3.3em;">
+              <div class="rang" style="position: absolute;top: 7.2em;left: 3.3em;">
                 <div class="rang-title2">
-                  <input class="rang-number" id="show5" type="text" value="0" disabled="disabled"/>
+                  <input class="rang-number4" id="show6" type="text" value="0" disabled="disabled"/>
                 </div>
               </div>
               <div style="position: relative;left: 0.2em; top: -1em; color: black;"><b>Move the slider ➤</b></div>
             <div class="slidecontainer" style=" position:relative; top:-0.5em; left:3px">
-              <input class="rang-slider" disabled="true" id="range2" type="range" min="0" max="2" value="0"/>
+              <input class="rang-slider" disabled="true" id="range2" type="range" min="0" max="4" value="0"/>
             </div>
              </div>
           </div>
+
 
           <div class="column15" >
-            <div style="text-align: center; background-color: rgb(62, 53, 53); color: aliceblue; height: 150px; width: 150px; position: absolute;top: 22em; left: 13.5em;">
-              <h4>Field Regulator <br> ( Alternator )</h4> 
-              <br>
-              <div class="rang" style="position: absolute;top: 7em;left: 3.3em;">
-                <div class="rang-title2">
-                  <input class="rang-number" id="show6" type="text" value="0" disabled="disabled"/>
-                </div>
-              </div>
-              <div style="position: relative;left: 0.2em; top: -1em; color: black;"><b>Move the slider ➤</b></div>
-            <div class="slidecontainer" style=" position:relative; top:-0.5em; left:3px">
-              <input class="rang-slider" disabled="true" id="range3" type="range" min="0" max="7" value="0"/>
-            </div>
-             </div>
-          </div>
-
-          <div class="column20" >
-            <img style="padding-left: 35px" class="amMeter" src="/static/images/Ammeter.png" alt="Ammeter" width="170" height="200" style="position: absolute;left: 0; top: 0;">
-            <div class="meter2" style="position: absolute;top: 298px;left: 120px;">
+            <img style="padding-left: -3px" class="voltMeter" src="/static/images/Voltmeter.png" alt="Voltmeter" width="170" height="200" style="position: absolute;">
+            <div class="meter2" style="position: absolute;top: 19em;left: 1.5em;">
               <div class="rang" style="position: absolute;top: -1em;left: 18.9em;">
                 <div class="rang-title" >
                   <input class="rang-number5" id="show7" type="text" value="0" disabled="disabled"/>
                 </div>
-                <br>Ammeter
+                <br>Voltmeter
               </div>
               <div>
                 <svg class="meter" style="position: absolute;top: -10.5em;left: 16.7em;">
@@ -245,27 +255,27 @@
             </div>
           </div>
 
-          <div class="column20" >
-            <img style="padding-left: 35px" class="amMeter" src="/static/images/frequency_meter.jpeg" alt="Ammeter" width="170" height="200" style="position: absolute;left: 0; top: 0;">
-            <div class="meter2" style="position: absolute;top: 298px;left: 120px;">
-              <div class="rang" style="position: absolute;top: 5em;left: 34.9em; color: black;">
+          <div class="column15" >
+            <img style="padding-left: -3px" class="amMeter" src="/static/images/Ammeter.png" alt="Ammeter" width="170" height="200" style="position: absolute;">
+            <div class="meter2" style="position: absolute;top: 19em;left: -2.8em;">
+              <div class="rang" style="position: absolute;top: -1em;left: 35.4em;">
                 <div class="rang-title" >
                   <input class="rang-number5" id="show8" type="text" value="0" disabled="disabled"/>
                 </div>
-                <br>Frequency Meter
+                <br>Ammeter
               </div>
               <div>
-                <svg class="meter" style="position: absolute;top: -7em;left: 35.8em;">
-                  <polygon class="meter-clock2" id="meter3" points="129,145 237,90 145,145"></polygon>
+                <svg class="meter" style="position: absolute;top: -10.5em;left: 33.1em;">
+                  <polygon class="meter-clock" id="meter3" points="129,145 137,90 145,145"></polygon>
                   <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
                 </svg>
               </div>
             </div>
           </div>
 
-          <div class="column20" >
-            <img style="padding-left: 35px" class="amMeter" src="/static/images/Voltmeter.png" alt="Voltmeter" width="170" height="200" style="position: absolute;left: 0; top: 0;">
-            <div class="meter2" style="position: absolute;top: 298px;left: 120px;">
+          <div class="column15" >
+            <img style="padding-left: -3px" class="voltMeter" src="/static/images/Voltmeter.png" alt="Voltmeter" width="170" height="200" style="position: absolute;left: 0; top: 0;">
+            <div class="meter2" style="position: absolute;top: 19em;left: -6.5em;">
               <div class="rang" style="position: absolute;top: -1em;left: 51.25em;">
                 <div class="rang-title" >
                   <input class="rang-number5" id="show9" type="text" value="0" disabled="disabled"/>
@@ -280,89 +290,82 @@
               </div>
             </div>
           </div>
+          <div class="column30" style="border-top: 0px;">
 
-          <div class="column10" >
-            <div style="position:absolute;left:75em;top:20.7em;">
-              <button id="check-button" style="background-color:#27D447; border:none; padding: 5px; border-radius:5px" >Check</button>
-            </div>
-            <div style="position:absolute;left:75em;top:23.7em;">
-              <button id="addToTable" disabled="true" style="background-color:#27D447; border:none; padding: 5px; border-radius:5px" >Add to table</button>
-              </div>
-                <div style="position:absolute;left:75em;top:26.7em;">
-                  <button id="graph" onclick="drawgraph();" disabled="true" style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Graph
-                  </button>
-                  </div>
-                <br><br>
-                  <div style="position:absolute;left:75em;top:29.7em; ">
-                    <button id="print"  onclick="window.print();" style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Print
-                    </button>
-                  </div>
-                  
-                  <div style="position:absolute;left:75em;top:33.2em;">
-                    <button id="reset" type="reset" onclick="window.location.reload();" style="background-color:#f82d12; border:none; padding: 5px; border-radius:5px" >Reset</button>
-                  </div>
           </div>
+          
         </div>
 
         <div class="row"> 
-          <div class="column60" >
-            <div style="position:absolute;left:16em;top:42em;">
-              <table id="table" class="table"; style="position: relative;right:11.5em;top:-4.6em; ">
+          <div class="column20" >
+            <div style="position: relative; left: 8.5em; top: 4.5em;">
+              <table id="table1" class="table"; style="position: relative;right:8.5em;top:-4.6em; ">
               <tr>
-              <th>SN</th>
-              <th>Alternator <br> field current</th>
-              <th>Alternator <br> output voltage</th>
-              <th>Alternator <br> Speed (RPM)</th>
-              <th>observed <br> frequency</th>
-              <th>Induction motor <br> speed (RPM)</th>
+              <th>SPEED</th>
               </tr>
               </table>
             </div> 
           </div>
-          <div class="column40" >
-            <div style="position: relative; top: -0.8em;"><b>Frequency vs Ind. motor Speed Graph</b></div>
-            <div class="container" style="position:absolute; top: 40.5em; left: 51.1em;">
-                <div class="box" id="myDiv" style="width:440px;height:300px;"></div>
-            </div>
+
+          <div class="column50" >
+            <div style="position:relative; left: 11.5em; top: 4.5em;">
+              <table id="table2" class="table"; style="position: relative;right:11.5em;top:-4.6em; ">
+              <tr>
+                <th>SL. NO.</th>
+                <th>AC MAX.</th>
+                <th>AC MIN.</th>
+                <th>AV MAX.</th>
+                <th>AV MIN.</th>
+                <th>Xd</th>
+                <th>Xq</th>
+              </tr>
+              </table>
+            </div> 
+          </div>
+
+          <div class="column30" >
+            <div style="position:relative; left: 11.5em; top: 4.5em;">
+              <table id="table3" class="table"; style="position: relative;right:11.5em;top:-4.6em; ">
+              <tr>
+                <th>SL. NO.</th>
+                <th>MAX. FIELD VOLTAGE</th>
+                <th>MIN. FIELD VOLTAGE</th>
+              </tr>
+              </table>
+            </div> 
           </div>
         </div>
   
   <script src="/static/js/jsplumb1.js"></script>
-  <script src="/static/js/exp3.js"></script>
+  <script src="/static/js/exp8.js"></script>
 
 <div style="position: relative; top: 1em; ">
  <div ><u><B>Instructions</B></u><br>
     <span>
             <B>Step 1: </B>Make the proper connection by clicking the node as instructed below. If the wire is misplaced, click the node number to deattach the nodes' wire. <br>
-                      <table>
+            <br><b>For Open Circuit Test</b>         
+            <table>
                           <tr>
                               <td><B>From</B></td>
                               <td>1</td>
                               <td>2</td>
                               <td>3</td>
                               <td>7</td>
-                              <td>7</td>
                               <td>8</td>
+                              <td>7</td>
                               <td>8</td>
                               <td>9</td>
                               <td>10</td>
                               <td>13</td>
                               <td>14</td>
-                              <td>15</td>
-                              <td>16</td>
-                              <td>16</td>
-                              <td>17</td>
+                              <td><b>15</b></td>
+                              <td><b>16</b></td>
+                              <td><b>17</b></td>
                               <td>18</td>
                               <td>19</td>
-                              <td>20</td>
-                              <td>21</td>
-                              <td>21</td>
-                              <td>22</td>
-                              <td>27</td>
-                              <td>35</td>
-                              <td>36</td>
-                              
-                               
+                              <td>24</td>
+                              <td>32</td>
+                              <td>33</td>
                           </tr>
                           <tr>
                           <td><B>To</B></td>
@@ -370,30 +373,71 @@
                               <td>5</td>
                               <td>6</td>
                               <td>9</td>
-                              <td>35</td>
                               <td>10</td>
-                              <td>36</td>
+                              <td>32</td>
+                              <td>33</td>
                               <td>11</td>
                               <td>12</td>
-                              <td>33</td>
-                              <td>34</td>
-                              <td>24</td>
-                              <td>23</td>
-                              <td>26</td>
-                              <td>25</td>
-                              <td>29</td>
-                              <td>28</td>
-                              <td>25</td>
-                              <td>23</td>
-                              <td>26</td>
-                              <td>24</td>
                               <td>30</td>
                               <td>31</td>
-                              <td>32</td>
-                                
+                              <td><b>21</b></td>
+                              <td><b>20</b></td>
+                              <td></td>
+                              <td>26</td>
+                              <td>25</td>
+                              <td>27</td>
+                              <td>28</td>
+                              <td>29</td>
                           </tr>
                       </table>
-                      <B>Step 2: </B>Click "Check" button.
+                      <br><b>For Short Circuit Test</b> 
+                      <table>
+                        <tr>
+                            <td><B>From</B></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td><b>15</b></td>
+                            <td><b>16</b></td>
+                            <td><b>17</b></td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>24</td>
+                            <td>32</td>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                        <td><B>To</B></td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>32</td>
+                            <td>33</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td><b>23</b></td>
+                            <td><b>22</b></td>
+                            <td><b>16</b></td>
+                            <td>26</td>
+                            <td>25</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                    </table>
+                      <br><B>Step 2: </B>Click "Check" button.
                       <li>if connection is correct, an alert appers. Click ok. Now, go to step 4.</li>
                       <li>if connection is wrong, an alert appers. Click ok. Now, go to step 3.</li>
                       <B>Step 3: </B>Check the connection, if incorrect, click on node <b>number</b> to remove any particular connection(s) or click on reset button and start from step 1.<br>
