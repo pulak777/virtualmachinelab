@@ -361,8 +361,8 @@ jsPlumb.ready(function () {
             },
     
             {
-                "source": "ld29",
-                "target": "ld31"
+                "source": "ld31",
+                "target": "ld29"
             }
         ];
         //a connection outside this will invalidate the circuit
@@ -1206,6 +1206,10 @@ function rangeChange2() {
     document.getElementById("range2").disabled = false;
     
     flucFunc(0.55, 0.2, 16.8, 14.2, 60, 48.49, 19.9);
+    setTimeout(function(){
+        alert("Start changing Field value of DC Motor");
+    }, 2500);
+
   }
 
 
@@ -1282,18 +1286,19 @@ async function fluc2(acma, acmi, avma, avmi, mf){
     var loopVal = rangeMeter2.value; 
      while(rangeMeter2.value == loopVal){
         rangeShow7.value = mf;
-         rangeClock2.style.transform = 'rotate(' + (-62 + (((mf/10) * 1000) / 90)) + 'deg)';
+         rangeClock2.style.transform = 'rotate(' + (-120 + (((mf/10) * 1000) / 90)) + 'deg)';
          rangeShow8.value = acma;
          rangeClock3.style.transform = 'rotate(' + (-62 + (((acma+3) * 1000) / 90)) + 'deg)';
-         rangeShow9.value = avma;
-         rangeClock4.style.transform = 'rotate(' + (-62 + ((((avma/10)+1) * 1000) / 90)) + 'deg)';
+         rangeShow9.value = avmi;
+         rangeClock4.style.transform = 'rotate(' + (-62 + ((((avma/10)+0.5) * 1000) / 90)) + 'deg)';
          await sleep(1500);
+
          rangeShow7.value = -mf;
-         rangeClock2.style.transform = 'rotate(' + (-62 + (((mf/20) * 1000) / 90)) + 'deg)';
+         rangeClock2.style.transform = 'rotate(' + (-120 + (((mf/20) * 1000) / 90)) + 'deg)';
          rangeShow8.value = acmi;
          rangeClock3.style.transform = 'rotate(' + (-62 + (((acma+1) * 1000) / 90)) + 'deg)';
-         rangeShow9.value = avmi;
-         rangeClock4.style.transform = 'rotate(' + (-62 + ((((avma/10)+3) * 1000) / 90)) + 'deg)';
+         rangeShow9.value = avma;
+         rangeClock4.style.transform = 'rotate(' + (-62 + ((((avma/10)+2.5) * 1000) / 90)) + 'deg)';
          await sleep(1500);
      }
 }
