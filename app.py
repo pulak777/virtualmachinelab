@@ -41,6 +41,11 @@ def theo8():
 def exp8():
     return render_template('simulations/sim8.html')
 
+
+@app.route('/Determination_of_equivalent_circuit_parameters_of_a_single_phase_Induction_motor')
+def exp5():
+    return render_template('simulations/sim5.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
 

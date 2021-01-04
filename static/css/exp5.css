@@ -1,0 +1,344 @@
+body {
+    background-color: white;
+  
+  }
+  
+  .demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+  }
+  /** JSPLUMB ARTEFACTS **/
+  .jtk-overlay {
+    z-index: 51;
+  }
+  
+  .jtk-endpoint {
+    z-index: 50;
+    cursor: move;
+  }
+  
+  .jtk-connector {
+    z-index: 1;
+  }
+  
+  /** ELEMENTS **/
+  .littledot
+  {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url("/static/images/littledot.png");
+    z-index: 5;
+    position: absolute;
+    border-radius: 31px;
+  }
+  
+  
+  
+  .littledot-hover-hover {
+    border: 2px solid orange;
+  }
+  
+  .dropHover {
+    border: 1px solid orange;
+  }
+  
+  /** ELEMENT POSITIONS **/
+  /* supply switches */
+  #ld1 {
+    top: 18.1em;
+    left: 6em;
+  }
+  #ld2 {
+    top: 22.1em;
+    left: 6em;
+  }
+  /* 1 phase auto transformer */
+  #ld3 {
+    top: 18.1em;
+    left: 10.5em;
+  }
+  #ld4 {
+    top: 22.1em;
+    left: 10.5em;
+  }
+  #ld5 {
+    top: 18.1em;
+    left: 18.5em;
+  }
+  #ld6 {
+    top: 22.1em;
+    left: 18.5em;
+  }
+
+  /* voltmeter */
+  #ld7 {
+    top: 12.1em;
+    left: 28em;
+  }
+  #ld8 {
+    top: 26.1em;
+    left: 28em;
+  }
+
+/* Ammeter */
+  #ld9 {
+    top: 5.1em;
+    left: 35em;
+  }
+  #ld10 {
+    top: 5.1em;
+    left: 48em;
+  }
+
+/* Wattmeter */
+  #ld11 {
+    top: 5.1em;
+    left: 53em;
+  }
+  #ld12 {
+    top: 5.1em;
+    left: 66em;
+  }
+  #ld13 {
+    top: 11.5em;
+    left: 59.5em;
+  }
+
+  /* main winding */
+  #ld14 {
+    top: 18em;
+    left: 46em;
+  }
+  #ld15 {
+    top: 26em;
+    left: 46em;
+  }
+
+/* Capacitor */
+  #ld16 {
+    top: 10em;
+    left: 72.5em;
+  }
+  #ld17 {
+    top: 10em;
+    left: 76.5em;
+  }
+
+  /* inductor */
+  #ld18 {
+    top: 16em;
+    left: 74em;
+  }
+  #ld19 {
+    top: 28em;
+    left: 74em;
+  }
+
+
+
+  
+  path, .jtk-endpoint {
+    cursor: pointer;
+  }
+  
+  
+  #wrapper {
+    width:100%;
+  }
+  div
+  {
+    box-sizing: border-box;
+    resize: both;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 600px;
+    border: solid;
+  }
+  
+  .column42 {
+    float: left;
+    width: 42%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+     
+  }
+  
+  .column40 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+     
+  }
+  .column20 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    
+  }
+
+  .column24 {
+    float: left;
+    width: 24%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    
+  }
+  
+  .column14 {
+    float: left;
+    width: 14%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    
+  }
+  .column30 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    
+  }
+  .column10 {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: 0px;
+    
+  }
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 67%;
+    height: 7px;
+    border-radius: 5px;
+    background: grey;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90px;
+    height: 15px;
+    opacity: 1;
+    border-radius: 10%;
+    background: black;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .rotorOuter
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  .rotorInner
+    {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+    }
+    @keyframes rotations {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }
+  .rotate {
+    animation: rotation 0s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+
+
+  .x0 div {
+    padding: 5px;
+  }
+  .x1 div {
+    position: relative;
+  }
+  .x2 div {
+    position: relative;
+  }
+  .x3 div {
+    position: relative;
+  }
+  .x4 div {
+    position: relative;
+  }
+  .x5 div {
+    position: relative;
+  }
+  .x6 div {
+    position: relative;
+  }
+  .x7 div {
+    position: relative;
+  }
+
+  .footer div{
+    position: relative;
+  }
+  .footer p {
+    position: relative;
+  }
