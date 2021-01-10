@@ -458,6 +458,9 @@ jsPlumb.ready(function () {
             document.getElementById("check-button").disabled = true;
             rightconnection = true;
             disable_all();
+            setTimeout(function(){
+                alert("Now turn on the power supply to perform No-load test on single phase induction motor");
+            }, 2000);
         }
         else {
             alert("Alert ! Incorrect connection.");
@@ -565,12 +568,13 @@ function disable_all() {
     });
 }
 
-
+var blocked_rotor = false;
 var rotoroffstate = true;
 var mcboffstate = true;
 var were = 270;
 function mcbonoff() {
     if (rightconnection == true) {
+
         if (mcboffstate == true) {
 
             mcboffstate = false;
@@ -580,6 +584,26 @@ function mcbonoff() {
             document.getElementById('myimage3').src = '/static/images/push2.png';
 
             rotaronoff();
+        }
+        else if (blocked_rotor) {
+            mcboffstate = true;
+            document.getElementById('cirmover').style.animation = "rotation 0s infinite linear";
+            rotoroffstate = true;
+            document.getElementById('myimage').src = '/static/images/mcboff.png';
+            document.getElementById('myimage1').src = '/static/images/push1.png';
+            document.getElementById('myimage2').src = '/static/images/push1.png';
+            document.getElementById('myimage3').src = '/static/images/push1.png';
+            rangeMeter.value = 0;
+            rangeShow0.value = 0;
+            rangeShow1.value = 0;
+            rangeShow2.value = 0;
+            rangeShow3.value = 0;
+            rangeShow4.value = 0;
+            rangeShow5.value = 0;
+            rangeClock1.style.transform = 'rotate -62 deg';
+            rangeClock1.style.transform = 'rotate -62 deg';
+            rangeClock1.style.transform = 'rotate -62 deg';
+            document.getElementById("rotor_blocker").src="/static/images/rotor_blocker.jfif";
         }
         else {
             return;
@@ -610,18 +634,15 @@ function rotaronoff() {
     if (mcboffstate == false) {
         if (rotoroffstate == true) {
             rotoroffstate = false;
-            document.getElementById('cirmover').style.animation = "rotation 3s infinite linear";
+            if (blocked_rotor) {
+                document.getElementById('cirmover').style.animation = "rotation 0s infinite linear";
+            }
+            else {
+                document.getElementById('cirmover').style.animation = "rotation 3s infinite linear";
+            }
             document.getElementById("range").disabled = false;
-            var intervalId = setInterval(function () {
-                if (were === 390) {
-                    clearInterval(intervalId);
-                    were = 400;
-                    isrotating = false;
-                }
-                were++;
-            }, 15);
+
             rangeMeter.value = 1;
-            
             rangeChange();
         }
         else {
@@ -635,46 +656,71 @@ function rotaronoff() {
 
 const volt = [0, 99, 119, 140, 161, 179, 200];
 const ampm = [0, 1.1, 1.17, 1.25, 1.32, 1.39, 1.46];
-const watt = [0, 52, 60, 71, 79, 91, 100]
+const watt = [0, 52, 60, 71, 79, 91, 100];
 const speed = [0, 1000, 1100, 1193, 1295, 1386, 1495];
+
+const blocked_volt = [0, 30, 41, 54, 63, 75];
+const blocked_ampm = [0, 1.1, 1.46, 1.68, 2.08, 2.4];
+const blocked_watt = [0, 50, 64, 78, 101, 120];
 
 function rangeChange() {
 
     const val = rangeMeter.value;
     rangeShow1.value = val;
-    rangeShow2.value = volt[val];
-    rangeClock1.style.transform = 'rotate(' + (-62 + (((volt[val] / 20) * 1000) / 150)) + 'deg)';
-    rangeShow3.value = ampm[val];
-    rangeClock2.style.transform = 'rotate(' + (-62 + ((ampm[val] * 1000) / 90)) + 'deg)';
-    rangeShow4.value = watt[val];
-    rangeClock3.style.transform = 'rotate(' + (-62 + (((watt[val] / 10) * 1000) / 100)) + 'deg)';
-    rangeShow5.value = speed[val];
+    if (blocked_rotor) {
+        rangeShow2.value = blocked_volt[val];
+        rangeShow3.value = blocked_ampm[val];
+        rangeShow4.value = blocked_watt[val];
+        rangeShow0.value = String(blocked_volt[val]) + "V";
+        if(val == 5){
+            document.getElementById("range").disabled = true;
+            blocked_rotor = false;
+            setTimeout(function(){
+                alert("Both experiments are completed. Hope you have noted down the final values.");
+            }, 2000);
+        }
+    }
+    else {
+        rangeShow2.value = volt[val];
+        rangeClock1.style.transform = 'rotate(' + (-62 + (((volt[val] / 20) * 1000) / 150)) + 'deg)';
+        rangeShow3.value = ampm[val];
+        rangeClock2.style.transform = 'rotate(' + (-62 + ((ampm[val] * 1000) / 90)) + 'deg)';
+        rangeShow4.value = watt[val];
+        rangeClock3.style.transform = 'rotate(' + (-62 + (((watt[val] / 10) * 1000) / 100)) + 'deg)';
+        rangeShow5.value = speed[val];
 
-    
-    if(val == 1){
-        rangeShow0.value = "100V";
-        document.getElementById('cirmover').style.animation = "rotation 3s infinite linear";        
-    }
-    else if(val == 2){
-        rangeShow0.value = "120V";
-        document.getElementById('cirmover').style.animation = "rotation 2.5s infinite linear";
-    }
-    else if(val == 3){
-        rangeShow0.value = "140V";
-        document.getElementById('cirmover').style.animation = "rotation 2s infinite linear";
-    }
-    else if(val == 4){
-        rangeShow0.value = "160V";
-        document.getElementById('cirmover').style.animation = "rotation 1.5s infinite linear";
-    }
-    else if(val == 5){
-        rangeShow0.value = "180V";
-        document.getElementById('cirmover').style.animation = "rotation 1s infinite linear";
-    }
-    else if(val == 6){
-        rangeShow0.value = "200V";
-        document.getElementById('cirmover').style.animation = "rotation 0.5s infinite linear";
-        document.getElementById("range").disabled = true;
+
+        if (val == 1) {
+            rangeShow0.value = "100V";
+            document.getElementById('cirmover').style.animation = "rotation 3s infinite linear";
+        }
+        else if (val == 2) {
+            rangeShow0.value = "120V";
+            document.getElementById('cirmover').style.animation = "rotation 2.5s infinite linear";
+        }
+        else if (val == 3) {
+            rangeShow0.value = "140V";
+            document.getElementById('cirmover').style.animation = "rotation 2s infinite linear";
+        }
+        else if (val == 4) {
+            rangeShow0.value = "160V";
+            document.getElementById('cirmover').style.animation = "rotation 1.5s infinite linear";
+        }
+        else if (val == 5) {
+            rangeShow0.value = "180V";
+            document.getElementById('cirmover').style.animation = "rotation 1s infinite linear";
+        }
+        else if (val == 6) {
+            rangeShow0.value = "200V";
+            document.getElementById('cirmover').style.animation = "rotation 0.5s infinite linear";
+            document.getElementById("range").disabled = true;
+            blocked_rotor = true;
+            setTimeout(function(){
+                alert("Now turn off then turn on the power supply to perform *Block rotor* test on single phase induction motor");
+            }, 2000);
+
+        }
+
     }
 }
 
