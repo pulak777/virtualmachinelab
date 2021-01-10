@@ -600,9 +600,9 @@ function mcbonoff() {
             rangeShow3.value = 0;
             rangeShow4.value = 0;
             rangeShow5.value = 0;
-            rangeClock1.style.transform = 'rotate -62 deg';
-            rangeClock1.style.transform = 'rotate -62 deg';
-            rangeClock1.style.transform = 'rotate -62 deg';
+            rangeClock1.style.transform = 'rotate(' + (-62) + 'deg)';
+            rangeClock2.style.transform ='rotate(' + (-62) + 'deg)';
+            rangeClock3.style.transform = 'rotate(' + (-62) + 'deg)';
             document.getElementById("rotor_blocker").src="/static/images/rotor_blocker.jfif";
         }
         else {
@@ -642,7 +642,12 @@ function rotaronoff() {
             }
             document.getElementById("range").disabled = false;
 
-            rangeMeter.value = 1;
+            if(blocked_rotor){
+                rangeMeter.value = 0;
+            }
+            else{
+                rangeMeter.value = 1;
+            }
             rangeChange();
         }
         else {
@@ -659,9 +664,9 @@ const ampm = [0, 1.1, 1.17, 1.25, 1.32, 1.39, 1.46];
 const watt = [0, 52, 60, 71, 79, 91, 100];
 const speed = [0, 1000, 1100, 1193, 1295, 1386, 1495];
 
-const blocked_volt = [0, 30, 41, 54, 63, 75];
-const blocked_ampm = [0, 1.1, 1.46, 1.68, 2.08, 2.4];
-const blocked_watt = [0, 50, 64, 78, 101, 120];
+const blocked_volt = [0, 75];
+const blocked_ampm = [0, 2.4];
+const blocked_watt = [0, 120];
 
 function rangeChange() {
 
@@ -669,10 +674,13 @@ function rangeChange() {
     rangeShow1.value = val;
     if (blocked_rotor) {
         rangeShow2.value = blocked_volt[val];
+        rangeClock1.style.transform = 'rotate(' + (-62 + (((blocked_volt[val] / 20) * 1000) / 150)) + 'deg)';
         rangeShow3.value = blocked_ampm[val];
+        rangeClock2.style.transform = 'rotate(' + (-62 + ((blocked_ampm[val] * 1000) / 90)) + 'deg)';
         rangeShow4.value = blocked_watt[val];
+        rangeClock3.style.transform = 'rotate(' + (-62 + (((blocked_watt[val] / 10) * 1000) / 100)) + 'deg)';
         rangeShow0.value = String(blocked_volt[val]) + "V";
-        if(val == 5){
+        if(val == 1){
             document.getElementById("range").disabled = true;
             blocked_rotor = false;
             setTimeout(function(){
