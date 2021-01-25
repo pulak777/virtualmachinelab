@@ -684,7 +684,7 @@ function drawgraph() {
         },
         yaxis: {
             title: {
-                text: 'Induced EMF',
+                text: 'Armature Current',
                 font:
                 {
                     family: 'Courier New, monoscope',
