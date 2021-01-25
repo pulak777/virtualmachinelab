@@ -46,6 +46,10 @@ def exp8():
 def exp5():
     return render_template('simulations/sim5.html')
 
+@app.route('/v-curve_of_synchronous_motor')
+def exp6():
+    return render_template('simulations/sim6.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
 
