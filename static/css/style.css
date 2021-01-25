@@ -55,6 +55,17 @@
         color: black;
         border-radius: 10px;
       }
+      .rang-numberL {
+        width: 40%;
+        height: 40%;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+      }
       .rang-number3 {
         width: 50%;
         height: 50%;
