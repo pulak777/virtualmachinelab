@@ -679,7 +679,7 @@ function rangeChange1() {
     rangeShow3.value = init_w1[4-val];
     rangeClock3.style.transform = 'rotate(' + (-62 + (((init_w1[4-val] / 20) * 1000) / 150)) + 'deg)';
     rangeShow4.value = init_w2[4-val];
-    rangeClock4.style.transform = 'rotate(' + (-62 + (((init_w2[4-val] / 20) * 1000) / 150)) + 'deg)';
+    rangeClock4.style.transform = 'rotate(' + (-62 + (((init_w2[4-val] / 40) * 1000) / 150)) + 'deg)';
     if(val == 4) {
         document.querySelector("#range1").disabled = true;
         setTimeout(function () {
@@ -771,7 +771,7 @@ function rangeChange3() {
     rangeShow3.value = cell4.innerHTML = w1[val];
     rangeClock3.style.transform = 'rotate(' + (-62 + (((w1[val] / 20) * 1000) / 150)) + 'deg)';
     rangeShow4.value = cell5.innerHTML = w2[val];
-    rangeClock4.style.transform = 'rotate(' + (-62 + (((w2[val] / 20) * 1000) / 150)) + 'deg)';
+    rangeClock4.style.transform = 'rotate(' + (-62 + (((w2[val] / 40) * 1000) / 150)) + 'deg)';
     rangeShow5.value = cell7.innerHTML = dc_gen_op_i[val];
     rangeClock5.style.transform = 'rotate(' + (-62 + (((dc_gen_op_i[val] / 20) * 1000) / 150)) + 'deg)';
     rangeShow6.value = cell6.innerHTML = dc_gen_op_v[val];
