@@ -50,7 +50,7 @@ def exp5():
 def exp6():
     return render_template('simulations/sim6.html')
 
-@app.route('//Study_of_Performance_of_Wound_Rotor_Induction_Motor_under_Load')
+@app.route('/Study_of_Performance_of_Wound_Rotor_Induction_Motor_under_Load')
 def exp10():
     return render_template('simulations/sim10.html')
 
