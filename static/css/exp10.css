@@ -1,0 +1,440 @@
+body {
+    background-color: white;
+  
+  }
+  
+  .demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+  }
+  /** JSPLUMB ARTEFACTS **/
+  .jtk-overlay {
+    z-index: 51;
+  }
+  
+  .jtk-endpoint {
+    z-index: 50;
+    cursor: move;
+  }
+  
+  .jtk-connector {
+    z-index: 1;
+  }
+  
+  /** ELEMENTS **/
+  .littledot
+  {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url("/static/images/littledot.png");
+    z-index: 5;
+    position: absolute;
+    border-radius: 31px;
+  }
+  
+  
+  
+  .littledot-hover-hover {
+    border: 2px solid orange;
+  }
+  
+  .dropHover {
+    border: 1px solid orange;
+  }
+  
+  /** ELEMENT POSITIONS **/
+  /* mcb */
+  #ld1 {
+    top: 32.6em;
+    left: 0.5em;
+  }
+  #ld2 {
+    top: 32.6em;
+    left: 2.2em;
+  }
+  #ld3 {
+    top: 32.6em;
+    left: 3.9em;
+  }
+  /*3ph reg*/
+  #ld4 {
+    top: 22.6em;
+    left: 7.5em;
+  }
+ #ld5 {
+  top: 27.6em;
+  left: 7.5em;
+ }
+#ld6 {
+  top: 32.6em;
+  left: 7.5em;
+}
+  #ld7 {
+    top: 22.6em;
+    left: 15.5em;
+  }
+  #ld8 {
+    top: 27.6em;
+    left: 15.5em;
+  }
+  #ld9 {
+    top: 32.6em;
+    left: 15.5em;
+  }
+/*ammeter*/
+  #ld10 {
+    top: 21.5em;
+    left: 18.5em;
+  }
+  #ld11 {
+    top: 21.5em;
+    left: 23em;
+  }
+/*voltmeter*/
+  #ld12 {
+    top: 28.5em;
+    left: 25.5em;
+  }
+  #ld13 {
+    top: 28.5em;
+    left: 30em;
+  }
+/*wattmeter*/
+  #ld14 {
+    top: 21.5em;
+    left: 33em;
+  }
+  #ld15 {
+    top: 21.5em;
+    left: 38em;
+  }
+
+  #ld43 {
+    top: 21.5em;
+    left: 35.5em;
+  }
+  
+/*wattmeter*/
+  #ld16 {
+    top: 40.5em;
+    left: 33em;
+  }
+  #ld17 {
+    top: 40.5em;
+    left: 38em;
+  }
+
+  #ld44 {
+    top: 32em;
+    left: 35.5em;
+  }
+
+/*3ph srim*/
+  #ld18 {
+    top: 23.5em;
+    left: 43em;
+  }
+  #ld19 {
+    top: 27.5em;
+    left: 43em;
+  }
+  #ld20 {
+    top: 31.5em;
+    left: 43em;
+  }
+
+  #ld21 {
+    top: 23.5em;
+    left: 50em;
+  }
+  #ld22 {
+    top: 27.5em;
+    left: 50em;
+  }
+  #ld23 {
+    top: 31.5em;
+    left: 50em;
+  }
+
+/*rheostat*/
+  #ld24 {
+    top: 23.5em;
+    left: 66em;
+  }
+  #ld25 {
+    top: 27.5em;
+    left: 66em;
+  }
+  #ld26 {
+    top: 31.5em;
+    left: 66em;
+  }
+
+/*DC motor*/
+  #ld27 {
+    top: 8em;
+    left: 42em;
+  }
+  #ld28 {
+    top: 12em;
+    left: 42em;
+  }
+
+  #ld29 {
+    top: 4em;
+    left: 45em;
+  }
+  #ld30 {
+    top: 4em;
+    left: 49em;
+  }
+/*Field regulator*/
+  #ld31 {
+    top: 4em;
+    left: 32.5em;
+  }
+  #ld32 {
+    top: 8em;
+    left: 32.5em;
+  }
+
+  #ld33 {
+    top: 4em;
+    left: 26em;
+  }
+  #ld34 {
+    top: 8em;
+    left: 26em;
+  }
+
+/*switch*/
+  #ld35 {
+    top: 4em;
+    left: 21em;
+  }
+  #ld36 {
+    top: 7em;
+    left: 21em;
+  }
+
+/*ammeter*/
+  #ld37 {
+    top: 7em;
+    left: 54.5em;
+  }
+  #ld38 {
+    top: 7em;
+    left: 59em;
+  }
+
+  /*voltmeter*/
+  #ld39 {
+    top: 14.5em;
+    left: 62.5em;
+  }
+  #ld40 {
+    top: 14.5em;
+    left: 67em;
+  }
+/*load box*/
+  #ld41 {
+    top: 6em;
+    left: 72.5em;
+  }
+  #ld42 {
+    top: 13em;
+    left: 72.5em;
+  }
+  
+
+
+
+  
+  path, .jtk-endpoint {
+    cursor: pointer;
+  }
+  
+  
+  #wrapper {
+    width:100%;
+  }
+  div
+  {
+    box-sizing: border-box;
+    resize: both;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 700px;
+    border: solid;
+  }
+
+  .column50 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 250px;
+    border: solid;
+  }
+  .column25 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 250px;
+    border-top: solid;
+  }
+
+  
+  .column42 {
+    float: left;
+    width: 42%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+     
+  }
+  
+  .column40 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+     
+  }
+
+  .column24 {
+    float: left;
+    width: 24%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    
+  }
+  
+  .column14 {
+    float: left;
+    width: 14%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    
+  }
+  .column30 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    
+  }
+  .column10 {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 300px;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: 0px;
+    
+  }
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 67%;
+    height: 7px;
+    border-radius: 5px;
+    background: grey;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90px;
+    height: 15px;
+    opacity: 1;
+    border-radius: 10%;
+    background: black;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .rotorOuter
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  .rotorInner
+    {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+    }
+    @keyframes rotations {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }
+  .rotate {
+    animation: rotation 0s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+
+  
+
+  .footer div{
+    position: relative;
+  }
+  .footer p {
+    position: relative;
+  }
