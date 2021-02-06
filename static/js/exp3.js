@@ -411,8 +411,8 @@ jsPlumb.ready(function () {
             },
     
             {
-                "source": "ld35",
-                "target": "ld31"
+                "source": "ld31",
+                "target": "ld35"
             }
         ];
         var correct_connections_36_32 = [
@@ -422,8 +422,8 @@ jsPlumb.ready(function () {
             },
     
             {
-                "source": "ld36",
-                "target": "ld32"
+                "source": "ld32",
+                "target": "ld36"
             }
         ];
 
@@ -652,8 +652,8 @@ jsPlumb.ready(function () {
                 },
         
                 {
-                    "source": "ld35",
-                    "target": "ld31"
+                    "source": "ld31",
+                    "target": "ld35"
                 },
             
                 {
@@ -662,8 +662,8 @@ jsPlumb.ready(function () {
                 },
         
                 {
-                    "source": "ld36",
-                    "target": "ld32"
+                    "source": "ld32",
+                    "target": "ld36"
                 }
         
         ];
@@ -1106,7 +1106,7 @@ jsPlumb.ready(function () {
             };
 
             if(!is_connected_35_31){
-                is_connected_35_31 = correct_connections_22_24.find(function (conn) {
+                is_connected_35_31 = correct_connections_35_31.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
@@ -1124,7 +1124,7 @@ jsPlumb.ready(function () {
             };
 
             if(!is_connected_36_32){
-                is_connected_36_32 = correct_connections_27_30.find(function (conn) {
+                is_connected_36_32 = correct_connections_36_32.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                   });
             }
