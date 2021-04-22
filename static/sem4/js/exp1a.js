@@ -508,7 +508,7 @@ function rangeChange2() {
             rangeChange3();
             document.querySelector("#range2").disabled = true;
             document.querySelector('#graph').disabled = false;
-            document.querySelector('#add').disabled = false;
+            document.querySelector('#add').disabled = true;
             setTimeout(function () {
                 alert("𝐍𝐨𝐰 click on 'Graph' button");
             }, 1000);
