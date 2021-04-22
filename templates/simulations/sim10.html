@@ -17,70 +17,69 @@
 <body style="background-color: rgb(236, 228, 180);">
     <div id="connection-table">
         <B>Step 1: </B>Make the proper connection by clicking the node as instructed below. If the wire is
-                    misplaced, click the node number to deattach the nodes' wire. <br>
-                    <table>
-                        <tr>
-                            <td><B>From</B></td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>11</td>
-                            <td>11</td>
-                            <td>43</td>
-                            <td>13</td>
-                            <td>15</td>
-                            <td>44</td>
-                            <td>17</td>
-                            <td>21</td>
-                            <td>22</td>
-                            <td>23</td>
-                            <td>35</td>
-                            <td>36</td>
-                            <td>31</td>
-                            <td>32</td>
-                            <td>29</td>
-                            <td>38</td>
-                            <td>30</td>
-                            <td>39</td>
-                            <td>40</td>
+        misplaced, click the node number to deattach the nodes' wire. <br>
+        <table>
+            <tr>
+                <td><B>From</B></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>11</td>
+                <td>11</td>
+                <td>43</td>
+                <td>13</td>
+                <td>15</td>
+                <td>44</td>
+                <td>17</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>35</td>
+                <td>36</td>
+                <td>31</td>
+                <td>32</td>
+                <td>29</td>
+                <td>38</td>
+                <td>30</td>
+                <td>39</td>
+                <td>40</td>
 
-                        </tr>
-                        <tr>
-                            <td><B>To</B></td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>10</td>
-                            <td>13</td>
-                            <td>16</td>
-                            <td>12</td>
-                            <td>14</td>
-                            <td>44</td>
-                            <td>44</td>
-                            <td>18</td>
-                            <td>19</td>
-                            <td>20</td>
-                            <td>24</td>
-                            <td>25</td>
-                            <td>26</td>
-                            <td>33</td>
-                            <td>34</td>
-                            <td>27</td>
-                            <td>28</td>
-                            <td>37</td>
-                            <td>39</td>
-                            <td>40</td>
-                            <td>41</td>
-                            <td>42</td>
+            </tr>
+            <tr>
+                <td><B>To</B></td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>10</td>
+                <td>13</td>
+                <td>16</td>
+                <td>12</td>
+                <td>14</td>
+                <td>44</td>
+                <td>44</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>33</td>
+                <td>34</td>
+                <td>27</td>
+                <td>28</td>
+                <td>37</td>
+                <td>39</td>
+                <td>40</td>
+                <td>41</td>
+                <td>42</td>
 
-                        </tr>
-                    </table>
+            </tr>
+        </table>
     </div>
-    <div id="wrapper"
-        style="position:absolute; top:67px; width:1360px; left:50px; background-color: rgb(255, 255, 255);">
+    <div id="wrapper" style="position:relative; width:1360px; left:50px; background-color: rgb(255, 255, 255);">
         <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a>
         </div>
         <div class="littledot" id="ld2"></br><a href="#" class="cmdLink detach" rel="ld2">2</a>
@@ -181,7 +180,8 @@
                     </div>
                     <div>
                         <button id="add" disabled="true"
-                            style="background-color:#27D447; border:none; margin: 5px; padding: 5px; border-radius:5px">Add to
+                            style="background-color:#27D447; border:none; margin: 5px; padding: 5px; border-radius:5px">Add
+                            to
                             table</button>
                     </div>
                     <div>
@@ -341,7 +341,8 @@
                 <div style="position: absolute;left: 66.5em; top: 22.5em;">
                     <div style="position: absolute; left: 11em; top: -0.3em; height: 11em; width: 2em; 
                     border-radius: 1em; background-color: rgb(56, 49, 49);">
-                    <p style="white-space:nowrap; transform : rotate(90deg);  color: aliceblue; font-size: 30px;">Rheostat</p>
+                        <p style="white-space:nowrap; transform : rotate(90deg);  color: aliceblue; font-size: 30px;">
+                            Rheostat</p>
                     </div>
                     <div>
                         <img src="/static/images/Rheostat_crop.png" alt="MCB Switch" width="205" height="55">
@@ -388,8 +389,8 @@
 
                 <!--DC supply switch-->
                 <div style="position: absolute;left: 14.5em; top: 2.5em;">
-                    <img id="dc-switch" style="padding-left: 60px; transform: rotate(90deg);" src="/static/images/switchoff.png"
-                        alt="Ammeter" width="75" onclick="dcswitchonoff()">
+                    <img id="dc-switch" style="padding-left: 60px; transform: rotate(90deg);"
+                        src="/static/images/switchoff.png" alt="Ammeter" width="75" onclick="dcswitchonoff()">
                 </div>
 
                 <!--AMMETER-->
@@ -439,8 +440,7 @@
                     <div style="white-space: nowrap; z-index: 4; position: absolute; top: 11.5em; left: 1em;"><b>Move
                             the slider ➤</b></div>
                     <div class="slidecontainer" style="z-index: 100; position: absolute; top:13em; left: 1em">
-                        <input class="rang-slider" disabled="true" id="range4" type="range" min="0" max="6"
-                            value="0" />
+                        <input class="rang-slider" disabled="true" id="range4" type="range" min="0" max="6" value="0" />
                     </div>
                     <div class="rang" style="z-index: 100; position: absolute;top: 12em;left: -1.5em;">
                         <div class="rang-title2">
@@ -456,22 +456,22 @@
             <div class="column50">
                 <div style="position:absolute;left:23em;top: 45em;">
                     <table id="table" class="table">
-                    <tr>
-                    <th>SN</th>
-                    <th>Stator curr(I)</th>
-                    <th>Stator volt(V)</th>
-                    <th>W1 (W)</th>
-                    <th>W2 (W)</th>
-                    <th>DC V<sub>G</sub></th>
-                    <th>DC I<sub>G</sub></th>
-                    <th>Speed (RPM)</th>
-                    </tr>
+                        <tr>
+                            <th>SN</th>
+                            <th>Stator curr(I)</th>
+                            <th>Stator volt(V)</th>
+                            <th>W1 (W)</th>
+                            <th>W2 (W)</th>
+                            <th>DC V<sub>G</sub></th>
+                            <th>DC I<sub>G</sub></th>
+                            <th>Speed (RPM)</th>
+                        </tr>
                     </table>
-                </div> 
+                </div>
             </div>
             <div class="column25"></div>
         </div>
-        
+
         <!-- 
 
     <div style="position:absolute;left:57em;top:22em;">
@@ -555,15 +555,6 @@
                     <B>Step 5: </B>Follow the procedure<br>
                     <B>Step 6: </B> Click "Print" button, to print the full connections with graph and table in
                     landscape mode.
-                    <br>
-                    ___________________________________________________<br>
-                    ___________________________________________________<br>
-                    ___________________________________________________ <br>
-                    ___________________________________________________<br>
-                    ___________________________________________________ <br>
-                    ___________________________________________________<br>
-                    ___________________________________________________ <br>
-                    ___________________________________________________
 
                 </span>
                 <br>

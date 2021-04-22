@@ -1,6 +1,13 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 1360px;
+  padding: 50px;
+  padding-top: 0;
+  border: 0;
+}
+body > div:nth-child(3) {
+  margin-top: 30px;
 }
 
 .demo {
@@ -41,208 +48,69 @@ body {
 }
 
 /** ELEMENT POSITIONS **/
-/* mcb */
+
 #ld1 {
-  top: 32.6em;
-  left: 0.5em;
+  top: 12.6em;
+  left: 25em;
 }
 #ld2 {
-  top: 32.6em;
-  left: 2.2em;
+  top: 15.4em;
+  left: 25em;
 }
+/* */
 #ld3 {
-  top: 32.6em;
-  left: 3.9em;
+  top: 24.6em;
+  left: 25em;
 }
-/*3ph reg*/
 #ld4 {
-  top: 22.6em;
-  left: 7.5em;
+  top: 27.4em;
+  left: 25em;
 }
+/* */
 #ld5 {
-  top: 27.6em;
-  left: 7.5em;
+  top: 8em;
+  left: 31em;
 }
 #ld6 {
-  top: 32.6em;
-  left: 7.5em;
+  top: 12em;
+  left: 31em;
 }
+/* */
 #ld7 {
-  top: 22.6em;
-  left: 15.5em;
+  top: 25.6em;
+  left: 48.5em;
 }
 #ld8 {
-  top: 27.6em;
-  left: 15.5em;
+  top: 25.6em;
+  left: 52.5em;
 }
+/* */
 #ld9 {
-  top: 32.6em;
-  left: 15.5em;
+  top: 18em;
+  left: 58em;
 }
-/*ammeter*/
 #ld10 {
-  top: 21.5em;
-  left: 18.5em;
+  top: 18em;
+  left: 64em;
 }
 #ld11 {
-  top: 21.5em;
-  left: 23em;
+  top: 8em;
+  left: 69em;
 }
-/*voltmeter*/
 #ld12 {
-  top: 28.5em;
-  left: 25.5em;
-}
-#ld13 {
-  top: 28.5em;
-  left: 30em;
-}
-/*wattmeter*/
-#ld14 {
-  top: 21.5em;
-  left: 33em;
-}
-#ld15 {
-  top: 21.5em;
-  left: 38em;
-}
-
-#ld43 {
-  top: 21.5em;
-  left: 35.5em;
-}
-
-/*wattmeter*/
-#ld16 {
-  top: 40.5em;
-  left: 33em;
-}
-#ld17 {
-  top: 40.5em;
-  left: 38em;
-}
-
-#ld44 {
-  top: 32em;
-  left: 35.5em;
-}
-
-/*3ph srim*/
-#ld18 {
-  top: 23.5em;
-  left: 43em;
-}
-#ld19 {
-  top: 27.5em;
-  left: 43em;
-}
-#ld20 {
-  top: 31.5em;
-  left: 43em;
-}
-
-#ld21 {
-  top: 23.5em;
-  left: 50em;
-}
-#ld22 {
-  top: 27.5em;
-  left: 50em;
-}
-#ld23 {
-  top: 31.5em;
-  left: 50em;
-}
-
-/*rheostat*/
-#ld24 {
-  top: 23.5em;
-  left: 66em;
-}
-#ld25 {
-  top: 27.5em;
-  left: 66em;
-}
-#ld26 {
-  top: 31.5em;
-  left: 66em;
-}
-
-/*DC motor*/
-#ld27 {
-  top: 8em;
-  left: 42em;
-}
-#ld28 {
   top: 12em;
-  left: 42em;
+  left: 69em;
 }
-
-#ld29 {
-  top: 4em;
-  left: 45em;
+/* */
+#ld13 {
+  top: 10.5em;
+  left: 76em;
 }
-#ld30 {
-  top: 4em;
-  left: 49em;
+#ld14 {
+  top: 10.5em;
+  left: 81.5em;
 }
-/*Field regulator*/
-#ld31 {
-  top: 4em;
-  left: 32.5em;
-}
-#ld32 {
-  top: 8em;
-  left: 32.5em;
-}
-
-#ld33 {
-  top: 4em;
-  left: 26em;
-}
-#ld34 {
-  top: 8em;
-  left: 26em;
-}
-
-/*switch*/
-#ld35 {
-  top: 4em;
-  left: 21em;
-}
-#ld36 {
-  top: 7em;
-  left: 21em;
-}
-
-/*ammeter*/
-#ld37 {
-  top: 7em;
-  left: 54.5em;
-}
-#ld38 {
-  top: 7em;
-  left: 59em;
-}
-
-/*voltmeter*/
-#ld39 {
-  top: 14.5em;
-  left: 62.5em;
-}
-#ld40 {
-  top: 14.5em;
-  left: 67em;
-}
-/*load box*/
-#ld41 {
-  top: 6em;
-  left: 72.5em;
-}
-#ld42 {
-  top: 13em;
-  left: 72.5em;
-}
+/* */
 
 path,
 .jtk-endpoint {
@@ -261,7 +129,24 @@ div {
   float: left;
   width: 100%;
   padding: 10px;
-  height: 700px;
+  height: 500px;
+  border: solid;
+  border-bottom: 0;
+}
+
+.column30 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 400px;
+  border: solid;
+  border-left: 0;
+}
+.column40 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 400px;
   border: solid;
 }
 
@@ -269,7 +154,7 @@ div {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 250px;
+  height: 400px;
   border: solid;
 }
 .column25 {
@@ -283,15 +168,6 @@ div {
 .column42 {
   float: left;
   width: 42%;
-  padding: 10px;
-  height: 300px;
-  border-top: solid;
-  border-bottom: solid;
-}
-
-.column40 {
-  float: left;
-  width: 40%;
   padding: 10px;
   height: 300px;
   border-top: solid;
@@ -315,14 +191,7 @@ div {
   border-top: solid;
   border-bottom: solid;
 }
-.column30 {
-  float: left;
-  width: 30%;
-  padding: 10px;
-  height: 300px;
-  border-top: solid;
-  border-bottom: solid;
-}
+
 .column10 {
   float: left;
   width: 10%;
@@ -408,10 +277,7 @@ div {
 th,
 td {
   border: 1px solid black;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-  padding-top: 0em;
-  padding-bottom: 0em;
+  text-align: center;
 }
 
 .footer div {
@@ -419,4 +285,70 @@ td {
 }
 .footer p {
   position: relative;
+}
+.rectifier {
+  position: absolute;
+  top: 9.5em;
+  left: 15em;
+  height: 316px;
+  width: 150px;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  background-color: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rectifier-diode {
+  background-color: #dcc5c2;
+  padding: 5px;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.rectifier-diode img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid;
+}
+
+.dc-motor {
+  position: absolute;
+  left: 33em;
+  top: 1.5em;
+  background-color: #404040;
+  padding: 5px;
+  width: 200px;
+  height: 235px;
+}
+
+.dc-motor img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dc-generator {
+  position: absolute;
+  left: 55em;
+  top: 0.5em;
+  background-color: white;
+  padding: 5px;
+  width: 200px;
+  height: 235px;
+}
+.dc-generator img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 6px solid #404040;
+}
+
+.addButtonClass {
+  background-color: #27d447;
+}
+
+.addButtonClass:hover {
+  background-color: royalblue;
+  color: white;
 }

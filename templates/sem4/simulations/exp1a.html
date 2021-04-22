@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Study of Performance of Wound Rotor Induction Motor under Load.</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="/static/sem4/css/style.css">
+    <link rel="stylesheet" href="/static/sem4/css/exp1a.css">
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="/static/js/graph.ob.js"></script>
+</head>
+
+<body style="background-color: rgb(236, 228, 180);">
+    <div id="connection-table">
+        <B>Step 1: </B>Make the proper connection by clicking the node as instructed below. If the wire is
+        misplaced, click the node number to deattach the nodes' wire. <br>
+        <table>
+            <tr>
+                <td><B>From</B></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>8</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td><B>To</B></td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>10</td>
+                <td>9</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+        </table>
+    </div>
+    <div id="wrapper" style="position:relative; background-color: rgb(255, 255, 255);">
+        <div class="littledot" id="ld1"></br><a href="#" class="detach" rel="ld1">1</a>
+        </div>
+        <div class="littledot" id="ld2"></br><a href="#" class="detach" rel="ld2">2</a>
+        </div>
+        <div class="littledot" id="ld3"></br><a href="#" class="detach" rel="ld3">3</a>
+        </div>
+        <div class="littledot" id="ld4"></br><a href="#" class="detach" rel="ld4">4</a>
+        </div>
+        <div class="littledot" id="ld5"></br><a href="#" class="detach" rel="ld5">5</a>
+        </div>
+        <div class="littledot" id="ld6"></br><a href="#" class="detach" rel="ld6">6</a>
+        </div>
+        <div class="littledot" id="ld7"></br><a href="#" class="detach" rel="ld7">7</a>
+        </div>
+        <div class="littledot" id="ld8"></br><a href="#" class="detach" rel="ld8">8</a>
+        </div>
+        <div class="littledot" id="ld9"></br><a href="#" class="detach" rel="ld9">9</a>
+        </div>
+        <div class="littledot" id="ld10"></br><a href="#" class="detach" rel="ld10">10</a>
+        </div>
+        <div class="littledot" id="ld11"></br><a href="#" class="detach" rel="ld11">11</a>
+        </div>
+        <div class="littledot" id="ld12"></br><a href="#" class="detach" rel="ld12">12</a>
+        </div>
+        <div class="littledot" id="ld13"></br><a href="#" class="detach" rel="ld13">13</a>
+        </div>
+        <div class="littledot" id="ld14"></br><a href="#" class="detach" rel="ld14">14</a>
+        </div>
+
+
+        <div>
+            <div class="column">
+
+                <div style="position: absolute; display: flex; left: 1em; z-index: 1000; padding: 10px;">
+                    <div>
+                        <button id="check-button"
+                            style="background-color:#27D447; border:none; margin: 5px; padding: 5px; border-radius:5px">Check</button>
+                    </div>
+                    <div>
+                        <button class="addButtonClass" id="add" disabled="true" onclick="rangeChange3()" style="
+                            border:none; margin: 5px; padding: 5px; border-radius:5px">Add
+                            to
+                            table</button>
+                    </div>
+                    <div>
+                        <button id="graph" disabled="true" onclick="drawgraph()" ;
+                            style="background-color:#27D447; border:none; margin: 5px; padding: 5px; border-radius:5px">Graph
+                        </button>
+                    </div>
+
+                    <div>
+                        <button id="print" onclick="window.print();"
+                            style="background-color:#27D447; border:none; margin: 5px; padding: 5px; border-radius:5px">Print
+                        </button>
+                    </div>
+
+                    <div>
+                        <button id="reset" type="reset" onclick="window.location.reload();"
+                            style="background-color:#f82d12; border:none; margin: 5px; padding: 5px; border-radius:5px">Reset</button>
+                    </div>
+                </div>
+                <!--power-->
+                <div style="position: absolute; left: 2em; top: 7.5em; z-index: 100;">
+                    <div style="top: -1em;">
+                        <img id="myimage1" class="mcbSwitch" src="/static/images/push1.png" alt="MCB Switch" width="25"
+                            height="25">
+                        <img id="myimage2" class="mcbSwitch" src="/static/images/push1.png" alt="MCB Switch" width="25"
+                            height="25">
+                        <img id="myimage3" class="mcbSwitch" src="/static/images/push1.png" alt="MCB Switch" width="25"
+                            height="25">
+                    </div>
+                    <div style="top:-1em;">
+                        <img id="myimage" class="mcbSwitch" src="/static/images/mcboff.png" alt="MCB Switch"
+                            onclick="mcbonoff();" width="78" height="120">
+                    </div>
+                </div>
+
+                <!--rectifier prev-->
+                <div style="position: absolute; left: 10em; top: 9.5em;">
+                    <!--line1-->
+                    <div
+                        style="position: absolute; top: 8.5em; left: -4em; width: 64px; height: 5px; background-color: #b60c0c;">
+                    </div>
+                    <!--line2-->
+                    <div
+                        style="position: absolute; top: 11.7em; left: -7em; width: 112px; height: 5px; background-color: #b60c0c;">
+                    </div>
+                    <!--line3-->
+                    <div
+                        style="position: absolute; top: 7.2em; left: -4em; width: 5px; height: 26px; background-color: #b60c0c;">
+                    </div>
+                    <!--line4-->
+                    <div
+                        style="position: absolute; top: 7.2em; left: -7em; width: 5px; height: 74px; background-color: #b60c0c;">
+                    </div>
+                    <div style="background-color: rgb(48, 59, 55); background-size: auto; padding: 2px;">
+                        <img src="../../../static/sem4/images/rectifier_prev.png" alt="">
+                    </div>
+                </div>
+
+                <!--Rectifier-->
+                <div class="rectifier">
+                    <div class="rectifier-diode">
+                        <img src="../../../static/sem4/images/electronic_component_diode.png" alt="">
+                    </div>
+                    <div></div>
+                    <div class="rectifier-diode">
+                        <img src="../../../static/sem4/images/electronic_component_diode.png" alt="">
+                    </div>
+                </div>
+
+                <!--DC motor-->
+                <div class="dc-motor">
+                    <h3 style="color: aliceblue;">DC Motor</h3>
+                    <img src="../../../static/sem4/images/dc_motor1.jpg" alt="">
+                    <div style="display: flex;">
+                        <div class="rang" style="position: relative; top: -1.2em;">
+                            <div class="rang-title2">
+                                <input class="rang-number2" id="show1" type="text" value="0" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div style="margin-left: 1em;">
+                            <input class="rang-slider" disabled="true" id="range1" type="range" min="0" max="8"
+                                value="0" />
+                        </div>
+                    </div>
+
+                </div>
+                <!--rotor inner and outer-->
+                <div style="position: absolute; width: 120px; height: 120px; left: 46.6em; top: 0;">
+                    <div style="position: relative;">
+                        <img src="/static/images/Rotorouter.png" class="rotate1"
+                            style="position: relative; max-width: 100%; max-height: 100%;">
+                        <img src="/static/images/Rotorinner.png" class="rotate" id="cirmover"
+                            style="position: relative; max-width: 52%; max-height: 52%; top: -5.9em; left: 1.8em;">
+                    </div>
+                    <div class="rang" style="position: relative; top: -5em; left: -2.5em;">
+                        <div class="rang-title">
+                            <input class="rang-numberL" id="show01" type="text" value="0" disabled="disabled" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Linker-->
+                <div
+                    style="background-color: #000000; position: absolute; left: 45em; top: 10em; width: 175px; height: 20px; z-index: 100; border-radius: 5px;">
+                </div>
+
+                <!--DC Generator-->
+                <div class="dc-generator">
+                    <h5 style="background-color: #404040; padding: 10px; margin: 0px; color: aliceblue; width: 96%;">
+                        DC
+                        Generator
+                        <br>
+                        [1 HP, 220V, I<sub>a</sub>=5.1A, I<sub>f</sub>=0.55A, 1500 RPM
+                    </h5>
+                    <img src="../../../static/sem4/images/dc_generator.png" alt="">
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <div class="rang" style="position: relative; left: 1em; top: -1em;">
+                            <div class="rang-title2">
+                                <input class="rang-number2" id="show2" type="text" value="0" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div>
+                            <input class="rang-slider" disabled="true" id="range2" type="range" min="0" max="10"
+                                value="0" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--AMMETER-->
+                <div style="position: absolute;left: 46em; top: 17em; width: 160px; height: 140px;">
+                    <img src="/static/images/Ammeter.png" alt="Ammeter" width="100%">
+                    <div class="meter2" style="position: relative;">
+                        <div class="rang" style="z-index: 100; position: relative; top: -13em; left: -1em;">
+                            <div class="rang-title">
+                                <input class="rang-numberL" id="show02" type="text" value="0" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div>
+                            <svg style="position: relative; top: -25em; left: -3.5em; width:220px;">
+                                <polygon class="meter-clock" id="meter1" points="132,150 137,100 143,150"></polygon>
+                                <circle class="meter-circle" r="6" cx="137" cy="145"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!--VOLTMETER-->
+                <div style="position: absolute;left: 73em;top: 0.5em; width: 180px; height: 150px;">
+                    <img src="/static/images/Voltmeter.png" alt="Ammeter" width="100%">
+                    <div class="meter2" style="position: relative;">
+                        <div class="rang" style="z-index: 100; position: relative; top: -14em; left: -0.5em;">
+                            <div class="rang-title">
+                                <input class="rang-numberL" id="show03" type="text" value="0" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div>
+                            <svg style="position: relative; top: -25.6em; left: -2.9em; width: 220px">
+                                <polygon class="meter-clock" id="meter2" points="133,140 137,90 145,150"></polygon>
+                                <circle class="meter-circle" r="8" cx="137" cy="145"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <div class="column40">
+                <div style="position: relative; display: flex; flex-direction: row;">
+                    <table id="table1" class="table" style="flex: 3;">
+                        <tr>
+                            <th>Sl. No.</th>
+                            <th>Speed (RPM)</th>
+                            <th>Increasing
+                                Field Current (A)</th>
+                            <th>Induced EMF (V)</th>
+                        </tr>
+                    </table>
+                    <table id="table2" class="table" style="flex: 2;">
+                        <tr>
+                            <th style=" border-left: 0;">Decreasing
+                                Field Current (A)
+                            </th>
+                            <th>Induced EMF (V)</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="column30">
+                <b>Magnetization curve (OCC) of the DC generator</b>
+                <b style="margin: 0;">(Decreasing field current)</b>
+                <div class="container" style="position:relative;">
+                    <div class="box" id="myDiv1" style="width:350px;height:350px;"></div>
+                </div>
+            </div>
+            <div class="column30">
+                <b>Magnetization curve (OCC) of the DC generator</b>
+                <b style="margin: 0;">(Increasing field current)</b>
+                <div class="container" style="position:relative;">
+                    <div class="box" id="myDiv2" style="width:350px;height:350px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div><u><B>Instructions</B></u><br>
+            <span>
+                <B>Step 1: </B>Make the proper connection by clicking the node as instructed below. If the wire is
+                misplaced, click the node number to deattach the nodes' wire. <br>
+                <table>
+                    <tr>
+                        <td><B>From</B></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td><B>To</B></td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                </table>
+                <B>Step 2: </B>Click "Check" button.
+                <li>if connection is correct, an alert appers. Click ok. Now, go to step 4.</li>
+                <li>if connection is wrong, an alert appers. Click ok. Now, go to step 3.</li>
+                <B>Step 3: </B>Check the connection, if incorrect, click on node <b>number</b> to remove any
+                particular connection(s) or click on reset button and start from step 1.<br>
+                <B>Step 4: </B>Switch on the Power Supply<br>
+                <B>Step 5: </B>Follow the procedure<br>
+                <B>Step 6: </B> Click "Print" button, to print the full connections with graph and table in
+                landscape mode.
+
+            </span>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="footer noPrint"
+        style="text-align: center; position: relative; top: 2em; background-color:rgb(236, 192, 126);">
+        <p style="font-size: 14.5px;"><b>Developed by <a href="https://github.com/pulak777" target="_blank">Pulak
+                    Deyashi</a></b></p>
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 13px;"
+            ;>under supervision of</p>
+        <div>
+            <p>
+                <a href="https://stcet.ac.in/department/faculty/indrayudh-bandyopadhyay/"><img
+                        src="https://stcet.ac.in/media/CACHE/images/faculty/IB/3859518f5164f79c6fb9f17433850725.jpg"
+                        width="40px" ; height="50px" ; alt="IB Sir"></a>
+            <div style="font-size: 14px;">
+                <b>Dr. Indrayudh Bandyopadhyay</b>
+                <a href="mailto:ayudh.indra@gmail.com">(Email)</a>
+            </div>
+            </p>
+            <p>
+                <a href="https://stcet.ac.in/department/faculty/sudip-chakraborty/"><img
+                        src="https://stcet.ac.in/media/faculty/Sudip.Chackraborty.jpg" width="40px" ; height="50px" ;
+                        alt="SDC Sir"></a>
+            <div style="font-size: 14px;">
+                <b>Prof. Sudip Chakraborty</b>
+                <a href="mailto:imsudip.17@gmail.com">(Email)</a>
+            </div>
+            </p>
+        </div>
+        <div>
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12.5px;">Inspired from <a
+                    href="https://ems-iitr.vlabs.ac.in/" target="_blank">ems-iitr.vlabs.ac.in</a></p>
+        </div>
+    </div>
+
+
+    <script src="/static/sem4/js/jsplumb1.js"></script>
+    <script src="/static/sem4/js/exp1a.js"></script>
+
+</body>
+
+</html>

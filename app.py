@@ -54,6 +54,12 @@ def exp6():
 def exp10():
     return render_template('simulations/sim10.html')
 
+#for 4th sem experiments 
+
+@app.route('/Study_of_the_Magnetization_Characteristics_of_a_Separately_Excited_DC_Generator/simulation')
+def s4sim1a():
+    return render_template('sem4/simulations/exp1a.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
 
