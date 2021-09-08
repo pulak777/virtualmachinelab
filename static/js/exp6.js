@@ -446,6 +446,7 @@ jsPlumb.ready(function () {
         if (is_connected_10_5 && !unallowed_connection_present) {
             alert("Alert ! Correct connection proceed to take reading.");
             document.getElementById("check-button").disabled = true;
+            document.querySelector("#connection-table").innerHTML = "";
             rightconnection = true;
             disable_all();
         }
@@ -608,7 +609,7 @@ function rotaronoff() {
         if (rotoroffstate == true) {
             rangeMeter.disabled = false;
             rangeMeter.value = 1;
-            setTimeout(function(){
+            setTimeout(function () {
                 alert("Start moving the slider");
             }, 1000);
             rangeChange();
@@ -636,7 +637,7 @@ function rangeChange() {
     if (val == 10) {
         document.querySelector("#range").disabled = true;
         document.querySelector("#graph").disabled = false;
-        setTimeout(function(){
+        setTimeout(function () {
             alert("Click on graph");
         }, 1000);
         return;
@@ -696,7 +697,7 @@ function drawgraph() {
     };
     Plotly.newPlot('myDiv', data, layout, { showSendToCloud: true });
 
-    setTimeout(function(){
+    setTimeout(function () {
         alert("CONGRATULATIONS YOU HAVE MADE IT**************************************NO MORE EXPERIMENTS LEFT****************CHEERS");
     }, 2000);
 }

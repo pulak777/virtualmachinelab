@@ -1,11 +1,18 @@
 body {
-  background-color: white;
-
+  display: flex;
+  flex-direction: column;
+  width: 1360px;
+  padding: 50px;
+  padding-top: 0;
+  border: 0;
+}
+body > div:nth-child(3) {
+  margin-top: 30px;
 }
 
 .demo {
   /* for IE10+ touch devices */
-  touch-action:none;
+  touch-action: none;
 }
 /** JSPLUMB ARTEFACTS **/
 .jtk-overlay {
@@ -22,8 +29,7 @@ body {
 }
 
 /** ELEMENTS **/
-.littledot
-{
+.littledot {
   cursor: pointer;
   width: 12px;
   height: 12px;
@@ -32,8 +38,6 @@ body {
   position: absolute;
   border-radius: 31px;
 }
-
-
 
 .littledot-hover-hover {
   border: 2px solid orange;
@@ -175,7 +179,6 @@ body {
   left: 36em;
 }
 
-
 #ld29 {
   top: 19.5em;
   left: 15em;
@@ -192,7 +195,6 @@ body {
   top: 32.5em;
   left: 21em;
 }
-
 
 #ld33 {
   top: 19.5em;
@@ -211,18 +213,15 @@ body {
   left: 9em;
 }
 
-
-
-path, .jtk-endpoint {
+path,
+.jtk-endpoint {
   cursor: pointer;
 }
 
-
 #wrapper {
-  width:100%;
+  width: 100%;
 }
-div
-{
+div {
   box-sizing: border-box;
   resize: both;
 }
@@ -232,7 +231,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32; 
+  color: #222d32;
 }
 .column42 {
   float: left;
@@ -240,7 +239,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32; 
+  color: #222d32;
 }
 .column48 {
   float: left;
@@ -248,7 +247,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32; 
+  color: #222d32;
 }
 .column40 {
   float: left;
@@ -256,7 +255,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32; 
+  color: #222d32;
 }
 .column17 {
   float: left;
@@ -264,7 +263,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column23 {
   float: left;
@@ -272,7 +271,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column24 {
   float: left;
@@ -280,7 +279,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column14 {
   float: left;
@@ -288,7 +287,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column15 {
   float: left;
@@ -296,7 +295,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column16 {
   float: left;
@@ -304,7 +303,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column30 {
   float: left;
@@ -318,7 +317,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column34 {
   float: left;
@@ -326,7 +325,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column20 {
   float: left;
@@ -334,7 +333,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column41 {
   float: left;
@@ -342,7 +341,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .column10 {
   float: left;
@@ -350,7 +349,7 @@ div
   padding: 10px;
   height: 300px;
   border-style: solid;
-  color:#222d32;
+  color: #222d32;
 }
 .slidecontainer {
   width: 100%;
@@ -364,8 +363,8 @@ div
   background: grey;
   outline: none;
   opacity: 1;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 .slider:hover {
@@ -395,19 +394,17 @@ div
   display: table;
   clear: both;
 }
-.rotorOuter
-  {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-.rotorInner
-  {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-  }
-  @keyframes rotations {
+.rotorOuter {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.rotorInner {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+@keyframes rotations {
   from {
     transform: rotate(10deg);
   }
@@ -427,7 +424,8 @@ div
   }
 }
 
-th, td {
+th,
+td {
   border: 1px solid black;
   padding-left: 0.4em;
   padding-right: 0.4em;

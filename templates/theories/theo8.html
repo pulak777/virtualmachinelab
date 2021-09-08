@@ -1,576 +1,2676 @@
-
 <html>
-    <head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-    <style type="text/css">
-    span.cls_002{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_002{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_003{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_003{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_005{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_005{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_006{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_006{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_007{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_007{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_004{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_004{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_012{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_012{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_010{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_010{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_011{font-family:Times,serif;font-size:7.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_011{font-family:Times,serif;font-size:7.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_009{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_009{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_013{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_013{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_014{font-family:Times,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_014{font-family:Times,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_016{font-family:Times,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_016{font-family:Times,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_017{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_017{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_015{font-family:Times,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_015{font-family:Times,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_018{font-family:Arial,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    div.cls_018{font-family:Arial,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    span.cls_020{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_020{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_022{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_022{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_023{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_023{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_021{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_021{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_008{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_008{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_024{font-family:Times,serif;font-size:11.7px;color:rgb(0, 0, 0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_024{font-family:Times,serif;font-size:11.7px;color:rgb(0, 0, 0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_025{font-family:Times,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_025{font-family:Times,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_028{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_028{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_029{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_029{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_026{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_026{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_027{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_027{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_032{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_032{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_033{font-family:Arial,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_033{font-family:Arial,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_030{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_030{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_031{font-family:Arial,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_031{font-family:Arial,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_034{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_034{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_035{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_035{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_036{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_036{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_037{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_037{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_038{font-family:Times,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_038{font-family:Times,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_117{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
-    div.cls_117{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_040{font-family:Times,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_040{font-family:Times,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_039{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_039{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_041{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_041{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_042{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_042{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_043{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    div.cls_043{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    span.cls_046{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_046{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_045{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_045{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_044{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_044{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_048{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_048{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_047{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_047{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_051{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_051{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_050{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_050{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_049{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_049{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_053{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_053{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_052{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_052{font-family:Times,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_054{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_054{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_055{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_055{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_057{font-family:Arial,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_057{font-family:Arial,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_056{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_056{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_059{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_059{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_060{font-family:Arial,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_060{font-family:Arial,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_058{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_058{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_062{font-family:Times,serif;font-size:10.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_062{font-family:Times,serif;font-size:10.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_063{font-family:Arial,serif;font-size:10.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_063{font-family:Arial,serif;font-size:10.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_061{font-family:Times,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_061{font-family:Times,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_064{font-family:Times,serif;font-size:13.7px;color:rgb(0, 0, 0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_064{font-family:Times,serif;font-size:13.7px;color:rgb(0, 0, 0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_065{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_065{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_066{font-family:"Calibri",serif;font-size:9.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_066{font-family:"Calibri",serif;font-size:9.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_067{font-family:"Calibri Bold",serif;font-size:9.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_067{font-family:"Calibri Bold",serif;font-size:9.8px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_068{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    div.cls_068{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    span.cls_071{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_071{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_072{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_072{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_075{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_075{font-family:Times,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_073{font-family:Arial,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_073{font-family:Arial,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_074{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_074{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_078{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_078{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_079{font-family:Times,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_079{font-family:Times,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_080{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_080{font-family:Times,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_076{font-family:Arial,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_076{font-family:Arial,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_077{font-family:Times,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_077{font-family:Times,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_081{font-family:Times,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_081{font-family:Times,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_083{font-family:Times,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_083{font-family:Times,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_084{font-family:Times,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_084{font-family:Times,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_082{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_082{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_086{font-family:Times,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_086{font-family:Times,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_085{font-family:Arial,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_085{font-family:Arial,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_118{font-family:Times,serif;font-size:17.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: underline}
-    div.cls_118{font-family:Times,serif;font-size:17.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    span.cls_087{font-family:Times,serif;font-size:8.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_087{font-family:Times,serif;font-size:8.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_091{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_091{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_088{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_088{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_089{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_089{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_092{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_092{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_090{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_090{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_096{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_096{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_093{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_093{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_094{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_094{font-family:Times,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_097{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_097{font-family:Arial,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_095{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_095{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_099{font-family:Times,serif;font-size:11.7px;color:rgb(0, 0, 0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_099{font-family:Times,serif;font-size:11.7px;color:rgb(0, 0, 0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_119{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: underline}
-    div.cls_119{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-    span.cls_101{font-family:Times,serif;font-size:12.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_101{font-family:Times,serif;font-size:12.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_102{font-family:Times,serif;font-size:8.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_102{font-family:Times,serif;font-size:8.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_019{font-family:Times,serif;font-size:12.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_019{font-family:Times,serif;font-size:12.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_120{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
-    div.cls_120{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_103{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_103{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_106{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_106{font-family:Times,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_121{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
-    div.cls_121{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_107{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    div.cls_107{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-    span.cls_104{font-family:Arial,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_104{font-family:Arial,serif;font-size:11.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_105{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_105{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_098{font-family:Arial,serif;font-size:11.7px;color:rgb(0, 0, 0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_098{font-family:Arial,serif;font-size:11.7px;color:rgb(0, 0, 0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_109{font-family:Times,serif;font-size:7.9px;color:rgb(0, 0, 0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_109{font-family:Times,serif;font-size:7.9px;color:rgb(0, 0, 0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_110{font-family:Times,serif;font-size:13.7px;color:rgb(0, 0, 0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_110{font-family:Times,serif;font-size:13.7px;color:rgb(0, 0, 0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_111{font-family:"Palatino Linotype",serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_111{font-family:"Palatino Linotype",serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_112{font-family:"Calibri",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_112{font-family:"Calibri",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_113{font-family:"Calibri Bold",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_113{font-family:"Calibri Bold",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_114{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_114{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    span.cls_115{font-family:"Calibri",serif;font-size:9.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    div.cls_115{font-family:"Calibri",serif;font-size:9.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-    span.cls_116{font-family:"Calibri Bold",serif;font-size:9.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    div.cls_116{font-family:"Calibri Bold",serif;font-size:9.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-    </style>
-<body>
-    <div style="text-align: center; position: relative; top: 10px; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test/simulation">Go to Simulation</a></div>
 
-<div style="position:absolute;left:50%;margin-left:-297px;top:100px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background13.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:96.48px;top:104.47px" class="cls_002"><span class="cls_002">Experiment No:</span><span class="cls_003"> 8</span></div>
-    <div style="position:absolute;left:96.48px;top:135.74px" class="cls_005"><span class="cls_005">Title:</span><span class="cls_006"> To determine the direct axis reactance</span></div>
-    <div style="position:absolute;left:368.24px;top:135.74px" class="cls_006"><span class="cls_006">[X</span><span class="cls_087"><sub>d</sub></span><span class="cls_006">] & quadrature axis</span></div>
-    <div style="position:absolute;left:96.48px;top:151.46px" class="cls_006"><span class="cls_006">reactance [X</span><span class="cls_087"><sub>q</sub></span><span class="cls_006">] of a 3 phase synchronous machine by slip test</span></div>
-    <div style="position:absolute;left:96.48px;top:181.04px" class="cls_007"><span class="cls_007">Objective:</span></div>
-    <div style="position:absolute;left:96.48px;top:194.24px" class="cls_004"><span class="cls_004">1.</span></div>
-    <div style="position:absolute;left:118.32px;top:194.24px" class="cls_004"><span class="cls_004">To perform experiment on a salient pole synchronous machine to find out the</span></div>
-    <div style="position:absolute;left:96.48px;top:207.68px" class="cls_004"><span class="cls_004">following:</span></div>
-    <div style="position:absolute;left:189.12px;top:221.12px" class="cls_004"><span class="cls_004">a.</span><span class="cls_008"> </span><span class="cls_004"> Direct axis reactance (X</span><span class="cls_038"><sub>d</sub></span><span class="cls_004">)</span></div>
-    <div style="position:absolute;left:189.12px;top:234.56px" class="cls_004"><span class="cls_004">b.</span></div>
-    <div style="position:absolute;left:223.44px;top:234.56px" class="cls_004"><span class="cls_004">Quadrature axis reactance (X</span><span class="cls_038"><sub>q</sub></span><span class="cls_004">)</span></div>
-    <div style="position:absolute;left:96.48px;top:261.68px" class="cls_007"><span class="cls_007">The Experiment Covers the Course Outcomes:</span></div>
-    <div style="position:absolute;left:96.48px;top:288.56px" class="cls_007"><span class="cls_007">Bloom’s Cognitive Domain:</span></div>
-    <div style="position:absolute;left:96.48px;top:328.70px" class="cls_005"><span class="cls_005">Basic Theory:</span></div>
-    <div style="position:absolute;left:96.48px;top:371.72px" class="cls_004"><span class="cls_004">In a 3-phase cylindrical rotor synchronous machine, the air-gap is uniform in between</span></div>
-    <div style="position:absolute;left:96.48px;top:391.76px" class="cls_004"><span class="cls_004">stator and rotor; hence reactance of the machine remains constant. In a salient pole</span></div>
-    <div style="position:absolute;left:96.48px;top:411.92px" class="cls_004"><span class="cls_004">machine however, air-gap length varies from minimum to maximum, so reactance</span></div>
-    <div style="position:absolute;left:96.48px;top:432.08px" class="cls_004"><span class="cls_004">varies from maximum to minimum. These components are taken along (i) the axis of</span></div>
-    <div style="position:absolute;left:96.48px;top:452.24px" class="cls_004"><span class="cls_004">poles and</span></div>
-    <div style="position:absolute;left:150.84px;top:452.24px" class="cls_004"><span class="cls_004">(ii) axis quadrature to this. These are also known as direct axis and</span></div>
-    <div style="position:absolute;left:96.48px;top:472.40px" class="cls_004"><span class="cls_004">quadrature axis respectively. The component of armature MMF acting along the direct</span></div>
-    <div style="position:absolute;left:96.48px;top:492.56px" class="cls_004"><span class="cls_004">axis has to overcome lesser reluctance as compared to the component of armature</span></div>
-    <div style="position:absolute;left:96.48px;top:512.60px" class="cls_004"><span class="cls_004">MMF acting along quadrature axis, and can therefore , establish more flux. On the</span></div>
-    <div style="position:absolute;left:96.48px;top:532.88px" class="cls_004"><span class="cls_004">other hand, the magnetic circuit along quadrature axis path has higher reluctance and,</span></div>
-    <div style="position:absolute;left:96.48px;top:552.92px" class="cls_004"><span class="cls_004">therefore, quadrature axis MMF will establish lesser flux. Under these conditions we</span></div>
-    <div style="position:absolute;left:96.48px;top:573.20px" class="cls_004"><span class="cls_004">define two reactances as follows.</span></div>
-    <div style="position:absolute;left:96.48px;top:593.24px" class="cls_004"><span class="cls_004">Direct axis reactance (along pole axis)</span></div>
-    <div style="position:absolute;left:398.61px;top:593.24px" class="cls_004"><span class="cls_004">= X</span><span class="cls_038"><sub>d</sub></span></div>
-    <div style="position:absolute;left:96.48px;top:613.40px" class="cls_004"><span class="cls_004">Quadrature axis reactance (along inter-polar axis)</span></div>
-    <div style="position:absolute;left:363.60px;top:613.40px" class="cls_004"><span class="cls_004">= X</span><span class="cls_038"><sub>q</sub></span></div>
-    <div style="position:absolute;left:96.48px;top:645.20px" class="cls_004"><span class="cls_004">To aid the analysis a model, known as the ‘two-reaction model” is proposed where the</span></div>
-    <div style="position:absolute;left:96.48px;top:660.68px" class="cls_004"><span class="cls_004">armature winding is considered to be made up of two coils of equal turns, one located</span></div>
-    <div style="position:absolute;left:96.48px;top:676.16px" class="cls_004"><span class="cls_004">along direct axis and another located along quadrature axis. One is having reactance</span></div>
-    <div style="position:absolute;left:96.48px;top:691.64px" class="cls_004"><span class="cls_004">equal to X</span><span class="cls_038"><sub>d</sub></span><span class="cls_004">, and the other X</span><span class="cls_038"><sub>q</sub></span><span class="cls_004">.</span></div>
-    <div style="position:absolute;left:96.48px;top:716.72px" class="cls_004"><span class="cls_004">From the slip test, the values of X</span><span class="cls_038"><sub>d</sub></span><span class="cls_004"> and X</span><span class="cls_038"><sub>q</sub></span><span class="cls_004"> can be determined. The synchronous</span></div>
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <style type="text/css">
+        span.cls_002 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_002 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_003 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_003 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_005 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_005 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_006 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_006 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_007 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_007 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_004 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_004 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_012 {
+            font-family: Times, serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_012 {
+            font-family: Times, serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_010 {
+            font-family: Arial, serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_010 {
+            font-family: Arial, serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_011 {
+            font-family: Times, serif;
+            font-size: 7.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_011 {
+            font-family: Times, serif;
+            font-size: 7.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_009 {
+            font-family: Times, serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_009 {
+            font-family: Times, serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_013 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_013 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_014 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_014 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_016 {
+            font-family: Times, serif;
+            font-size: 10.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_016 {
+            font-family: Times, serif;
+            font-size: 10.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_017 {
+            font-family: Arial, serif;
+            font-size: 10.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_017 {
+            font-family: Arial, serif;
+            font-size: 10.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_015 {
+            font-family: Times, serif;
+            font-size: 6.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_015 {
+            font-family: Times, serif;
+            font-size: 6.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_018 {
+            font-family: Arial, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_018 {
+            font-family: Arial, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_020 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_020 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_022 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_022 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_023 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_023 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_021 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_021 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_008 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_008 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_024 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_024 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_025 {
+            font-family: Times, serif;
+            font-size: 10.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_025 {
+            font-family: Times, serif;
+            font-size: 10.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_028 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_028 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_029 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_029 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_026 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_026 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_027 {
+            font-family: Arial, serif;
+            font-size: 7.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_027 {
+            font-family: Arial, serif;
+            font-size: 7.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_032 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_032 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_033 {
+            font-family: Arial, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_033 {
+            font-family: Arial, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_030 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_030 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_031 {
+            font-family: Arial, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_031 {
+            font-family: Arial, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_034 {
+            font-family: Arial, serif;
+            font-size: 7.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_034 {
+            font-family: Arial, serif;
+            font-size: 7.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_035 {
+            font-family: Arial, serif;
+            font-size: 7.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_035 {
+            font-family: Arial, serif;
+            font-size: 7.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_036 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_036 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_037 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_037 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_038 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_038 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_117 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: underline
+        }
+
+        div.cls_117 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_040 {
+            font-family: Times, serif;
+            font-size: 12.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_040 {
+            font-family: Times, serif;
+            font-size: 12.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_039 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_039 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_041 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_041 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_042 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_042 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_043 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_043 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_046 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_046 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_045 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_045 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_044 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_044 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_048 {
+            font-family: Arial, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_048 {
+            font-family: Arial, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_047 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_047 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_051 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_051 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_050 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_050 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_049 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_049 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_053 {
+            font-family: Arial, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_053 {
+            font-family: Arial, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_052 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_052 {
+            font-family: Times, serif;
+            font-size: 11.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_054 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_054 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_055 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_055 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_057 {
+            font-family: Arial, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_057 {
+            font-family: Arial, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_056 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_056 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_059 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_059 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_060 {
+            font-family: Arial, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_060 {
+            font-family: Arial, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_058 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_058 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_062 {
+            font-family: Times, serif;
+            font-size: 10.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_062 {
+            font-family: Times, serif;
+            font-size: 10.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_063 {
+            font-family: Arial, serif;
+            font-size: 10.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_063 {
+            font-family: Arial, serif;
+            font-size: 10.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_061 {
+            font-family: Times, serif;
+            font-size: 6.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_061 {
+            font-family: Times, serif;
+            font-size: 6.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_064 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_064 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_065 {
+            font-family: "Calibri Bold", serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_065 {
+            font-family: "Calibri Bold", serif;
+            font-size: 12.1px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_066 {
+            font-family: "Calibri", serif;
+            font-size: 9.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_066 {
+            font-family: "Calibri", serif;
+            font-size: 9.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_067 {
+            font-family: "Calibri Bold", serif;
+            font-size: 9.8px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_067 {
+            font-family: "Calibri Bold", serif;
+            font-size: 9.8px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_068 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_068 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_071 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_071 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_072 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_072 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_075 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_075 {
+            font-family: Times, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_073 {
+            font-family: Arial, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_073 {
+            font-family: Arial, serif;
+            font-size: 11.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_074 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_074 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_078 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_078 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_079 {
+            font-family: Times, serif;
+            font-size: 11.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_079 {
+            font-family: Times, serif;
+            font-size: 11.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_080 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_080 {
+            font-family: Times, serif;
+            font-size: 6.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_076 {
+            font-family: Arial, serif;
+            font-size: 11.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_076 {
+            font-family: Arial, serif;
+            font-size: 11.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_077 {
+            font-family: Times, serif;
+            font-size: 11.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_077 {
+            font-family: Times, serif;
+            font-size: 11.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_081 {
+            font-family: Times, serif;
+            font-size: 11.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_081 {
+            font-family: Times, serif;
+            font-size: 11.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_083 {
+            font-family: Times, serif;
+            font-size: 11.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_083 {
+            font-family: Times, serif;
+            font-size: 11.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_084 {
+            font-family: Times, serif;
+            font-size: 6.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_084 {
+            font-family: Times, serif;
+            font-size: 6.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_082 {
+            font-family: Arial, serif;
+            font-size: 11.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_082 {
+            font-family: Arial, serif;
+            font-size: 11.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_086 {
+            font-family: Times, serif;
+            font-size: 6.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_086 {
+            font-family: Times, serif;
+            font-size: 6.5px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_085 {
+            font-family: Arial, serif;
+            font-size: 13.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_085 {
+            font-family: Arial, serif;
+            font-size: 13.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_118 {
+            font-family: Times, serif;
+            font-size: 17.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline
+        }
+
+        div.cls_118 {
+            font-family: Times, serif;
+            font-size: 17.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_087 {
+            font-family: Times, serif;
+            font-size: 8.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_087 {
+            font-family: Times, serif;
+            font-size: 8.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_091 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_091 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_088 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_088 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_089 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_089 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_092 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_092 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_090 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_090 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_096 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_096 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_093 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_093 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_094 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_094 {
+            font-family: Times, serif;
+            font-size: 6.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_097 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_097 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_095 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_095 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_099 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_099 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_119 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline
+        }
+
+        div.cls_119 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_101 {
+            font-family: Times, serif;
+            font-size: 12.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_101 {
+            font-family: Times, serif;
+            font-size: 12.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_102 {
+            font-family: Times, serif;
+            font-size: 8.3px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_102 {
+            font-family: Times, serif;
+            font-size: 8.3px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_019 {
+            font-family: Times, serif;
+            font-size: 12.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_019 {
+            font-family: Times, serif;
+            font-size: 12.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_120 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: underline
+        }
+
+        div.cls_120 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_103 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_103 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_106 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_106 {
+            font-family: Times, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_121 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: underline
+        }
+
+        div.cls_121 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_107 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_107 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_104 {
+            font-family: Arial, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_104 {
+            font-family: Arial, serif;
+            font-size: 11.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_105 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_105 {
+            font-family: Times, serif;
+            font-size: 7.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_098 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_098 {
+            font-family: Arial, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_109 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_109 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_110 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_110 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_111 {
+            font-family: "Palatino Linotype", serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_111 {
+            font-family: "Palatino Linotype", serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_112 {
+            font-family: "Calibri", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_112 {
+            font-family: "Calibri", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_113 {
+            font-family: "Calibri Bold", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_113 {
+            font-family: "Calibri Bold", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_114 {
+            font-family: "Calibri Bold", serif;
+            font-size: 11.1px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_114 {
+            font-family: "Calibri Bold", serif;
+            font-size: 11.1px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_115 {
+            font-family: "Calibri", serif;
+            font-size: 9.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_115 {
+            font-family: "Calibri", serif;
+            font-size: 9.0px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_116 {
+            font-family: "Calibri Bold", serif;
+            font-size: 9.0px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_116 {
+            font-family: "Calibri Bold", serif;
+            font-size: 9.0px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+    </style>
+
+<body>
+    <div
+        style="text-align: center; position: relative; top: 10px; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <a
+            href="/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test/simulation#wrapper">Go
+            to Simulation</a></div>
+
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:100px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background13.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:96.48px;top:104.47px" class="cls_002"><span class="cls_002">Experiment
+                No:</span><span class="cls_003"> 8</span></div>
+        <div style="position:absolute;left:96.48px;top:135.74px" class="cls_005"><span
+                class="cls_005">Title:</span><span class="cls_006"> To determine the direct axis reactance</span></div>
+        <div style="position:absolute;left:368.24px;top:135.74px" class="cls_006"><span class="cls_006">[X</span><span
+                class="cls_087"><sub>d</sub></span><span class="cls_006">] & quadrature axis</span></div>
+        <div style="position:absolute;left:96.48px;top:151.46px" class="cls_006"><span class="cls_006">reactance
+                [X</span><span class="cls_087"><sub>q</sub></span><span class="cls_006">] of a 3 phase synchronous
+                machine by slip test</span></div>
+        <div style="position:absolute;left:96.48px;top:181.04px" class="cls_007"><span class="cls_007">Objective:</span>
+        </div>
+        <div style="position:absolute;left:96.48px;top:194.24px" class="cls_004"><span class="cls_004">1.</span></div>
+        <div style="position:absolute;left:118.32px;top:194.24px" class="cls_004"><span class="cls_004">To perform
+                experiment on a salient pole synchronous machine to find out the</span></div>
+        <div style="position:absolute;left:96.48px;top:207.68px" class="cls_004"><span class="cls_004">following:</span>
+        </div>
+        <div style="position:absolute;left:189.12px;top:221.12px" class="cls_004"><span class="cls_004">a.</span><span
+                class="cls_008"> </span><span class="cls_004"> Direct axis reactance (X</span><span
+                class="cls_038"><sub>d</sub></span><span class="cls_004">)</span></div>
+        <div style="position:absolute;left:189.12px;top:234.56px" class="cls_004"><span class="cls_004">b.</span></div>
+        <div style="position:absolute;left:223.44px;top:234.56px" class="cls_004"><span class="cls_004">Quadrature axis
+                reactance (X</span><span class="cls_038"><sub>q</sub></span><span class="cls_004">)</span></div>
+        <div style="position:absolute;left:96.48px;top:261.68px" class="cls_007"><span class="cls_007">The Experiment
+                Covers the Course Outcomes:</span></div>
+        <div style="position:absolute;left:96.48px;top:288.56px" class="cls_007"><span class="cls_007">Bloom’s Cognitive
+                Domain:</span></div>
+        <div style="position:absolute;left:96.48px;top:328.70px" class="cls_005"><span class="cls_005">Basic
+                Theory:</span></div>
+        <div style="position:absolute;left:96.48px;top:371.72px" class="cls_004"><span class="cls_004">In a 3-phase
+                cylindrical rotor synchronous machine, the air-gap is uniform in between</span></div>
+        <div style="position:absolute;left:96.48px;top:391.76px" class="cls_004"><span class="cls_004">stator and rotor;
+                hence reactance of the machine remains constant. In a salient pole</span></div>
+        <div style="position:absolute;left:96.48px;top:411.92px" class="cls_004"><span class="cls_004">machine however,
+                air-gap length varies from minimum to maximum, so reactance</span></div>
+        <div style="position:absolute;left:96.48px;top:432.08px" class="cls_004"><span class="cls_004">varies from
+                maximum to minimum. These components are taken along (i) the axis of</span></div>
+        <div style="position:absolute;left:96.48px;top:452.24px" class="cls_004"><span class="cls_004">poles and</span>
+        </div>
+        <div style="position:absolute;left:150.84px;top:452.24px" class="cls_004"><span class="cls_004">(ii) axis
+                quadrature to this. These are also known as direct axis and</span></div>
+        <div style="position:absolute;left:96.48px;top:472.40px" class="cls_004"><span class="cls_004">quadrature axis
+                respectively. The component of armature MMF acting along the direct</span></div>
+        <div style="position:absolute;left:96.48px;top:492.56px" class="cls_004"><span class="cls_004">axis has to
+                overcome lesser reluctance as compared to the component of armature</span></div>
+        <div style="position:absolute;left:96.48px;top:512.60px" class="cls_004"><span class="cls_004">MMF acting along
+                quadrature axis, and can therefore , establish more flux. On the</span></div>
+        <div style="position:absolute;left:96.48px;top:532.88px" class="cls_004"><span class="cls_004">other hand, the
+                magnetic circuit along quadrature axis path has higher reluctance and,</span></div>
+        <div style="position:absolute;left:96.48px;top:552.92px" class="cls_004"><span class="cls_004">therefore,
+                quadrature axis MMF will establish lesser flux. Under these conditions we</span></div>
+        <div style="position:absolute;left:96.48px;top:573.20px" class="cls_004"><span class="cls_004">define two
+                reactances as follows.</span></div>
+        <div style="position:absolute;left:96.48px;top:593.24px" class="cls_004"><span class="cls_004">Direct axis
+                reactance (along pole axis)</span></div>
+        <div style="position:absolute;left:398.61px;top:593.24px" class="cls_004"><span class="cls_004">= X</span><span
+                class="cls_038"><sub>d</sub></span></div>
+        <div style="position:absolute;left:96.48px;top:613.40px" class="cls_004"><span class="cls_004">Quadrature axis
+                reactance (along inter-polar axis)</span></div>
+        <div style="position:absolute;left:363.60px;top:613.40px" class="cls_004"><span class="cls_004">= X</span><span
+                class="cls_038"><sub>q</sub></span></div>
+        <div style="position:absolute;left:96.48px;top:645.20px" class="cls_004"><span class="cls_004">To aid the
+                analysis a model, known as the ‘two-reaction model” is proposed where the</span></div>
+        <div style="position:absolute;left:96.48px;top:660.68px" class="cls_004"><span class="cls_004">armature winding
+                is considered to be made up of two coils of equal turns, one located</span></div>
+        <div style="position:absolute;left:96.48px;top:676.16px" class="cls_004"><span class="cls_004">along direct axis
+                and another located along quadrature axis. One is having reactance</span></div>
+        <div style="position:absolute;left:96.48px;top:691.64px" class="cls_004"><span class="cls_004">equal to
+                X</span><span class="cls_038"><sub>d</sub></span><span class="cls_004">, and the other X</span><span
+                class="cls_038"><sub>q</sub></span><span class="cls_004">.</span></div>
+        <div style="position:absolute;left:96.48px;top:716.72px" class="cls_004"><span class="cls_004">From the slip
+                test, the values of X</span><span class="cls_038"><sub>d</sub></span><span class="cls_004"> and
+                X</span><span class="cls_038"><sub>q</sub></span><span class="cls_004"> can be determined. The
+                synchronous</span></div>
     </div>
-    <div style="position:absolute;left:50%;margin-left:-297px;top:960px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background14.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:96.48px;top:104.84px" class="cls_004"><span class="cls_004">machine is driven by a separate prime mover at a speed slightly different from</span></div>
-    <div style="position:absolute;left:96.48px;top:120.20px" class="cls_004"><span class="cls_004">synchronous speed. The field winding of the synchronous machine is left open and</span></div>
-    <div style="position:absolute;left:96.48px;top:135.68px" class="cls_004"><span class="cls_004">balanced three-phase voltages of reduced magnitude are supplied across the armature</span></div>
-    <div style="position:absolute;left:96.48px;top:151.16px" class="cls_004"><span class="cls_004">terminals. Under these conditions, the relative velocity between the field poles and the</span></div>
-    <div style="position:absolute;left:96.48px;top:166.52px" class="cls_004"><span class="cls_004">rotating armature MMF wave is equal to the difference between synchronous speed</span></div>
-    <div style="position:absolute;left:96.48px;top:182.00px" class="cls_004"><span class="cls_004">and the rotor speed i.e. the slip speed. A small AC voltage appearing across the open</span></div>
-    <div style="position:absolute;left:96.48px;top:197.36px" class="cls_004"><span class="cls_004">field winding indicates that the field poles and the rotating mmf wave are revolving in</span></div>
-    <div style="position:absolute;left:96.48px;top:212.96px" class="cls_004"><span class="cls_004">the same direction which is required in slip test.</span></div>
-    <div style="position:absolute;left:96.48px;top:238.04px" class="cls_004"><span class="cls_004">While rotating, the stator flux passes across the air gap, then through the rotor poles</span></div>
-    <div style="position:absolute;left:96.48px;top:253.52px" class="cls_004"><span class="cls_004">and then back to the stator. Thus, reluctance offered to the flux varies at twice the slip</span></div>
-    <div style="position:absolute;left:96.48px;top:269.00px" class="cls_004"><span class="cls_004">frequency (for a two pole machine) from maximum to minimum. Reluctance is</span></div>
-    <div style="position:absolute;left:96.48px;top:284.48px" class="cls_004"><span class="cls_004">maximum when the RMF axis is along the inter-polar axis (q-axis) and the reluctance</span></div>
-    <div style="position:absolute;left:96.48px;top:299.84px" class="cls_004"><span class="cls_004">is minimum when the RMF axis is directly along the poles (d-axis). Thus, when the</span></div>
-    <div style="position:absolute;left:96.48px;top:315.32px" class="cls_004"><span class="cls_004">RMF axis is along d-axis, then effective reactance offered by the machine is </span><span class="cls_013">X</span><span class="cls_014"><sub>d</sub></span><span class="cls_004">. On the</span></div>
-    <div style="position:absolute;left:96.48px;top:330.80px" class="cls_004"><span class="cls_004">other hand, when the RMF axis gets aligned along q-axis, then effective reactance is</span></div>
-    <div style="position:absolute;left:96.48px;top:346.16px" class="cls_013"><span class="cls_013">X</span><span class="cls_014">q</span><span class="cls_004">. Sincle reluctance along d-axis is much less compared to reluctance along q-axis, it</span></div>
-    <div style="position:absolute;left:96.48px;top:361.64px" class="cls_004"><span class="cls_004">is obvious that </span><span class="cls_013">X</span><span class="cls_014"><sub>d</sub></span></div>
-    <div style="position:absolute;left:189.24px;top:361.64px" class="cls_004"><span class="cls_004">>> </span><span class="cls_013">X</span><span class="cls_014"><sub>q</sub></span><span class="cls_004">, and therefore the current drawn by the machine when the</span></div>
-    <div style="position:absolute;left:96.48px;top:377.00px" class="cls_004"><span class="cls_004">RMF axis is aligned with direct axis is lower than when the RMF axis is aligned with</span></div>
-    <div style="position:absolute;left:96.48px;top:392.60px" class="cls_004"><span class="cls_004">the quadrature axis. Hence, as shown in Fig</span></div>
-    <div style="position:absolute;left:331.30px;top:392.60px" class="cls_004"><span class="cls_004">5.8.1(b), peak value of the power</span></div>
-    <div style="position:absolute;left:96.48px;top:407.96px" class="cls_004"><span class="cls_004">frequency sinusoidal current drawn by the armature varies cyclically at twice the slip</span></div>
-    <div style="position:absolute;left:96.48px;top:423.44px" class="cls_004"><span class="cls_004">frequency with minimum value when machine reactance is </span><span class="cls_013">X</span><span class="cls_014"><sub>d</sub></span><span class="cls_004"> and maximum value</span></div>
-    <div style="position:absolute;left:96.48px;top:438.80px" class="cls_004"><span class="cls_004">when machine reactance is </span><span class="cls_013">X</span><span class="cls_014"><sub>q</sub></span><span class="cls_004">.  Due to voltage drop in the supply lines, the voltage</span></div>
-    <div style="position:absolute;left:96.48px;top:454.40px" class="cls_004"><span class="cls_004">available at armature terminals, as read by the voltmeter, reaches maximum when the</span></div>
-    <div style="position:absolute;left:96.48px;top:469.76px" class="cls_004"><span class="cls_004">current drawn in minimum, while the voltage reaches minimum value when the</span></div>
-    <div style="position:absolute;left:96.48px;top:485.24px" class="cls_004"><span class="cls_004">armature current is maximum. Thus, peak value of the power frequency sinusoidal</span></div>
-    <div style="position:absolute;left:96.48px;top:500.60px" class="cls_004"><span class="cls_004">voltage at the machine terminals also varies cyclically with double the slip frequency,</span></div>
-    <div style="position:absolute;left:96.48px;top:516.20px" class="cls_004"><span class="cls_004">but in the reverse manner as the current variations as shown in Fig 5.8.1(c).</span></div>
-    <div style="position:absolute;left:96.48px;top:541.28px" class="cls_004"><span class="cls_004">From the above discussion, direct and quadrature axis reactance of the alternator can</span></div>
-    <div style="position:absolute;left:96.48px;top:556.64px" class="cls_004"><span class="cls_004">be found using the following equations:</span></div>
-    <div style="position:absolute;left:137.28px;top:582.36px" class="cls_091"><span class="cls_091">V</span></div>
-    <div style="position:absolute;left:144.36px;top:590.21px" class="cls_088"><span class="cls_088">t</span><span class="cls_089"> max</span></div>
-    <div style="position:absolute;left:99.24px;top:589.92px" class="cls_091"><span class="cls_091">X</span></div>
-    <div style="position:absolute;left:116.52px;top:589.92px" class="cls_092"><span class="cls_092">=</span></div>
-    <div style="position:absolute;left:108.24px;top:597.65px" class="cls_088"><span class="cls_088">d</span></div>
-    <div style="position:absolute;left:134.40px;top:599.88px" class="cls_090"><span class="cls_090">3</span><span class="cls_092">×</span><span class="cls_091">I</span></div>
-    <div style="position:absolute;left:155.76px;top:607.73px" class="cls_088"><span class="cls_088">a</span><span class="cls_089">min</span></div>
-    <div style="position:absolute;left:138.00px;top:628.04px" class="cls_096"><span class="cls_096">V</span></div>
-    <div style="position:absolute;left:144.84px;top:635.79px" class="cls_093"><span class="cls_093">t</span><span class="cls_094"> min</span></div>
-    <div style="position:absolute;left:99.12px;top:635.48px" class="cls_096"><span class="cls_096">X</span></div>
-    <div style="position:absolute;left:115.80px;top:635.48px" class="cls_097"><span class="cls_097">=</span></div>
-    <div style="position:absolute;left:107.88px;top:643.35px" class="cls_093"><span class="cls_093">q</span></div>
-    <div style="position:absolute;left:133.80px;top:645.44px" class="cls_095"><span class="cls_095">3</span><span class="cls_097">×</span></div>
-    <div style="position:absolute;left:150.60px;top:645.44px" class="cls_096"><span class="cls_096">I</span></div>
-    <div style="position:absolute;left:155.52px;top:653.31px" class="cls_093"><span class="cls_093">a</span><span class="cls_094">max</span></div>
-    <div style="position:absolute;left:96.48px;top:673.28px" class="cls_095"><span class="cls_095">Here, the armature terminal voltage </span><span class="cls_096">V</span><span class="cls_014"><sub>t</sub></span><span class="cls_095"> and current </span><span class="cls_096">I</span><span class="cls_014"><sub>a</sub></span><span class="cls_095"> are both line quantities, and the</span></div>
-    <div style="position:absolute;left:96.48px;top:688.64px" class="cls_095"><span class="cls_095">machine has been assumed to be star connected.</span></div>
-    <div style="position:absolute;left:96.48px;top:713.96px" class="cls_095"><span class="cls_095">During the slip test, it can be observed that ammeter pointer swing is very wide,</span></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:960px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background14.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:96.48px;top:104.84px" class="cls_004"><span class="cls_004">machine is driven
+                by a separate prime mover at a speed slightly different from</span></div>
+        <div style="position:absolute;left:96.48px;top:120.20px" class="cls_004"><span class="cls_004">synchronous
+                speed. The field winding of the synchronous machine is left open and</span></div>
+        <div style="position:absolute;left:96.48px;top:135.68px" class="cls_004"><span class="cls_004">balanced
+                three-phase voltages of reduced magnitude are supplied across the armature</span></div>
+        <div style="position:absolute;left:96.48px;top:151.16px" class="cls_004"><span class="cls_004">terminals. Under
+                these conditions, the relative velocity between the field poles and the</span></div>
+        <div style="position:absolute;left:96.48px;top:166.52px" class="cls_004"><span class="cls_004">rotating armature
+                MMF wave is equal to the difference between synchronous speed</span></div>
+        <div style="position:absolute;left:96.48px;top:182.00px" class="cls_004"><span class="cls_004">and the rotor
+                speed i.e. the slip speed. A small AC voltage appearing across the open</span></div>
+        <div style="position:absolute;left:96.48px;top:197.36px" class="cls_004"><span class="cls_004">field winding
+                indicates that the field poles and the rotating mmf wave are revolving in</span></div>
+        <div style="position:absolute;left:96.48px;top:212.96px" class="cls_004"><span class="cls_004">the same
+                direction which is required in slip test.</span></div>
+        <div style="position:absolute;left:96.48px;top:238.04px" class="cls_004"><span class="cls_004">While rotating,
+                the stator flux passes across the air gap, then through the rotor poles</span></div>
+        <div style="position:absolute;left:96.48px;top:253.52px" class="cls_004"><span class="cls_004">and then back to
+                the stator. Thus, reluctance offered to the flux varies at twice the slip</span></div>
+        <div style="position:absolute;left:96.48px;top:269.00px" class="cls_004"><span class="cls_004">frequency (for a
+                two pole machine) from maximum to minimum. Reluctance is</span></div>
+        <div style="position:absolute;left:96.48px;top:284.48px" class="cls_004"><span class="cls_004">maximum when the
+                RMF axis is along the inter-polar axis (q-axis) and the reluctance</span></div>
+        <div style="position:absolute;left:96.48px;top:299.84px" class="cls_004"><span class="cls_004">is minimum when
+                the RMF axis is directly along the poles (d-axis). Thus, when the</span></div>
+        <div style="position:absolute;left:96.48px;top:315.32px" class="cls_004"><span class="cls_004">RMF axis is along
+                d-axis, then effective reactance offered by the machine is </span><span class="cls_013">X</span><span
+                class="cls_014"><sub>d</sub></span><span class="cls_004">. On the</span></div>
+        <div style="position:absolute;left:96.48px;top:330.80px" class="cls_004"><span class="cls_004">other hand, when
+                the RMF axis gets aligned along q-axis, then effective reactance is</span></div>
+        <div style="position:absolute;left:96.48px;top:346.16px" class="cls_013"><span class="cls_013">X</span><span
+                class="cls_014">q</span><span class="cls_004">. Sincle reluctance along d-axis is much less compared to
+                reluctance along q-axis, it</span></div>
+        <div style="position:absolute;left:96.48px;top:361.64px" class="cls_004"><span class="cls_004">is obvious that
+            </span><span class="cls_013">X</span><span class="cls_014"><sub>d</sub></span></div>
+        <div style="position:absolute;left:189.24px;top:361.64px" class="cls_004"><span class="cls_004">>> </span><span
+                class="cls_013">X</span><span class="cls_014"><sub>q</sub></span><span class="cls_004">, and therefore
+                the current drawn by the machine when the</span></div>
+        <div style="position:absolute;left:96.48px;top:377.00px" class="cls_004"><span class="cls_004">RMF axis is
+                aligned with direct axis is lower than when the RMF axis is aligned with</span></div>
+        <div style="position:absolute;left:96.48px;top:392.60px" class="cls_004"><span class="cls_004">the quadrature
+                axis. Hence, as shown in Fig</span></div>
+        <div style="position:absolute;left:331.30px;top:392.60px" class="cls_004"><span class="cls_004">5.8.1(b), peak
+                value of the power</span></div>
+        <div style="position:absolute;left:96.48px;top:407.96px" class="cls_004"><span class="cls_004">frequency
+                sinusoidal current drawn by the armature varies cyclically at twice the slip</span></div>
+        <div style="position:absolute;left:96.48px;top:423.44px" class="cls_004"><span class="cls_004">frequency with
+                minimum value when machine reactance is </span><span class="cls_013">X</span><span
+                class="cls_014"><sub>d</sub></span><span class="cls_004"> and maximum value</span></div>
+        <div style="position:absolute;left:96.48px;top:438.80px" class="cls_004"><span class="cls_004">when machine
+                reactance is </span><span class="cls_013">X</span><span class="cls_014"><sub>q</sub></span><span
+                class="cls_004">. Due to voltage drop in the supply lines, the voltage</span></div>
+        <div style="position:absolute;left:96.48px;top:454.40px" class="cls_004"><span class="cls_004">available at
+                armature terminals, as read by the voltmeter, reaches maximum when the</span></div>
+        <div style="position:absolute;left:96.48px;top:469.76px" class="cls_004"><span class="cls_004">current drawn in
+                minimum, while the voltage reaches minimum value when the</span></div>
+        <div style="position:absolute;left:96.48px;top:485.24px" class="cls_004"><span class="cls_004">armature current
+                is maximum. Thus, peak value of the power frequency sinusoidal</span></div>
+        <div style="position:absolute;left:96.48px;top:500.60px" class="cls_004"><span class="cls_004">voltage at the
+                machine terminals also varies cyclically with double the slip frequency,</span></div>
+        <div style="position:absolute;left:96.48px;top:516.20px" class="cls_004"><span class="cls_004">but in the
+                reverse manner as the current variations as shown in Fig 5.8.1(c).</span></div>
+        <div style="position:absolute;left:96.48px;top:541.28px" class="cls_004"><span class="cls_004">From the above
+                discussion, direct and quadrature axis reactance of the alternator can</span></div>
+        <div style="position:absolute;left:96.48px;top:556.64px" class="cls_004"><span class="cls_004">be found using
+                the following equations:</span></div>
+        <div style="position:absolute;left:137.28px;top:582.36px" class="cls_091"><span class="cls_091">V</span></div>
+        <div style="position:absolute;left:144.36px;top:590.21px" class="cls_088"><span class="cls_088">t</span><span
+                class="cls_089"> max</span></div>
+        <div style="position:absolute;left:99.24px;top:589.92px" class="cls_091"><span class="cls_091">X</span></div>
+        <div style="position:absolute;left:116.52px;top:589.92px" class="cls_092"><span class="cls_092">=</span></div>
+        <div style="position:absolute;left:108.24px;top:597.65px" class="cls_088"><span class="cls_088">d</span></div>
+        <div style="position:absolute;left:134.40px;top:599.88px" class="cls_090"><span class="cls_090">3</span><span
+                class="cls_092">×</span><span class="cls_091">I</span></div>
+        <div style="position:absolute;left:155.76px;top:607.73px" class="cls_088"><span class="cls_088">a</span><span
+                class="cls_089">min</span></div>
+        <div style="position:absolute;left:138.00px;top:628.04px" class="cls_096"><span class="cls_096">V</span></div>
+        <div style="position:absolute;left:144.84px;top:635.79px" class="cls_093"><span class="cls_093">t</span><span
+                class="cls_094"> min</span></div>
+        <div style="position:absolute;left:99.12px;top:635.48px" class="cls_096"><span class="cls_096">X</span></div>
+        <div style="position:absolute;left:115.80px;top:635.48px" class="cls_097"><span class="cls_097">=</span></div>
+        <div style="position:absolute;left:107.88px;top:643.35px" class="cls_093"><span class="cls_093">q</span></div>
+        <div style="position:absolute;left:133.80px;top:645.44px" class="cls_095"><span class="cls_095">3</span><span
+                class="cls_097">×</span></div>
+        <div style="position:absolute;left:150.60px;top:645.44px" class="cls_096"><span class="cls_096">I</span></div>
+        <div style="position:absolute;left:155.52px;top:653.31px" class="cls_093"><span class="cls_093">a</span><span
+                class="cls_094">max</span></div>
+        <div style="position:absolute;left:96.48px;top:673.28px" class="cls_095"><span class="cls_095">Here, the
+                armature terminal voltage </span><span class="cls_096">V</span><span
+                class="cls_014"><sub>t</sub></span><span class="cls_095"> and current </span><span
+                class="cls_096">I</span><span class="cls_014"><sub>a</sub></span><span class="cls_095"> are both line
+                quantities, and the</span></div>
+        <div style="position:absolute;left:96.48px;top:688.64px" class="cls_095"><span class="cls_095">machine has been
+                assumed to be star connected.</span></div>
+        <div style="position:absolute;left:96.48px;top:713.96px" class="cls_095"><span class="cls_095">During the slip
+                test, it can be observed that ammeter pointer swing is very wide,</span></div>
     </div>
-    <div style="position:absolute;left:50%;margin-left:-297px;top:1810px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background15.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:96.48px;top:104.84px" class="cls_004"><span class="cls_004">whereas voltmeter swing is small because of low impedance voltage drop in the leads</span></div>
-    <div style="position:absolute;left:96.48px;top:120.20px" class="cls_004"><span class="cls_004">and 3-phaseVariac.</span></div>
-    <div style="position:absolute;left:96.48px;top:145.40px" class="cls_004"><span class="cls_004">With three-phase supply given to the stator coils, an RMF is developed by the stator in</span></div>
-    <div style="position:absolute;left:96.48px;top:160.88px" class="cls_004"><span class="cls_004">the air gap. Thus, as the rotor pole structure is rotated in the air gap, flux linking with</span></div>
-    <div style="position:absolute;left:96.48px;top:176.24px" class="cls_004"><span class="cls_004">the rotor coil changes and an EMF is induced in the rotor coil. Note that the field</span></div>
-    <div style="position:absolute;left:96.48px;top:191.84px" class="cls_004"><span class="cls_004">winding is not supplied with any voltage and is kept open. Thus EMF induced across</span></div>
-    <div style="position:absolute;left:96.48px;top:207.20px" class="cls_004"><span class="cls_004">the two open terminals of the field coil can be recorded with a voltmeter. Frequency of</span></div>
-    <div style="position:absolute;left:96.48px;top:222.68px" class="cls_004"><span class="cls_004">this induced EMF across the open-circuited field winding is same as the rate at which</span></div>
-    <div style="position:absolute;left:96.48px;top:238.04px" class="cls_004"><span class="cls_004">flux linking the field circuit changes, i.e. at the slip frequency. When the RMF axis and</span></div>
-    <div style="position:absolute;left:96.48px;top:253.52px" class="cls_004"><span class="cls_004">the rotor salient pole d-axis coincides with each other, then flux linkage with field</span></div>
-    <div style="position:absolute;left:96.48px;top:269.00px" class="cls_004"><span class="cls_004">winding is maximum but rate of change of flux linkage with field winding being</span></div>
-    <div style="position:absolute;left:96.48px;top:284.48px" class="cls_004"><span class="cls_004">minimum, the induced EMF in field coil is almost equal to zero. On the other hand,</span></div>
-    <div style="position:absolute;left:96.48px;top:299.84px" class="cls_004"><span class="cls_004">when the RMF axis is at right angle to field pole axis (i.e. along q-axis), then flux</span></div>
-    <div style="position:absolute;left:96.48px;top:315.32px" class="cls_004"><span class="cls_004">linkage with field winding is minimum, but rate of change of flux linkage with field</span></div>
-    <div style="position:absolute;left:96.48px;top:330.80px" class="cls_004"><span class="cls_004">winding being maximum, the induced EMF in field coil is at its peak. The nature of</span></div>
-    <div style="position:absolute;left:96.48px;top:346.16px" class="cls_004"><span class="cls_004">variation of induced EMF </span><span class="cls_013">V</span><span class="cls_014"><sub>f</sub></span><span class="cls_004"> across open circuited field winding is shown in Fig</span></div>
-    <div style="position:absolute;left:96.48px;top:361.64px" class="cls_004"><span class="cls_004">5.8.1(a).</span></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:1810px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background15.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:96.48px;top:104.84px" class="cls_004"><span class="cls_004">whereas voltmeter
+                swing is small because of low impedance voltage drop in the leads</span></div>
+        <div style="position:absolute;left:96.48px;top:120.20px" class="cls_004"><span class="cls_004">and
+                3-phaseVariac.</span></div>
+        <div style="position:absolute;left:96.48px;top:145.40px" class="cls_004"><span class="cls_004">With three-phase
+                supply given to the stator coils, an RMF is developed by the stator in</span></div>
+        <div style="position:absolute;left:96.48px;top:160.88px" class="cls_004"><span class="cls_004">the air gap.
+                Thus, as the rotor pole structure is rotated in the air gap, flux linking with</span></div>
+        <div style="position:absolute;left:96.48px;top:176.24px" class="cls_004"><span class="cls_004">the rotor coil
+                changes and an EMF is induced in the rotor coil. Note that the field</span></div>
+        <div style="position:absolute;left:96.48px;top:191.84px" class="cls_004"><span class="cls_004">winding is not
+                supplied with any voltage and is kept open. Thus EMF induced across</span></div>
+        <div style="position:absolute;left:96.48px;top:207.20px" class="cls_004"><span class="cls_004">the two open
+                terminals of the field coil can be recorded with a voltmeter. Frequency of</span></div>
+        <div style="position:absolute;left:96.48px;top:222.68px" class="cls_004"><span class="cls_004">this induced EMF
+                across the open-circuited field winding is same as the rate at which</span></div>
+        <div style="position:absolute;left:96.48px;top:238.04px" class="cls_004"><span class="cls_004">flux linking the
+                field circuit changes, i.e. at the slip frequency. When the RMF axis and</span></div>
+        <div style="position:absolute;left:96.48px;top:253.52px" class="cls_004"><span class="cls_004">the rotor salient
+                pole d-axis coincides with each other, then flux linkage with field</span></div>
+        <div style="position:absolute;left:96.48px;top:269.00px" class="cls_004"><span class="cls_004">winding is
+                maximum but rate of change of flux linkage with field winding being</span></div>
+        <div style="position:absolute;left:96.48px;top:284.48px" class="cls_004"><span class="cls_004">minimum, the
+                induced EMF in field coil is almost equal to zero. On the other hand,</span></div>
+        <div style="position:absolute;left:96.48px;top:299.84px" class="cls_004"><span class="cls_004">when the RMF axis
+                is at right angle to field pole axis (i.e. along q-axis), then flux</span></div>
+        <div style="position:absolute;left:96.48px;top:315.32px" class="cls_004"><span class="cls_004">linkage with
+                field winding is minimum, but rate of change of flux linkage with field</span></div>
+        <div style="position:absolute;left:96.48px;top:330.80px" class="cls_004"><span class="cls_004">winding being
+                maximum, the induced EMF in field coil is at its peak. The nature of</span></div>
+        <div style="position:absolute;left:96.48px;top:346.16px" class="cls_004"><span class="cls_004">variation of
+                induced EMF </span><span class="cls_013">V</span><span class="cls_014"><sub>f</sub></span><span
+                class="cls_004"> across open circuited field winding is shown in Fig</span></div>
+        <div style="position:absolute;left:96.48px;top:361.64px" class="cls_004"><span class="cls_004">5.8.1(a).</span>
+        </div>
     </div>
-    <div style="position:absolute;left:50%;margin-left:-297px;top:2660px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background16.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:96.48px;top:104.84px" class="cls_004"><span class="cls_004">Fig 5.81. Voltage and current waveforms obtained from slip test (a) field terminal</span></div>
-    <div style="position:absolute;left:96.48px;top:120.20px" class="cls_004"><span class="cls_004">voltage (b) armature current (c) armature terminal voltage</span></div>
-    <div style="position:absolute;left:96.48px;top:145.64px" class="cls_007"><span class="cls_007">Procedure for Slip Test:</span></div>
-    <div style="position:absolute;left:96.48px;top:170.60px" class="cls_004"><span class="cls_004">A step wise procedure to perform this test is given below:</span></div>
-    <div style="position:absolute;left:109.56px;top:195.68px" class="cls_004"><span class="cls_004">1)</span></div>
-    <div style="position:absolute;left:131.52px;top:195.68px" class="cls_004"><span class="cls_004">Connect the circuit as shown in Fig 5.8.2.</span></div>
-    <div style="position:absolute;left:109.56px;top:209.12px" class="cls_004"><span class="cls_004">2)</span></div>
-    <div style="position:absolute;left:131.52px;top:209.12px" class="cls_004"><span class="cls_004">Start the prime mover (DC motor) coupled to the synchronous machine</span></div>
-    <div style="position:absolute;left:109.56px;top:222.56px" class="cls_004"><span class="cls_004">3)</span></div>
-    <div style="position:absolute;left:131.52px;top:222.56px" class="cls_004"><span class="cls_004">Check the direction of rotation of the synchronous machine. The direction of</span></div>
-    <div style="position:absolute;left:131.52px;top:236.00px" class="cls_004"><span class="cls_004">rotation of the synchronous machine when run by DC motor (as a prime</span></div>
-    <div style="position:absolute;left:131.52px;top:249.44px" class="cls_004"><span class="cls_004">mover) should be as the direction of rotation when run as an induction motor</span></div>
-    <div style="position:absolute;left:131.52px;top:262.88px" class="cls_004"><span class="cls_004">(DC motor off, supply given to synchronous machine stator). If it is not same,</span></div>
-    <div style="position:absolute;left:131.52px;top:276.20px" class="cls_004"><span class="cls_004">change either the direction of rotation of DC motor or the phase sequence of</span></div>
-    <div style="position:absolute;left:131.52px;top:289.64px" class="cls_004"><span class="cls_004">the synchronous machine.</span></div>
-    <div style="position:absolute;left:109.56px;top:303.08px" class="cls_024"><span class="cls_024">4)</span></div>
-    <div style="position:absolute;left:131.52px;top:303.08px" class="cls_024"><span class="cls_024">Increase the speed of DC motor by increasing its armature supply so that the</span></div>
-    <div style="position:absolute;left:131.52px;top:316.52px" class="cls_024"><span class="cls_024">speed reaches synchronous speed of the machine.</span></div>
-    <div style="position:absolute;left:109.56px;top:329.96px" class="cls_004"><span class="cls_004">5)</span></div>
-    <div style="position:absolute;left:131.52px;top:329.96px" class="cls_004"><span class="cls_004">Keep the synchronous machine field terminals open.</span></div>
-    <div style="position:absolute;left:109.56px;top:343.40px" class="cls_004"><span class="cls_004">6)</span></div>
-    <div style="position:absolute;left:131.52px;top:343.40px" class="cls_004"><span class="cls_004">Check the 3</span><span class="cls_007">-</span><span class="cls_004">phase variac is set to zero position. Switch on 3</span><span class="cls_007">-</span><span class="cls_004">phase AC supply</span></div>
-    <div style="position:absolute;left:131.52px;top:356.84px" class="cls_004"><span class="cls_004">to the stator winding of the synchronous machine.</span></div>
-    <div style="position:absolute;left:109.56px;top:370.28px" class="cls_024"><span class="cls_024">7)</span></div>
-    <div style="position:absolute;left:131.52px;top:370.28px" class="cls_024"><span class="cls_024">Increase the voltage supplied to the stator windings of the synchronous</span></div>
-    <div style="position:absolute;left:131.52px;top:383.72px" class="cls_024"><span class="cls_024">machine using 3</span><span class="cls_099">-</span><span class="cls_024">phase variac to 20% to 30% of the armature rated voltage, but</span></div>
-    <div style="position:absolute;left:131.52px;top:397.16px" class="cls_024"><span class="cls_024">check that the current drawn is below the rated value.</span></div>
-    <div style="position:absolute;left:109.56px;top:410.60px" class="cls_004"><span class="cls_004">8)</span></div>
-    <div style="position:absolute;left:131.52px;top:410.60px" class="cls_024"><span class="cls_024">As the speed is reduced slightly lesser than the synchronous speed, you will</span></div>
-    <div style="position:absolute;left:131.52px;top:424.04px" class="cls_024"><span class="cls_024">observe that the induced voltage in the open circuited field circuit, the applied</span></div>
-    <div style="position:absolute;left:131.52px;top:437.48px" class="cls_024"><span class="cls_024">voltage to the stator windings and the current in the stator winding will</span></div>
-    <div style="position:absolute;left:131.52px;top:450.92px" class="cls_024"><span class="cls_024">fluctuate from their minimum values to maximum</span><span class="cls_099"> </span><span class="cls_024">values</span><span class="cls_004">. Vary the speed to</span></div>
-    <div style="position:absolute;left:131.52px;top:464.36px" class="cls_004"><span class="cls_004">obtain maximum oscillations of pointers. Record their values.</span></div>
-    <div style="position:absolute;left:109.56px;top:477.68px" class="cls_004"><span class="cls_004">9)</span></div>
-    <div style="position:absolute;left:131.52px;top:477.68px" class="cls_004"><span class="cls_004">Repeat the steps 7 and 8 for some other suitable speeds.</span></div>
-    <div style="position:absolute;left:109.56px;top:491.12px" class="cls_004"><span class="cls_004">10)</span></div>
-    <div style="position:absolute;left:131.52px;top:491.12px" class="cls_004"><span class="cls_004">Reduce the applied voltage to the stator windings of the synchronous machine</span></div>
-    <div style="position:absolute;left:131.52px;top:504.56px" class="cls_004"><span class="cls_004">by means of 3</span><span class="cls_007">-</span><span class="cls_004">phase variac to zero and switch off AC supply.</span></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:2660px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background16.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:96.48px;top:104.84px" class="cls_004"><span class="cls_004">Fig 5.81. Voltage
+                and current waveforms obtained from slip test (a) field terminal</span></div>
+        <div style="position:absolute;left:96.48px;top:120.20px" class="cls_004"><span class="cls_004">voltage (b)
+                armature current (c) armature terminal voltage</span></div>
+        <div style="position:absolute;left:96.48px;top:145.64px" class="cls_007"><span class="cls_007">Procedure for
+                Slip Test:</span></div>
+        <div style="position:absolute;left:96.48px;top:170.60px" class="cls_004"><span class="cls_004">A step wise
+                procedure to perform this test is given below:</span></div>
+        <div style="position:absolute;left:109.56px;top:195.68px" class="cls_004"><span class="cls_004">1)</span></div>
+        <div style="position:absolute;left:131.52px;top:195.68px" class="cls_004"><span class="cls_004">Connect the
+                circuit as shown in Fig 5.8.2.</span></div>
+        <div style="position:absolute;left:109.56px;top:209.12px" class="cls_004"><span class="cls_004">2)</span></div>
+        <div style="position:absolute;left:131.52px;top:209.12px" class="cls_004"><span class="cls_004">Start the prime
+                mover (DC motor) coupled to the synchronous machine</span></div>
+        <div style="position:absolute;left:109.56px;top:222.56px" class="cls_004"><span class="cls_004">3)</span></div>
+        <div style="position:absolute;left:131.52px;top:222.56px" class="cls_004"><span class="cls_004">Check the
+                direction of rotation of the synchronous machine. The direction of</span></div>
+        <div style="position:absolute;left:131.52px;top:236.00px" class="cls_004"><span class="cls_004">rotation of the
+                synchronous machine when run by DC motor (as a prime</span></div>
+        <div style="position:absolute;left:131.52px;top:249.44px" class="cls_004"><span class="cls_004">mover) should be
+                as the direction of rotation when run as an induction motor</span></div>
+        <div style="position:absolute;left:131.52px;top:262.88px" class="cls_004"><span class="cls_004">(DC motor off,
+                supply given to synchronous machine stator). If it is not same,</span></div>
+        <div style="position:absolute;left:131.52px;top:276.20px" class="cls_004"><span class="cls_004">change either
+                the direction of rotation of DC motor or the phase sequence of</span></div>
+        <div style="position:absolute;left:131.52px;top:289.64px" class="cls_004"><span class="cls_004">the synchronous
+                machine.</span></div>
+        <div style="position:absolute;left:109.56px;top:303.08px" class="cls_024"><span class="cls_024">4)</span></div>
+        <div style="position:absolute;left:131.52px;top:303.08px" class="cls_024"><span class="cls_024">Increase the
+                speed of DC motor by increasing its armature supply so that the</span></div>
+        <div style="position:absolute;left:131.52px;top:316.52px" class="cls_024"><span class="cls_024">speed reaches
+                synchronous speed of the machine.</span></div>
+        <div style="position:absolute;left:109.56px;top:329.96px" class="cls_004"><span class="cls_004">5)</span></div>
+        <div style="position:absolute;left:131.52px;top:329.96px" class="cls_004"><span class="cls_004">Keep the
+                synchronous machine field terminals open.</span></div>
+        <div style="position:absolute;left:109.56px;top:343.40px" class="cls_004"><span class="cls_004">6)</span></div>
+        <div style="position:absolute;left:131.52px;top:343.40px" class="cls_004"><span class="cls_004">Check the
+                3</span><span class="cls_007">-</span><span class="cls_004">phase variac is set to zero position. Switch
+                on 3</span><span class="cls_007">-</span><span class="cls_004">phase AC supply</span></div>
+        <div style="position:absolute;left:131.52px;top:356.84px" class="cls_004"><span class="cls_004">to the stator
+                winding of the synchronous machine.</span></div>
+        <div style="position:absolute;left:109.56px;top:370.28px" class="cls_024"><span class="cls_024">7)</span></div>
+        <div style="position:absolute;left:131.52px;top:370.28px" class="cls_024"><span class="cls_024">Increase the
+                voltage supplied to the stator windings of the synchronous</span></div>
+        <div style="position:absolute;left:131.52px;top:383.72px" class="cls_024"><span class="cls_024">machine using
+                3</span><span class="cls_099">-</span><span class="cls_024">phase variac to 20% to 30% of the armature
+                rated voltage, but</span></div>
+        <div style="position:absolute;left:131.52px;top:397.16px" class="cls_024"><span class="cls_024">check that the
+                current drawn is below the rated value.</span></div>
+        <div style="position:absolute;left:109.56px;top:410.60px" class="cls_004"><span class="cls_004">8)</span></div>
+        <div style="position:absolute;left:131.52px;top:410.60px" class="cls_024"><span class="cls_024">As the speed is
+                reduced slightly lesser than the synchronous speed, you will</span></div>
+        <div style="position:absolute;left:131.52px;top:424.04px" class="cls_024"><span class="cls_024">observe that the
+                induced voltage in the open circuited field circuit, the applied</span></div>
+        <div style="position:absolute;left:131.52px;top:437.48px" class="cls_024"><span class="cls_024">voltage to the
+                stator windings and the current in the stator winding will</span></div>
+        <div style="position:absolute;left:131.52px;top:450.92px" class="cls_024"><span class="cls_024">fluctuate from
+                their minimum values to maximum</span><span class="cls_099"> </span><span
+                class="cls_024">values</span><span class="cls_004">. Vary the speed to</span></div>
+        <div style="position:absolute;left:131.52px;top:464.36px" class="cls_004"><span class="cls_004">obtain maximum
+                oscillations of pointers. Record their values.</span></div>
+        <div style="position:absolute;left:109.56px;top:477.68px" class="cls_004"><span class="cls_004">9)</span></div>
+        <div style="position:absolute;left:131.52px;top:477.68px" class="cls_004"><span class="cls_004">Repeat the steps
+                7 and 8 for some other suitable speeds.</span></div>
+        <div style="position:absolute;left:109.56px;top:491.12px" class="cls_004"><span class="cls_004">10)</span></div>
+        <div style="position:absolute;left:131.52px;top:491.12px" class="cls_004"><span class="cls_004">Reduce the
+                applied voltage to the stator windings of the synchronous machine</span></div>
+        <div style="position:absolute;left:131.52px;top:504.56px" class="cls_004"><span class="cls_004">by means of
+                3</span><span class="cls_007">-</span><span class="cls_004">phase variac to zero and switch off AC
+                supply.</span></div>
     </div>
-    <div style="position:absolute;left:50%;margin-left:-297px;top:3510px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background17.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:96.48px;top:318.08px" class="cls_004"><span class="cls_004">Fig  5.8.2 Connection diagram for slip test of synchronous machine</span></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:3510px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background17.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:96.48px;top:318.08px" class="cls_004"><span class="cls_004">Fig 5.8.2
+                Connection diagram for slip test of synchronous machine</span></div>
     </div>
-    <div style="position:absolute;left:50%;margin-left:-297px;top:4360px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background18.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:96.48px;top:116.47px" class="cls_119"><span class="cls_119">Observation Tables & Calculation</span></div>
-    <div style="position:absolute;left:96.48px;top:160.58px" class="cls_005"><span class="cls_005">Table A:</span></div>
-    <div style="position:absolute;left:96.48px;top:184.10px" class="cls_064"><span class="cls_064">Armature voltage regulator is changed so that different speed of of Dc</span></div>
-    <div style="position:absolute;left:83.28px;top:207.62px" class="cls_064"><span class="cls_064">motor is achieved. After the speed is taken at a fixed value, the supply to</span></div>
-    <div style="position:absolute;left:83.28px;top:231.02px" class="cls_064"><span class="cls_064">the synchronous machine is given with three phase variac.</span></div>
-    <div style="position:absolute;left:105.96px;top:255.35px" class="cls_101"><span class="cls_101">Sl. No.</span></div>
-    <div style="position:absolute;left:184.92px;top:268.07px" class="cls_101"><span class="cls_101">SPEED (RPM)</span></div>
-    <div style="position:absolute;left:360.36px;top:268.07px" class="cls_101"><span class="cls_101">SLIP</span></div>
-    <div style="position:absolute;left:124.08px;top:307.64px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:213.72px;top:307.64px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:362.28px;top:307.64px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:124.08px;top:333.32px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:213.72px;top:333.32px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:362.28px;top:333.32px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:124.08px;top:359.12px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:213.72px;top:359.12px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:357.36px;top:359.12px" class="cls_004"><span class="cls_004"></span></div>
-    <div style="position:absolute;left:103.68px;top:408.26px" class="cls_005"><span class="cls_005">Table B:</span></div>
-    <div style="position:absolute;left:103.68px;top:431.78px" class="cls_064"><span class="cls_064">The reading will continuously fluctuate between the highest and</span></div>
-    <div style="position:absolute;left:83.28px;top:455.18px" class="cls_064"><span class="cls_064">lowest  value  of  armature  current  and  voltage.  When  voltage  is</span></div>
-    <div style="position:absolute;left:83.28px;top:478.70px" class="cls_064"><span class="cls_064">maximum current will be minimum</span></div>
-    <div style="position:absolute;left:138.84px;top:526.43px" class="cls_101"><span class="cls_101">ARMATURE</span></div>
-    <div style="position:absolute;left:255.24px;top:526.43px" class="cls_101"><span class="cls_101">ARMATURE</span></div>
-    <div style="position:absolute;left:107.76px;top:533.87px" class="cls_101"><span class="cls_101">SL.</span></div>
-    <div style="position:absolute;left:138.84px;top:540.95px" class="cls_101"><span class="cls_101">CURRENT (A)</span></div>
-    <div style="position:absolute;left:250.44px;top:540.95px" class="cls_101"><span class="cls_101">VOLTAGE (V)</span></div>
-    <div style="position:absolute;left:366.12px;top:537.19px" class="cls_101"><span class="cls_101">X</span><span class="cls_102"><sub>d</sub></span></div>
-    <div style="position:absolute;left:423.12px;top:541.31px" class="cls_101"><span class="cls_101">X</span><span class="cls_102"><sub>q</sub></span></div>
-    <div style="position:absolute;left:463.80px;top:541.31px" class="cls_101"><span class="cls_101">Avg. X</span><span class="cls_102"><sub>d</sub></span></div>
-    <div style="position:absolute;left:518.76px;top:541.31px" class="cls_101"><span class="cls_101">Avg. X</span><span class="cls_102"><sub>q</sub></span></div>
-    <div style="position:absolute;left:105.96px;top:548.51px" class="cls_101"><span class="cls_101">NO.</span></div>
-    <div style="position:absolute;left:147.72px;top:555.95px" class="cls_101"><span class="cls_101">MAX.</span></div>
-    <div style="position:absolute;left:204.24px;top:555.95px" class="cls_101"><span class="cls_101">MIN.</span></div>
-    <div style="position:absolute;left:248.40px;top:555.95px" class="cls_101"><span class="cls_101">MAX.</span></div>
-    <div style="position:absolute;left:300.60px;top:555.95px" class="cls_101"><span class="cls_101">MIN.</span></div>
-    <div style="position:absolute;left:470.52px;top:570.83px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:525.36px;top:570.83px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:113.88px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:153.36px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:211.08px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:254.04px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:304.20px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:358.80px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:418.92px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:113.88px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:153.36px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:207.84px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:254.04px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:304.20px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:358.80px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:415.80px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:113.88px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:153.36px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:211.08px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:254.04px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:304.20px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:358.80px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
-    <div style="position:absolute;left:415.80px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:4360px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background18.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:96.48px;top:116.47px" class="cls_119"><span class="cls_119">Observation
+                Tables & Calculation</span></div>
+        <div style="position:absolute;left:96.48px;top:160.58px" class="cls_005"><span class="cls_005">Table A:</span>
+        </div>
+        <div style="position:absolute;left:96.48px;top:184.10px" class="cls_064"><span class="cls_064">Armature voltage
+                regulator is changed so that different speed of of Dc</span></div>
+        <div style="position:absolute;left:83.28px;top:207.62px" class="cls_064"><span class="cls_064">motor is
+                achieved. After the speed is taken at a fixed value, the supply to</span></div>
+        <div style="position:absolute;left:83.28px;top:231.02px" class="cls_064"><span class="cls_064">the synchronous
+                machine is given with three phase variac.</span></div>
+        <div style="position:absolute;left:105.96px;top:255.35px" class="cls_101"><span class="cls_101">Sl. No.</span>
+        </div>
+        <div style="position:absolute;left:184.92px;top:268.07px" class="cls_101"><span class="cls_101">SPEED
+                (RPM)</span></div>
+        <div style="position:absolute;left:360.36px;top:268.07px" class="cls_101"><span class="cls_101">SLIP</span>
+        </div>
+        <div style="position:absolute;left:124.08px;top:307.64px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:213.72px;top:307.64px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:362.28px;top:307.64px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:124.08px;top:333.32px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:213.72px;top:333.32px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:362.28px;top:333.32px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:124.08px;top:359.12px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:213.72px;top:359.12px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:357.36px;top:359.12px" class="cls_004"><span class="cls_004"></span></div>
+        <div style="position:absolute;left:103.68px;top:408.26px" class="cls_005"><span class="cls_005">Table B:</span>
+        </div>
+        <div style="position:absolute;left:103.68px;top:431.78px" class="cls_064"><span class="cls_064">The reading will
+                continuously fluctuate between the highest and</span></div>
+        <div style="position:absolute;left:83.28px;top:455.18px" class="cls_064"><span class="cls_064">lowest value of
+                armature current and voltage. When voltage is</span></div>
+        <div style="position:absolute;left:83.28px;top:478.70px" class="cls_064"><span class="cls_064">maximum current
+                will be minimum</span></div>
+        <div style="position:absolute;left:138.84px;top:526.43px" class="cls_101"><span class="cls_101">ARMATURE</span>
+        </div>
+        <div style="position:absolute;left:255.24px;top:526.43px" class="cls_101"><span class="cls_101">ARMATURE</span>
+        </div>
+        <div style="position:absolute;left:107.76px;top:533.87px" class="cls_101"><span class="cls_101">SL.</span></div>
+        <div style="position:absolute;left:138.84px;top:540.95px" class="cls_101"><span class="cls_101">CURRENT
+                (A)</span></div>
+        <div style="position:absolute;left:250.44px;top:540.95px" class="cls_101"><span class="cls_101">VOLTAGE
+                (V)</span></div>
+        <div style="position:absolute;left:366.12px;top:537.19px" class="cls_101"><span class="cls_101">X</span><span
+                class="cls_102"><sub>d</sub></span></div>
+        <div style="position:absolute;left:423.12px;top:541.31px" class="cls_101"><span class="cls_101">X</span><span
+                class="cls_102"><sub>q</sub></span></div>
+        <div style="position:absolute;left:463.80px;top:541.31px" class="cls_101"><span class="cls_101">Avg.
+                X</span><span class="cls_102"><sub>d</sub></span></div>
+        <div style="position:absolute;left:518.76px;top:541.31px" class="cls_101"><span class="cls_101">Avg.
+                X</span><span class="cls_102"><sub>q</sub></span></div>
+        <div style="position:absolute;left:105.96px;top:548.51px" class="cls_101"><span class="cls_101">NO.</span></div>
+        <div style="position:absolute;left:147.72px;top:555.95px" class="cls_101"><span class="cls_101">MAX.</span>
+        </div>
+        <div style="position:absolute;left:204.24px;top:555.95px" class="cls_101"><span class="cls_101">MIN.</span>
+        </div>
+        <div style="position:absolute;left:248.40px;top:555.95px" class="cls_101"><span class="cls_101">MAX.</span>
+        </div>
+        <div style="position:absolute;left:300.60px;top:555.95px" class="cls_101"><span class="cls_101">MIN.</span>
+        </div>
+        <div style="position:absolute;left:470.52px;top:570.83px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:525.36px;top:570.83px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:113.88px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:153.36px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:211.08px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:254.04px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:304.20px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:358.80px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:418.92px;top:575.27px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:113.88px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:153.36px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:207.84px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:254.04px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:304.20px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:358.80px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:415.80px;top:611.03px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:113.88px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:153.36px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:211.08px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:254.04px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:304.20px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:358.80px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
+        <div style="position:absolute;left:415.80px;top:646.79px" class="cls_019"><span class="cls_019"></span></div>
     </div>
-    <div style="position:absolute;left:50%;margin-left:-297px;top:5210px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background19.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:103.68px;top:163.46px" class="cls_005"><span class="cls_005">Table C:</span></div>
-    <div style="position:absolute;left:103.68px;top:192.86px" class="cls_064"><span class="cls_064">When current value is maximum, the field voltage is maximum.</span></div>
-    <div style="position:absolute;left:83.28px;top:216.38px" class="cls_064"><span class="cls_064">Again when current value is maximum, the field voltage value is</span></div>
-    <div style="position:absolute;left:83.28px;top:239.78px" class="cls_064"><span class="cls_064">minimum. Therefore the field voltage value will be maximum and</span></div>
-    <div style="position:absolute;left:83.28px;top:263.30px" class="cls_064"><span class="cls_064">minimum alternatively as the current value becomes maximum</span></div>
-    <div style="position:absolute;left:110.40px;top:287.63px" class="cls_101"><span class="cls_101">SL.</span></div>
-    <div style="position:absolute;left:164.40px;top:294.83px" class="cls_101"><span class="cls_101">MAXIMUM FIELD VOLTAGE</span></div>
-    <div style="position:absolute;left:376.80px;top:294.83px" class="cls_101"><span class="cls_101">MINIMUM FIELD VOLTAGE</span></div>
-    <div style="position:absolute;left:110.40px;top:302.03px" class="cls_101"><span class="cls_101">NO.</span></div>
-    <div style="position:absolute;left:123.60px;top:316.51px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:244.80px;top:316.51px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:452.52px;top:316.51px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:123.60px;top:347.35px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:244.80px;top:347.35px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:452.52px;top:347.35px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:123.60px;top:378.19px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:244.80px;top:378.19px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:452.52px;top:378.19px" class="cls_003"><span class="cls_003"></span></div>
-    <div style="position:absolute;left:96.48px;top:462.25px" class="cls_118"><span class="cls_118">Devices, Apparatus and Equipments used:</span></div>
-    <div style="position:absolute;left:96.48px;top:495.32px" class="cls_117"><span class="cls_117">Devices under test:</span></div>
-    <div style="position:absolute;left:119.16px;top:520.76px" class="cls_004"><span class="cls_004">SL.</span></div>
-    <div style="position:absolute;left:162.72px;top:520.76px" class="cls_004"><span class="cls_004">Name of the</span></div>
-    <div style="position:absolute;left:457.08px;top:520.76px" class="cls_004"><span class="cls_004">Maker’s</span></div>
-    <div style="position:absolute;left:249.24px;top:527.48px" class="cls_004"><span class="cls_004">Specifications</span></div>
-    <div style="position:absolute;left:392.39px;top:527.48px" class="cls_004"><span class="cls_004">Quantity</span></div>
-    <div style="position:absolute;left:119.16px;top:534.20px" class="cls_004"><span class="cls_004">NO.</span></div>
-    <div style="position:absolute;left:162.72px;top:534.20px" class="cls_004"><span class="cls_004">Devices</span></div>
-    <div style="position:absolute;left:457.08px;top:534.20px" class="cls_004"><span class="cls_004">Name</span></div>
-    <div style="position:absolute;left:443.88px;top:548.12px" class="cls_004"><span class="cls_004">Electrical</span></div>
-    <div style="position:absolute;left:236.04px;top:551.12px" class="cls_004"><span class="cls_004">415V,</span></div>
-    <div style="position:absolute;left:149.52px;top:557.84px" class="cls_004"><span class="cls_004">3Phase</span></div>
-    <div style="position:absolute;left:119.16px;top:564.56px" class="cls_004"><span class="cls_004">1</span></div>
-    <div style="position:absolute;left:236.04px;top:564.56px" class="cls_004"><span class="cls_004">3KVA,3Phase,4Amp,</span></div>
-    <div style="position:absolute;left:379.20px;top:563.72px" class="cls_004"><span class="cls_004">1</span></div>
-    <div style="position:absolute;left:443.88px;top:563.72px" class="cls_004"><span class="cls_004">Machine</span></div>
-    <div style="position:absolute;left:149.52px;top:571.28px" class="cls_004"><span class="cls_004">Alternator</span></div>
-    <div style="position:absolute;left:236.04px;top:578.00px" class="cls_004"><span class="cls_004">1500rpm</span></div>
-    <div style="position:absolute;left:443.88px;top:579.08px" class="cls_004"><span class="cls_004">Fabrication</span></div>
-    <div style="position:absolute;left:443.88px;top:595.04px" class="cls_004"><span class="cls_004">Electrical</span></div>
-    <div style="position:absolute;left:149.52px;top:604.64px" class="cls_004"><span class="cls_004">DC</span></div>
-    <div style="position:absolute;left:198.36px;top:604.64px" class="cls_004"><span class="cls_004">Shunt</span></div>
-    <div style="position:absolute;left:119.16px;top:611.36px" class="cls_004"><span class="cls_004">2</span></div>
-    <div style="position:absolute;left:236.04px;top:611.36px" class="cls_004"><span class="cls_004">220V,5HP,15Amp,1500rpm</span></div>
-    <div style="position:absolute;left:379.20px;top:610.40px" class="cls_004"><span class="cls_004">1</span></div>
-    <div style="position:absolute;left:443.88px;top:610.40px" class="cls_004"><span class="cls_004">Machine</span></div>
-    <div style="position:absolute;left:149.52px;top:618.08px" class="cls_004"><span class="cls_004">Motor</span></div>
-    <div style="position:absolute;left:443.88px;top:626.00px" class="cls_004"><span class="cls_004">Fabrication</span></div>
-    <div style="position:absolute;left:96.48px;top:655.40px" class="cls_117"><span class="cls_117">Instruments / Equipments used:</span></div>
-    <div style="position:absolute;left:119.16px;top:682.52px" class="cls_004"><span class="cls_004">SL.</span></div>
-    <div style="position:absolute;left:162.72px;top:682.52px" class="cls_004"><span class="cls_004">Name    of    the</span></div>
-    <div style="position:absolute;left:453.48px;top:682.52px" class="cls_004"><span class="cls_004">Maker’s</span></div>
-    <div style="position:absolute;left:270.48px;top:689.24px" class="cls_004"><span class="cls_004">Specifications</span></div>
-    <div style="position:absolute;left:388.91px;top:689.24px" class="cls_004"><span class="cls_004">Quantity</span></div>
-    <div style="position:absolute;left:119.16px;top:695.96px" class="cls_004"><span class="cls_004">NO.</span></div>
-    <div style="position:absolute;left:162.72px;top:695.96px" class="cls_004"><span class="cls_004">Instrument</span></div>
-    <div style="position:absolute;left:453.48px;top:695.96px" class="cls_004"><span class="cls_004">Name</span></div>
-    <div style="position:absolute;left:119.16px;top:711.92px" class="cls_004"><span class="cls_004">1</span></div>
-    <div style="position:absolute;left:149.52px;top:711.92px" class="cls_004"><span class="cls_004">Ammeter</span></div>
-    <div style="position:absolute;left:257.27px;top:711.92px" class="cls_004"><span class="cls_004">Moving Iron (Analog)</span></div>
-    <div style="position:absolute;left:375.72px;top:710.96px" class="cls_004"><span class="cls_004">1</span></div>
-    <div style="position:absolute;left:440.28px;top:710.96px" class="cls_004"><span class="cls_004">A.E</span></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:5210px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background19.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:103.68px;top:163.46px" class="cls_005"><span class="cls_005">Table C:</span>
+        </div>
+        <div style="position:absolute;left:103.68px;top:192.86px" class="cls_064"><span class="cls_064">When current
+                value is maximum, the field voltage is maximum.</span></div>
+        <div style="position:absolute;left:83.28px;top:216.38px" class="cls_064"><span class="cls_064">Again when
+                current value is maximum, the field voltage value is</span></div>
+        <div style="position:absolute;left:83.28px;top:239.78px" class="cls_064"><span class="cls_064">minimum.
+                Therefore the field voltage value will be maximum and</span></div>
+        <div style="position:absolute;left:83.28px;top:263.30px" class="cls_064"><span class="cls_064">minimum
+                alternatively as the current value becomes maximum</span></div>
+        <div style="position:absolute;left:110.40px;top:287.63px" class="cls_101"><span class="cls_101">SL.</span></div>
+        <div style="position:absolute;left:164.40px;top:294.83px" class="cls_101"><span class="cls_101">MAXIMUM FIELD
+                VOLTAGE</span></div>
+        <div style="position:absolute;left:376.80px;top:294.83px" class="cls_101"><span class="cls_101">MINIMUM FIELD
+                VOLTAGE</span></div>
+        <div style="position:absolute;left:110.40px;top:302.03px" class="cls_101"><span class="cls_101">NO.</span></div>
+        <div style="position:absolute;left:123.60px;top:316.51px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:244.80px;top:316.51px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:452.52px;top:316.51px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:123.60px;top:347.35px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:244.80px;top:347.35px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:452.52px;top:347.35px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:123.60px;top:378.19px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:244.80px;top:378.19px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:452.52px;top:378.19px" class="cls_003"><span class="cls_003"></span></div>
+        <div style="position:absolute;left:96.48px;top:462.25px" class="cls_118"><span class="cls_118">Devices,
+                Apparatus and Equipments used:</span></div>
+        <div style="position:absolute;left:96.48px;top:495.32px" class="cls_117"><span class="cls_117">Devices under
+                test:</span></div>
+        <div style="position:absolute;left:119.16px;top:520.76px" class="cls_004"><span class="cls_004">SL.</span></div>
+        <div style="position:absolute;left:162.72px;top:520.76px" class="cls_004"><span class="cls_004">Name of
+                the</span></div>
+        <div style="position:absolute;left:457.08px;top:520.76px" class="cls_004"><span class="cls_004">Maker’s</span>
+        </div>
+        <div style="position:absolute;left:249.24px;top:527.48px" class="cls_004"><span
+                class="cls_004">Specifications</span></div>
+        <div style="position:absolute;left:392.39px;top:527.48px" class="cls_004"><span class="cls_004">Quantity</span>
+        </div>
+        <div style="position:absolute;left:119.16px;top:534.20px" class="cls_004"><span class="cls_004">NO.</span></div>
+        <div style="position:absolute;left:162.72px;top:534.20px" class="cls_004"><span class="cls_004">Devices</span>
+        </div>
+        <div style="position:absolute;left:457.08px;top:534.20px" class="cls_004"><span class="cls_004">Name</span>
+        </div>
+        <div style="position:absolute;left:443.88px;top:548.12px" class="cls_004"><span
+                class="cls_004">Electrical</span></div>
+        <div style="position:absolute;left:236.04px;top:551.12px" class="cls_004"><span class="cls_004">415V,</span>
+        </div>
+        <div style="position:absolute;left:149.52px;top:557.84px" class="cls_004"><span class="cls_004">3Phase</span>
+        </div>
+        <div style="position:absolute;left:119.16px;top:564.56px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:236.04px;top:564.56px" class="cls_004"><span
+                class="cls_004">3KVA,3Phase,4Amp,</span></div>
+        <div style="position:absolute;left:379.20px;top:563.72px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:443.88px;top:563.72px" class="cls_004"><span class="cls_004">Machine</span>
+        </div>
+        <div style="position:absolute;left:149.52px;top:571.28px" class="cls_004"><span
+                class="cls_004">Alternator</span></div>
+        <div style="position:absolute;left:236.04px;top:578.00px" class="cls_004"><span class="cls_004">1500rpm</span>
+        </div>
+        <div style="position:absolute;left:443.88px;top:579.08px" class="cls_004"><span
+                class="cls_004">Fabrication</span></div>
+        <div style="position:absolute;left:443.88px;top:595.04px" class="cls_004"><span
+                class="cls_004">Electrical</span></div>
+        <div style="position:absolute;left:149.52px;top:604.64px" class="cls_004"><span class="cls_004">DC</span></div>
+        <div style="position:absolute;left:198.36px;top:604.64px" class="cls_004"><span class="cls_004">Shunt</span>
+        </div>
+        <div style="position:absolute;left:119.16px;top:611.36px" class="cls_004"><span class="cls_004">2</span></div>
+        <div style="position:absolute;left:236.04px;top:611.36px" class="cls_004"><span
+                class="cls_004">220V,5HP,15Amp,1500rpm</span></div>
+        <div style="position:absolute;left:379.20px;top:610.40px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:443.88px;top:610.40px" class="cls_004"><span class="cls_004">Machine</span>
+        </div>
+        <div style="position:absolute;left:149.52px;top:618.08px" class="cls_004"><span class="cls_004">Motor</span>
+        </div>
+        <div style="position:absolute;left:443.88px;top:626.00px" class="cls_004"><span
+                class="cls_004">Fabrication</span></div>
+        <div style="position:absolute;left:96.48px;top:655.40px" class="cls_117"><span class="cls_117">Instruments /
+                Equipments used:</span></div>
+        <div style="position:absolute;left:119.16px;top:682.52px" class="cls_004"><span class="cls_004">SL.</span></div>
+        <div style="position:absolute;left:162.72px;top:682.52px" class="cls_004"><span class="cls_004">Name of
+                the</span></div>
+        <div style="position:absolute;left:453.48px;top:682.52px" class="cls_004"><span class="cls_004">Maker’s</span>
+        </div>
+        <div style="position:absolute;left:270.48px;top:689.24px" class="cls_004"><span
+                class="cls_004">Specifications</span></div>
+        <div style="position:absolute;left:388.91px;top:689.24px" class="cls_004"><span class="cls_004">Quantity</span>
+        </div>
+        <div style="position:absolute;left:119.16px;top:695.96px" class="cls_004"><span class="cls_004">NO.</span></div>
+        <div style="position:absolute;left:162.72px;top:695.96px" class="cls_004"><span
+                class="cls_004">Instrument</span></div>
+        <div style="position:absolute;left:453.48px;top:695.96px" class="cls_004"><span class="cls_004">Name</span>
+        </div>
+        <div style="position:absolute;left:119.16px;top:711.92px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:149.52px;top:711.92px" class="cls_004"><span class="cls_004">Ammeter</span>
+        </div>
+        <div style="position:absolute;left:257.27px;top:711.92px" class="cls_004"><span class="cls_004">Moving Iron
+                (Analog)</span></div>
+        <div style="position:absolute;left:375.72px;top:710.96px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:440.28px;top:710.96px" class="cls_004"><span class="cls_004">A.E</span></div>
     </div>
-    <div style="position:absolute;left:50%;margin-left:-297px;top:6060px;width:595px;height:842px;border-style:outset;overflow:hidden">
-    <div style="position:absolute;left:0px;top:0px">
-    <img src="/static/images/exp78new9/background20.jpg" width=595 height=842></div>
-    <div style="position:absolute;left:257.28px;top:105.20px" class="cls_004"><span class="cls_004">0-1Amp</span></div>
-    <div style="position:absolute;left:257.28px;top:123.08px" class="cls_004"><span class="cls_004">Moving Iron (Analog)</span></div>
-    <div style="position:absolute;left:119.16px;top:129.80px" class="cls_004"><span class="cls_004">2</span></div>
-    <div style="position:absolute;left:149.52px;top:129.80px" class="cls_004"><span class="cls_004">Voltmeter</span></div>
-    <div style="position:absolute;left:375.72px;top:128.96px" class="cls_004"><span class="cls_004">2</span></div>
-    <div style="position:absolute;left:440.28px;top:128.96px" class="cls_004"><span class="cls_004">A.E</span></div>
-    <div style="position:absolute;left:257.28px;top:136.52px" class="cls_004"><span class="cls_004">0-500Volt, 0-300Volt</span></div>
-    <div style="position:absolute;left:257.28px;top:150.44px" class="cls_004"><span class="cls_004">Moving Coil (Analog)</span></div>
-    <div style="position:absolute;left:119.16px;top:163.88px" class="cls_004"><span class="cls_004">3</span></div>
-    <div style="position:absolute;left:149.52px;top:163.88px" class="cls_004"><span class="cls_004">Voltmeter</span></div>
-    <div style="position:absolute;left:257.28px;top:163.88px" class="cls_004"><span class="cls_004">0-300Volt</span></div>
-    <div style="position:absolute;left:375.72px;top:162.92px" class="cls_004"><span class="cls_004">1</span></div>
-    <div style="position:absolute;left:440.28px;top:162.92px" class="cls_004"><span class="cls_004">A.E</span></div>
-    <div style="position:absolute;left:119.16px;top:193.16px" class="cls_004"><span class="cls_004">4</span></div>
-    <div style="position:absolute;left:149.52px;top:193.16px" class="cls_004"><span class="cls_004">Tachometer</span></div>
-    <div style="position:absolute;left:257.27px;top:193.16px" class="cls_004"><span class="cls_004">0-9999.99 rpm</span></div>
-    <div style="position:absolute;left:375.72px;top:192.44px" class="cls_004"><span class="cls_004">1</span></div>
-    <div style="position:absolute;left:440.28px;top:192.44px" class="cls_004"><span class="cls_004">Kusam Meco</span></div>
-    <div style="position:absolute;left:96.48px;top:249.26px" class="cls_120"><span class="cls_120">Sample Calculation:</span></div>
-    <div style="position:absolute;left:158.52px;top:275.28px" class="cls_103"><span class="cls_103">1</span></div>
-    <div style="position:absolute;left:125.40px;top:285.12px" class="cls_106"><span class="cls_106">V</span></div>
-    <div style="position:absolute;left:187.56px;top:287.04px" class="cls_103"><span class="cls_103">3</span></div>
-    <div style="position:absolute;left:132.48px;top:293.07px" class="cls_121"><span class="cls_121">max</span></div>
-    <div style="position:absolute;left:99.12px;top:292.80px" class="cls_106"><span class="cls_106">X</span><span class="cls_107"><sub>d</sub></span></div>
-    <div style="position:absolute;left:116.28px;top:292.80px" class="cls_104"><span class="cls_104">=</span></div>
-    <div style="position:absolute;left:149.64px;top:292.80px" class="cls_104"><span class="cls_104">=</span></div>
-    <div style="position:absolute;left:197.64px;top:292.80px" class="cls_104"><span class="cls_104">=</span></div>
-    <div style="position:absolute;left:206.64px;top:292.80px" class="cls_103"><span class="cls_103">64.66</span><span class="cls_104">Ω</span></div>
-    <div style="position:absolute;left:127.68px;top:302.04px" class="cls_103"><span class="cls_103">I</span><span class="cls_105"><sub>min</sub></span></div>
-    <div style="position:absolute;left:166.68px;top:302.04px" class="cls_103"><span class="cls_103">0.15</span></div>
-    <div style="position:absolute;left:156.96px;top:328.56px" class="cls_103"><span class="cls_103">1</span></div>
-    <div style="position:absolute;left:124.92px;top:338.52px" class="cls_106"><span class="cls_106">V</span></div>
-    <div style="position:absolute;left:132.12px;top:346.35px" class="cls_121"><span class="cls_121">min</span></div>
-    <div style="position:absolute;left:186.36px;top:340.32px" class="cls_103"><span class="cls_103">3</span></div>
-    <div style="position:absolute;left:99.12px;top:346.08px" class="cls_106"><span class="cls_106">X</span><span class="cls_107"><sub>q</sub></span></div>
-    <div style="position:absolute;left:115.80px;top:346.08px" class="cls_104"><span class="cls_104">=</span></div>
-    <div style="position:absolute;left:148.08px;top:346.08px" class="cls_104"><span class="cls_104">=</span></div>
-    <div style="position:absolute;left:196.44px;top:346.08px" class="cls_104"><span class="cls_104">=</span></div>
-    <div style="position:absolute;left:204.36px;top:346.08px" class="cls_103"><span class="cls_103">15.39</span><span class="cls_104">Ω</span></div>
-    <div style="position:absolute;left:126.12px;top:355.32px" class="cls_103"><span class="cls_103">I</span><span class="cls_105"><sub>max</sub></span></div>
-    <div style="position:absolute;left:165.24px;top:355.32px" class="cls_103"><span class="cls_103">0.54</span></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:6060px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp78new9/background20.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:257.28px;top:105.20px" class="cls_004"><span class="cls_004">0-1Amp</span>
+        </div>
+        <div style="position:absolute;left:257.28px;top:123.08px" class="cls_004"><span class="cls_004">Moving Iron
+                (Analog)</span></div>
+        <div style="position:absolute;left:119.16px;top:129.80px" class="cls_004"><span class="cls_004">2</span></div>
+        <div style="position:absolute;left:149.52px;top:129.80px" class="cls_004"><span class="cls_004">Voltmeter</span>
+        </div>
+        <div style="position:absolute;left:375.72px;top:128.96px" class="cls_004"><span class="cls_004">2</span></div>
+        <div style="position:absolute;left:440.28px;top:128.96px" class="cls_004"><span class="cls_004">A.E</span></div>
+        <div style="position:absolute;left:257.28px;top:136.52px" class="cls_004"><span class="cls_004">0-500Volt,
+                0-300Volt</span></div>
+        <div style="position:absolute;left:257.28px;top:150.44px" class="cls_004"><span class="cls_004">Moving Coil
+                (Analog)</span></div>
+        <div style="position:absolute;left:119.16px;top:163.88px" class="cls_004"><span class="cls_004">3</span></div>
+        <div style="position:absolute;left:149.52px;top:163.88px" class="cls_004"><span class="cls_004">Voltmeter</span>
+        </div>
+        <div style="position:absolute;left:257.28px;top:163.88px" class="cls_004"><span class="cls_004">0-300Volt</span>
+        </div>
+        <div style="position:absolute;left:375.72px;top:162.92px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:440.28px;top:162.92px" class="cls_004"><span class="cls_004">A.E</span></div>
+        <div style="position:absolute;left:119.16px;top:193.16px" class="cls_004"><span class="cls_004">4</span></div>
+        <div style="position:absolute;left:149.52px;top:193.16px" class="cls_004"><span
+                class="cls_004">Tachometer</span></div>
+        <div style="position:absolute;left:257.27px;top:193.16px" class="cls_004"><span class="cls_004">0-9999.99
+                rpm</span></div>
+        <div style="position:absolute;left:375.72px;top:192.44px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:440.28px;top:192.44px" class="cls_004"><span class="cls_004">Kusam
+                Meco</span></div>
+        <div style="position:absolute;left:96.48px;top:249.26px" class="cls_120"><span class="cls_120">Sample
+                Calculation:</span></div>
+        <div style="position:absolute;left:158.52px;top:275.28px" class="cls_103"><span class="cls_103">1</span></div>
+        <div style="position:absolute;left:125.40px;top:285.12px" class="cls_106"><span class="cls_106">V</span></div>
+        <div style="position:absolute;left:187.56px;top:287.04px" class="cls_103"><span class="cls_103">3</span></div>
+        <div style="position:absolute;left:132.48px;top:293.07px" class="cls_121"><span class="cls_121">max</span></div>
+        <div style="position:absolute;left:99.12px;top:292.80px" class="cls_106"><span class="cls_106">X</span><span
+                class="cls_107"><sub>d</sub></span></div>
+        <div style="position:absolute;left:116.28px;top:292.80px" class="cls_104"><span class="cls_104">=</span></div>
+        <div style="position:absolute;left:149.64px;top:292.80px" class="cls_104"><span class="cls_104">=</span></div>
+        <div style="position:absolute;left:197.64px;top:292.80px" class="cls_104"><span class="cls_104">=</span></div>
+        <div style="position:absolute;left:206.64px;top:292.80px" class="cls_103"><span
+                class="cls_103">64.66</span><span class="cls_104">Ω</span></div>
+        <div style="position:absolute;left:127.68px;top:302.04px" class="cls_103"><span class="cls_103">I</span><span
+                class="cls_105"><sub>min</sub></span></div>
+        <div style="position:absolute;left:166.68px;top:302.04px" class="cls_103"><span class="cls_103">0.15</span>
+        </div>
+        <div style="position:absolute;left:156.96px;top:328.56px" class="cls_103"><span class="cls_103">1</span></div>
+        <div style="position:absolute;left:124.92px;top:338.52px" class="cls_106"><span class="cls_106">V</span></div>
+        <div style="position:absolute;left:132.12px;top:346.35px" class="cls_121"><span class="cls_121">min</span></div>
+        <div style="position:absolute;left:186.36px;top:340.32px" class="cls_103"><span class="cls_103">3</span></div>
+        <div style="position:absolute;left:99.12px;top:346.08px" class="cls_106"><span class="cls_106">X</span><span
+                class="cls_107"><sub>q</sub></span></div>
+        <div style="position:absolute;left:115.80px;top:346.08px" class="cls_104"><span class="cls_104">=</span></div>
+        <div style="position:absolute;left:148.08px;top:346.08px" class="cls_104"><span class="cls_104">=</span></div>
+        <div style="position:absolute;left:196.44px;top:346.08px" class="cls_104"><span class="cls_104">=</span></div>
+        <div style="position:absolute;left:204.36px;top:346.08px" class="cls_103"><span
+                class="cls_103">15.39</span><span class="cls_104">Ω</span></div>
+        <div style="position:absolute;left:126.12px;top:355.32px" class="cls_103"><span class="cls_103">I</span><span
+                class="cls_105"><sub>max</sub></span></div>
+        <div style="position:absolute;left:165.24px;top:355.32px" class="cls_103"><span class="cls_103">0.54</span>
+        </div>
     </div>
-    <div style="text-align: center; position: relative; top: 6900px; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test/simulation">Go to Simulation</a></div>
+    <div
+        style="text-align: center; position: relative; top: 6900px; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <a
+            href="/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test/simulation#wrapper">Go
+            to Simulation</a></div>
     <div style="text-align: center; position: relative; top: 6950px;">______________O______________</div>
 </body>
+
 </html>

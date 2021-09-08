@@ -1,6 +1,13 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 1360px;
+  padding: 50px;
+  padding-top: 0;
+  border: 0;
+}
+body > div:nth-child(3) {
+  margin-top: 30px;
 }
 
 .demo {

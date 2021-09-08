@@ -1,431 +1,428 @@
 body {
-    background-color: white;
-  
-  }
-  
-  .demo {
-    /* for IE10+ touch devices */
-    touch-action:none;
-  }
-  /** JSPLUMB ARTEFACTS **/
-  .jtk-overlay {
-    z-index: 51;
-  }
-  
-  .jtk-endpoint {
-    z-index: 50;
-    cursor: move;
-  }
-  
-  .jtk-connector {
-    z-index: 1;
-  }
-  
-  /** ELEMENTS **/
-  .littledot
-  {
-    cursor: pointer;
-    width: 12px;
-    height: 12px;
-    background-image: url("/static/images/littledot.png");
-    z-index: 5;
-    position: absolute;
-    border-radius: 31px;
-  }
-  
-  
-  
-  .littledot-hover-hover {
-    border: 2px solid orange;
-  }
-  
-  .dropHover {
-    border: 1px solid orange;
-  }
-  
-  /** ELEMENT POSITIONS **/
-  /* MCB switches */
-  #ld1 {
-    top: 12.1em;
-    left: 1.5em;
-  }
-  #ld2 {
-    top: 12.1em;
-    left: 3.5em;
-  }
-  #ld3 {
-    top: 12.1em;
-    left: 5.5em;
-  }
-  /* Rectifier */
-  #ld4 {
-    top: 5.1em;
-    left: 9em;
-  }
-  #ld5 {
-    top: 8.6em;
-    left: 9em;
-  }
-  #ld6 {
-    top: 12.1em;
-    left: 9em;
-  }
-  
-  #ld7 {
-    top: 6.5em;
-    left: 14.5em;
-  }
-  #ld8 {
-    top: 10.4em;
-    left: 14.5em;
-  }
-  
-  /* armature voltage regulator */
-  #ld9 {
-    top: 16.1em;
-    left: 21em;
-  }
-  #ld10 {
-    top: 16.1em;
-    left: 26.5em;
-  }
-  
-  /* DC motor */
-  #ld11 {
-    top: 13.1em;
-    left: 35.4em;
-  }
-  #ld12 {
-    top: 13.1em;
-    left: 40.4em;
-  }
-  #ld13 {
-    top: 16.1em;
-    left: 35.4em;
-  }
-  #ld14 {
-    top: 16.1em;
-    left: 40.4em;
-  }
-  
-  /* 3 ph alternator */
-  #ld15 {
-    top: 4.5em;
-    left: 55em;
-  }
-  #ld16 {
-    top: 8.5em;
-    left: 55em;
-  }
-  #ld17 {
-    top: 12.5em;
-    left: 55em;
-  }
-  
-  #ld18 {
-    top: 15em;
-    left: 48em;
-  }
-  #ld19 {
-    top: 15em;
-    left: 52em;
-  }
-  
-  
-  /* voltmeter */
-  #ld20 {
-    top: 32.5em;
-    left: 62em;
-  }
-  #ld21 {
-    top: 32.5em;
-    left: 68em;
-  }
-  
-  /* ammeter */
-  #ld22 {
-    top: 33em;
-    left: 44.8em;
-  }
-  #ld23 {
-    top: 33em;
-    left: 52em;
-  }
-  
-  /* ammeter */
-  #ld24 {
-    top: 32.5em;
-    left: 29em;
-  }
-  #ld25 {
-    top: 32.5em;
-    left: 36em;
-  }
-  
-  
-  #ld26 {
-    top: 19.5em;
-    left: 15em;
-  }
-  #ld27 {
-    top: 19.5em;
-    left: 21em;
-  }
-  #ld28 {
-    top: 32.5em;
-    left: 15em;
-  }
-  #ld29 {
-    top: 32.5em;
-    left: 21em;
-  }
-  
-  
-  #ld30 {
-    top: 19.5em;
-    left: 3em;
-  }
-  #ld31 {
-    top: 19.5em;
-    left: 9em;
-  }
-  #ld32 {
-    top: 32.5em;
-    left: 3em;
-  }
-  #ld33 {
-    top: 32.5em;
-    left: 9em;
-  }
-  
-  
-  
-  path, .jtk-endpoint {
-    cursor: pointer;
-  }
-  
-  
-  #wrapper {
-    width:100%;
-  }
-  div
-  {
-    box-sizing: border-box;
-    resize: both;
-  }
-  .column60 {
-    float: left;
-    width: 60%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32; 
-  }
-  .column42 {
-    float: left;
-    width: 42%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32; 
-  }
-  .column48 {
-    float: left;
-    width: 48%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32; 
-  }
-  .column40 {
-    float: left;
-    width: 40%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32; 
-  }
-  .column50 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32; 
-  }
-  .column17 {
-    float: left;
-    width: 17%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column23 {
-    float: left;
-    width: 23%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column24 {
-    float: left;
-    width: 24%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column14 {
-    float: left;
-    width: 14%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column15 {
-    float: left;
-    width: 15%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column16 {
-    float: left;
-    width: 16%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column30 {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    height: 300px;
-  }
-  .column33 {
-    float: left;
-    width: 33%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column34 {
-    float: left;
-    width: 34%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column20 {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column41 {
-    float: left;
-    width: 41%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .column10 {
-    float: left;
-    width: 10%;
-    padding: 10px;
-    height: 300px;
-    border-style: solid;
-    color:#222d32;
-  }
-  .slidecontainer {
-    width: 100%;
-  }
-  
-  .slider {
-    -webkit-appearance: none;
-    width: 67%;
-    height: 7px;
-    border-radius: 5px;
-    background: grey;
-    outline: none;
-    opacity: 1;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider:hover {
-    opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 90px;
-    height: 15px;
-    opacity: 1;
-    border-radius: 10%;
-    background: black;
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 20px;
-    height: 25px;
-    border-radius: 50%;
-    background: black;
-    cursor: pointer;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .rotorOuter
-    {
-      position: relative;
-      top: 0;
-      left: 0;
-    }
-  .rotorInner
-    {
-      position: absolute;
-      top: 60px;
-      left: 60px;
-    }
-    @keyframes rotations {
-    from {
-      transform: rotate(10deg);
-    }
-    to {
-      transform: rotate(30deg);
-    }
-  }
-  .rotate {
-    animation: rotation 0s infinite linear;
-  }
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-  
-  th, td {
-    border: 1px solid black;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 1360px;
+  padding: 50px;
+  padding-top: 0;
+  border: 0;
+}
+body > div:nth-child(3) {
+  margin-top: 30px;
+}
+
+.demo {
+  /* for IE10+ touch devices */
+  touch-action: none;
+}
+/** JSPLUMB ARTEFACTS **/
+.jtk-overlay {
+  z-index: 51;
+}
+
+.jtk-endpoint {
+  z-index: 50;
+  cursor: move;
+}
+
+.jtk-connector {
+  z-index: 1;
+}
+
+/** ELEMENTS **/
+.littledot {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background-image: url("/static/images/littledot.png");
+  z-index: 5;
+  position: absolute;
+  border-radius: 31px;
+}
+
+.littledot-hover-hover {
+  border: 2px solid orange;
+}
+
+.dropHover {
+  border: 1px solid orange;
+}
+
+/** ELEMENT POSITIONS **/
+/* MCB switches */
+#ld1 {
+  top: 12.1em;
+  left: 1.5em;
+}
+#ld2 {
+  top: 12.1em;
+  left: 3.5em;
+}
+#ld3 {
+  top: 12.1em;
+  left: 5.5em;
+}
+/* Rectifier */
+#ld4 {
+  top: 5.1em;
+  left: 9em;
+}
+#ld5 {
+  top: 8.6em;
+  left: 9em;
+}
+#ld6 {
+  top: 12.1em;
+  left: 9em;
+}
+
+#ld7 {
+  top: 6.5em;
+  left: 14.5em;
+}
+#ld8 {
+  top: 10.4em;
+  left: 14.5em;
+}
+
+/* armature voltage regulator */
+#ld9 {
+  top: 16.1em;
+  left: 21em;
+}
+#ld10 {
+  top: 16.1em;
+  left: 26.5em;
+}
+
+/* DC motor */
+#ld11 {
+  top: 13.1em;
+  left: 35.4em;
+}
+#ld12 {
+  top: 13.1em;
+  left: 40.4em;
+}
+#ld13 {
+  top: 16.1em;
+  left: 35.4em;
+}
+#ld14 {
+  top: 16.1em;
+  left: 40.4em;
+}
+
+/* 3 ph alternator */
+#ld15 {
+  top: 4.5em;
+  left: 55em;
+}
+#ld16 {
+  top: 8.5em;
+  left: 55em;
+}
+#ld17 {
+  top: 12.5em;
+  left: 55em;
+}
+
+#ld18 {
+  top: 15em;
+  left: 48em;
+}
+#ld19 {
+  top: 15em;
+  left: 52em;
+}
+
+/* voltmeter */
+#ld20 {
+  top: 32.5em;
+  left: 62em;
+}
+#ld21 {
+  top: 32.5em;
+  left: 68em;
+}
+
+/* ammeter */
+#ld22 {
+  top: 33em;
+  left: 44.8em;
+}
+#ld23 {
+  top: 33em;
+  left: 52em;
+}
+
+/* ammeter */
+#ld24 {
+  top: 32.5em;
+  left: 29em;
+}
+#ld25 {
+  top: 32.5em;
+  left: 36em;
+}
+
+#ld26 {
+  top: 19.5em;
+  left: 15em;
+}
+#ld27 {
+  top: 19.5em;
+  left: 21em;
+}
+#ld28 {
+  top: 32.5em;
+  left: 15em;
+}
+#ld29 {
+  top: 32.5em;
+  left: 21em;
+}
+
+#ld30 {
+  top: 19.5em;
+  left: 3em;
+}
+#ld31 {
+  top: 19.5em;
+  left: 9em;
+}
+#ld32 {
+  top: 32.5em;
+  left: 3em;
+}
+#ld33 {
+  top: 32.5em;
+  left: 9em;
+}
+
+path,
+.jtk-endpoint {
+  cursor: pointer;
+}
+
+#wrapper {
+  width: 100%;
+}
+div {
+  box-sizing: border-box;
+  resize: both;
+}
+.column60 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column42 {
+  float: left;
+  width: 42%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column48 {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column40 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column50 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column17 {
+  float: left;
+  width: 17%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column23 {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column24 {
+  float: left;
+  width: 24%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column14 {
+  float: left;
+  width: 14%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column15 {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column16 {
+  float: left;
+  width: 16%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column30 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+}
+.column33 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column34 {
+  float: left;
+  width: 34%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column20 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column41 {
+  float: left;
+  width: 41%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.column10 {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  color: #222d32;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 67%;
+  height: 7px;
+  border-radius: 5px;
+  background: grey;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90px;
+  height: 15px;
+  opacity: 1;
+  border-radius: 10%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.rotorOuter {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.rotorInner {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+@keyframes rotations {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.rotate {
+  animation: rotation 0s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}

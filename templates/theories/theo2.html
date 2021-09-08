@@ -1,257 +1,863 @@
 <html>
-<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-<style type="text/css">
-span.cls_002{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_002{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_003{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_003{font-family:Times,serif;font-size:15.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_005{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_005{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_006{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_006{font-family:Times,serif;font-size:13.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_007{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_007{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_004{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_004{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_011{font-family:Times,serif;font-size:11.2px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_011{font-family:Times,serif;font-size:11.2px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_012{font-family:Arial,serif;font-size:11.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_012{font-family:Arial,serif;font-size:11.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_009{font-family:Arial,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_009{font-family:Arial,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_013{font-family:Times,serif;font-size:11.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_013{font-family:Times,serif;font-size:11.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_010{font-family:Times,serif;font-size:6.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_010{font-family:Times,serif;font-size:6.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_014{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_014{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_015{font-family:Times,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_015{font-family:Times,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_018{font-family:Times,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_018{font-family:Times,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_016{font-family:Times,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_016{font-family:Times,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_017{font-family:Times,serif;font-size:6.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_017{font-family:Times,serif;font-size:6.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_019{font-family:Arial,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_019{font-family:Arial,serif;font-size:11.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_024{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_024{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_023{font-family:Times,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_023{font-family:Times,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_021{font-family:Times,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_021{font-family:Times,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_120{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
-div.cls_120{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_025{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_025{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_026{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_026{font-family:Arial,serif;font-size:11.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_022{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_022{font-family:Times,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_020{font-family:Arial,serif;font-size:13.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_020{font-family:Arial,serif;font-size:13.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_027{font-family:"Calibri",serif;font-size:10.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_027{font-family:"Calibri",serif;font-size:10.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_029{font-family:"Calibri Bold",serif;font-size:10.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_029{font-family:"Calibri Bold",serif;font-size:10.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_030{font-family:"Calibri",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_030{font-family:"Calibri",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_031{font-family:"Calibri Bold",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_031{font-family:"Calibri Bold",serif;font-size:8.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_122{font-family:Times,serif;font-size:17.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: underline}
-div.cls_122{font-family:Times,serif;font-size:17.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-span.cls_123{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
-div.cls_123{font-family:Times,serif;font-size:11.7px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-</style>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <style type="text/css">
+        span.cls_002 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_002 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_003 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_003 {
+            font-family: Times, serif;
+            font-size: 15.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_005 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_005 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_006 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_006 {
+            font-family: Times, serif;
+            font-size: 13.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_007 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_007 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_004 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_004 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_011 {
+            font-family: Times, serif;
+            font-size: 11.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_011 {
+            font-family: Times, serif;
+            font-size: 11.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_012 {
+            font-family: Arial, serif;
+            font-size: 11.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_012 {
+            font-family: Arial, serif;
+            font-size: 11.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_009 {
+            font-family: Arial, serif;
+            font-size: 13.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_009 {
+            font-family: Arial, serif;
+            font-size: 13.1px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_013 {
+            font-family: Times, serif;
+            font-size: 11.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_013 {
+            font-family: Times, serif;
+            font-size: 11.2px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_010 {
+            font-family: Times, serif;
+            font-size: 6.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_010 {
+            font-family: Times, serif;
+            font-size: 6.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_014 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_014 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_015 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_015 {
+            font-family: Times, serif;
+            font-size: 7.9px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_018 {
+            font-family: Times, serif;
+            font-size: 11.3px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_018 {
+            font-family: Times, serif;
+            font-size: 11.3px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_016 {
+            font-family: Times, serif;
+            font-size: 11.3px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_016 {
+            font-family: Times, serif;
+            font-size: 11.3px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_017 {
+            font-family: Times, serif;
+            font-size: 6.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_017 {
+            font-family: Times, serif;
+            font-size: 6.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_019 {
+            font-family: Arial, serif;
+            font-size: 11.3px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_019 {
+            font-family: Arial, serif;
+            font-size: 11.3px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_024 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_024 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_023 {
+            font-family: Times, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_023 {
+            font-family: Times, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_021 {
+            font-family: Times, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_021 {
+            font-family: Times, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_120 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: underline
+        }
+
+        div.cls_120 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_025 {
+            font-family: Arial, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_025 {
+            font-family: Arial, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_026 {
+            font-family: Arial, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_026 {
+            font-family: Arial, serif;
+            font-size: 11.6px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_022 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        div.cls_022 {
+            font-family: Times, serif;
+            font-size: 6.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_020 {
+            font-family: Arial, serif;
+            font-size: 13.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_020 {
+            font-family: Arial, serif;
+            font-size: 13.4px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_027 {
+            font-family: "Calibri", serif;
+            font-size: 10.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_027 {
+            font-family: "Calibri", serif;
+            font-size: 10.8px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_029 {
+            font-family: "Calibri Bold", serif;
+            font-size: 10.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_029 {
+            font-family: "Calibri Bold", serif;
+            font-size: 10.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_030 {
+            font-family: "Calibri", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_030 {
+            font-family: "Calibri", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_031 {
+            font-family: "Calibri Bold", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        div.cls_031 {
+            font-family: "Calibri Bold", serif;
+            font-size: 8.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+
+        span.cls_122 {
+            font-family: Times, serif;
+            font-size: 17.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline
+        }
+
+        div.cls_122 {
+            font-family: Times, serif;
+            font-size: 17.6px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none
+        }
+
+        span.cls_123 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: underline
+        }
+
+        div.cls_123 {
+            font-family: Times, serif;
+            font-size: 11.7px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+    </style>
 </head>
+
 <body>
-<div style="text-align: center; position: relative; top:10px; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="/speed_control_of_3-phase_squirrel_cage_induction_motor_by_voltage_control/simulation">Go to Simulation</a></div>
-<div style="position:absolute;left:50%;margin-left:-297px;top:80px;width:595px;height:842px;border-style:outset;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="/static/images/exp2and3/background01.jpg" width=595 height=842></div>
-<div style="position:absolute;left:83.28px;top:104.47px" class="cls_002"><span class="cls_002">Experiment No:</span><span class="cls_003"> 2</span></div>
-<div style="position:absolute;left:83.28px;top:135.74px" class="cls_005"><span class="cls_005">Title:</span><span class="cls_006"> Speed control of 3-phase squirrel cage induction motor by voltage control</span></div>
-<div style="position:absolute;left:83.28px;top:167.60px" class="cls_007"><span class="cls_007">Objective:</span></div>
-<div style="position:absolute;left:83.28px;top:180.80px" class="cls_004"><span class="cls_004">1.</span></div>
-<div style="position:absolute;left:109.56px;top:180.80px" class="cls_004"><span class="cls_004">To perform an experiment to control the speed of a 3-phase squirrel cage induction</span></div>
-<div style="position:absolute;left:109.56px;top:194.24px" class="cls_004"><span class="cls_004">motor by varying its supply voltage</span></div>
-<div style="position:absolute;left:83.28px;top:221.36px" class="cls_007"><span class="cls_007">The Experiment Covers the Course Outcomes:</span></div>
-<div style="position:absolute;left:83.28px;top:248.24px" class="cls_007"><span class="cls_007">Bloom’s Cognitive Domain:</span></div>
-<div style="position:absolute;left:83.28px;top:288.38px" class="cls_005"><span class="cls_005">Basic Theory:</span></div>
-<div style="position:absolute;left:83.28px;top:319.76px" class="cls_004"><span class="cls_004">The operating speed of a 3-phase induction motor is given by:</span></div>
-<div style="position:absolute;left:85.56px;top:345.92px" class="cls_011"><span class="cls_011">N</span></div>
-<div style="position:absolute;left:101.52px;top:345.92px" class="cls_012"><span class="cls_012">=</span></div>
-<div style="position:absolute;left:110.40px;top:344.04px" class="cls_009"><span class="cls_009">(</span></div>
-<div style="position:absolute;left:112.80px;top:345.92px" class="cls_013"><span class="cls_013">1</span><span class="cls_012">−</span></div>
-<div style="position:absolute;left:128.16px;top:345.92px" class="cls_011"><span class="cls_011">s</span></div>
-<div style="position:absolute;left:133.44px;top:344.04px" class="cls_009"><span class="cls_009">)</span></div>
-<div style="position:absolute;left:137.28px;top:345.92px" class="cls_011"><span class="cls_011">N</span></div>
-<div style="position:absolute;left:94.44px;top:353.47px" class="cls_010"><span class="cls_010">r</span></div>
-<div style="position:absolute;left:146.16px;top:353.47px" class="cls_010"><span class="cls_010">S</span></div>
-<div style="position:absolute;left:83.28px;top:373.40px" class="cls_004"><span class="cls_004">Where, the synchronous speed </span><span class="cls_014">N</span><span class="cls_015"><sub>S</sub></span><span class="cls_004"> is related to the supply frequency </span><span class="cls_014">f</span><span class="cls_004"> and number of poles </span><span class="cls_014">P</span></div>
-<div style="position:absolute;left:83.28px;top:388.88px" class="cls_004"><span class="cls_004">by the equation:</span></div>
-<div style="position:absolute;left:109.92px;top:414.60px" class="cls_018"><span class="cls_018">120</span></div>
-<div style="position:absolute;left:129.36px;top:414.60px" class="cls_016"><span class="cls_016">f</span></div>
-<div style="position:absolute;left:85.56px;top:421.80px" class="cls_016"><span class="cls_016">N</span></div>
-<div style="position:absolute;left:93.84px;top:429.26px" class="cls_017"><span class="cls_017">S</span></div>
-<div style="position:absolute;left:101.40px;top:421.80px" class="cls_019"><span class="cls_019">=</span></div>
-<div style="position:absolute;left:119.76px;top:430.68px" class="cls_016"><span class="cls_016">P</span></div>
-<div style="position:absolute;left:83.28px;top:455.00px" class="cls_004"><span class="cls_004">The above expressions indicates that the speed </span><span class="cls_014">N</span><span class="cls_015"><sub>r</sub></span><span class="cls_004"> of an induction motor can be controlled by</span></div>
-<div style="position:absolute;left:83.28px;top:470.36px" class="cls_004"><span class="cls_004">varying the synchronous speed </span><span class="cls_014">N</span><span class="cls_015"><sub>S</sub></span><span class="cls_004"> or the slip </span><span class="cls_014">s</span><span class="cls_004">.</span></div>
-<div style="position:absolute;left:83.28px;top:495.56px" class="cls_004"><span class="cls_004">The synchronous speed can be changed by varying either the frequency </span><span class="cls_014">f</span><span class="cls_004">, or the number of</span></div>
-<div style="position:absolute;left:83.28px;top:511.04px" class="cls_004"><span class="cls_004">poles </span><span class="cls_014">P</span><span class="cls_004"> of the motor. On the other hand, the slip </span><span class="cls_014">s</span><span class="cls_004"> can be controlled by varying the supply</span></div>
-<div style="position:absolute;left:83.28px;top:526.40px" class="cls_004"><span class="cls_004">voltage, or by varying the motor circuit resistance or reactance. Accordingly, the practical</span></div>
-<div style="position:absolute;left:83.28px;top:542.00px" class="cls_004"><span class="cls_004">methods of speed control of a 3-phase induction motor can be listed as:</span></div>
-<div style="position:absolute;left:83.28px;top:566.96px" class="cls_004"><span class="cls_004">(a)  Variation of supply voltage</span></div>
-<div style="position:absolute;left:83.28px;top:580.40px" class="cls_004"><span class="cls_004">(b)  Variation of supply frequency</span></div>
-<div style="position:absolute;left:83.28px;top:593.84px" class="cls_004"><span class="cls_004">(c)  Variation of number of poles</span></div>
-<div style="position:absolute;left:83.28px;top:607.28px" class="cls_004"><span class="cls_004">(d)  Variation of rotor circuit resistance or reactance</span></div>
-<div style="position:absolute;left:83.28px;top:646.04px" class="cls_004"><span class="cls_004">Since poles can only be integers, speed control by pole changing method only provides</span></div>
-<div style="position:absolute;left:83.28px;top:661.52px" class="cls_004"><span class="cls_004">discrete steps of speed variation. One of the simplest methods of controlling the speed is thus</span></div>
-<div style="position:absolute;left:83.28px;top:676.88px" class="cls_004"><span class="cls_004">by varying the supply voltage.</span></div>
-<div style="position:absolute;left:83.28px;top:702.08px" class="cls_004"><span class="cls_004">Recall the expression for developed torque in a 3-phase induction motor:</span></div>
-</div>
-<div style="position:absolute;left:50%;margin-left:-297px;top:932px;width:595px;height:842px;border-style:outset;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="/static/images/exp2and3/background02.jpg" width=595 height=842></div>
-<div style="position:absolute;left:182.88px;top:107.24px" class="cls_024"><span class="cls_024">2</span></div>
-<div style="position:absolute;left:108.48px;top:108.41px" class="cls_023"><span class="cls_023">3</span></div>
-<div style="position:absolute;left:172.92px;top:108.41px" class="cls_021"><span class="cls_021">V</span></div>
-<div style="position:absolute;left:179.28px;top:116.12px" class="cls_024"><span class="cls_024">1</span></div>
-<div style="position:absolute;left:244.20px;top:108.41px" class="cls_021"><span class="cls_021">r</span></div>
-<div style="position:absolute;left:247.92px;top:116.12px" class="cls_120"><span class="cls_120">2</span></div>
-<div style="position:absolute;left:252.72px;top:108.41px" class="cls_023"><span class="cls_023">'</span></div>
-<div style="position:absolute;left:84.36px;top:115.61px" class="cls_021"><span class="cls_021">T</span></div>
-<div style="position:absolute;left:95.16px;top:115.61px" class="cls_025"><span class="cls_025">=</span></div>
-<div style="position:absolute;left:119.88px;top:115.61px" class="cls_025"><span class="cls_025">×</span></div>
-<div style="position:absolute;left:234.84px;top:115.61px" class="cls_025"><span class="cls_025">×</span></div>
-<div style="position:absolute;left:171.36px;top:124.16px" class="cls_024"><span class="cls_024">2</span></div>
-<div style="position:absolute;left:104.76px;top:124.61px" class="cls_026"><span class="cls_026">ω</span></div>
-<div style="position:absolute;left:128.88px;top:127.25px" class="cls_025"><span class="cls_025">/</span></div>
-<div style="position:absolute;left:154.08px;top:126.41px" class="cls_021"><span class="cls_021">r</span></div>
-<div style="position:absolute;left:162.48px;top:126.41px" class="cls_023"><span class="cls_023">'</span><span class="cls_025">\</span></div>
-<div style="position:absolute;left:246.96px;top:124.61px" class="cls_021"><span class="cls_021">s</span></div>
-<div style="position:absolute;left:157.68px;top:134.12px" class="cls_120"><span class="cls_120">2</span></div>
-<div style="position:absolute;left:113.16px;top:132.32px" class="cls_022"><span class="cls_022">s</span></div>
-<div style="position:absolute;left:227.64px;top:132.32px" class="cls_024"><span class="cls_024">2</span></div>
-<div style="position:absolute;left:128.88px;top:134.69px" class="cls_025"><span class="cls_025">|</span><span class="cls_021">r</span></div>
-<div style="position:absolute;left:144.12px;top:133.61px" class="cls_025"><span class="cls_025">+</span></div>
-<div style="position:absolute;left:166.20px;top:134.69px" class="cls_025"><span class="cls_025">|</span></div>
-<div style="position:absolute;left:178.32px;top:133.61px" class="cls_025"><span class="cls_025">+</span></div>
-<div style="position:absolute;left:186.96px;top:131.76px" class="cls_020"><span class="cls_020">(</span></div>
-<div style="position:absolute;left:191.28px;top:133.61px" class="cls_021"><span class="cls_021">x</span></div>
-<div style="position:absolute;left:202.20px;top:133.61px" class="cls_025"><span class="cls_025">+</span></div>
-<div style="position:absolute;left:211.80px;top:133.61px" class="cls_021"><span class="cls_021">x</span></div>
-<div style="position:absolute;left:221.88px;top:133.61px" class="cls_023"><span class="cls_023">'</span></div>
-<div style="position:absolute;left:224.04px;top:131.76px" class="cls_020"><span class="cls_020">)</span></div>
-<div style="position:absolute;left:137.64px;top:141.32px" class="cls_024"><span class="cls_024">1</span></div>
-<div style="position:absolute;left:195.84px;top:141.32px" class="cls_024"><span class="cls_024">1</span></div>
-<div style="position:absolute;left:217.08px;top:141.32px" class="cls_024"><span class="cls_024">2</span></div>
-<div style="position:absolute;left:128.88px;top:143.93px" class="cls_025"><span class="cls_025">\</span></div>
-<div style="position:absolute;left:156.84px;top:142.61px" class="cls_021"><span class="cls_021">s</span></div>
-<div style="position:absolute;left:166.20px;top:143.93px" class="cls_025"><span class="cls_025">/</span></div>
-<div style="position:absolute;left:105.12px;top:185.30px" class="cls_005"><span class="cls_005">Variation of supply voltage</span></div>
-<div style="position:absolute;left:83.28px;top:212.96px" class="cls_004"><span class="cls_004">It is thus seen that the developed torque is proportional to square of the supply voltage. Figure</span></div>
-<div style="position:absolute;left:83.28px;top:228.44px" class="cls_004"><span class="cls_004">5.2.1 shows the nature of variation of developed torque with change in supply voltage. One</span></div>
-<div style="position:absolute;left:83.28px;top:243.92px" class="cls_004"><span class="cls_004">possible example of load-torque characteristic is also included in the plot. The intersection</span></div>
-<div style="position:absolute;left:83.28px;top:259.28px" class="cls_004"><span class="cls_004">points between the load torque line and the developed torque curves at different voltages</span></div>
-<div style="position:absolute;left:83.28px;top:274.76px" class="cls_004"><span class="cls_004">indicate the stable operating points of the motor at those different supply voltages and the</span></div>
-<div style="position:absolute;left:83.28px;top:290.24px" class="cls_004"><span class="cls_004">corresponding stable running speeds.</span></div>
-<div style="position:absolute;left:83.28px;top:514.76px" class="cls_004"><span class="cls_004">Figure 5.2.1 Speed control of induction motor by supply voltage variation</span></div>
-<div style="position:absolute;left:83.28px;top:539.96px" class="cls_004"><span class="cls_004">The experimental setup is shown in Figure 5.2.2.</span></div>
-<div style="position:absolute;left:295.32px;top:575.22px" class="cls_027"><span class="cls_027">A</span></div>
-<div style="position:absolute;left:240.96px;top:615.30px" class="cls_027"><span class="cls_027">V</span></div>
-<div style="position:absolute;left:83.28px;top:703.16px" class="cls_004"><span class="cls_004">Figure 5.2.2 Circuit diagram for speed control of squirrel cage induction motor by supply</span></div>
-<div style="position:absolute;left:83.28px;top:718.52px" class="cls_004"><span class="cls_004">voltage variation</span></div>
-</div>
+    <div
+        style="text-align: center; position: relative; top:10px; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <a href="/speed_control_of_3-phase_squirrel_cage_induction_motor_by_voltage_control/simulation#wrapper">Go to
+            Simulation</a></div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:80px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp2and3/background01.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:83.28px;top:104.47px" class="cls_002"><span class="cls_002">Experiment
+                No:</span><span class="cls_003"> 2</span></div>
+        <div style="position:absolute;left:83.28px;top:135.74px" class="cls_005"><span
+                class="cls_005">Title:</span><span class="cls_006"> Speed control of 3-phase squirrel cage induction
+                motor by voltage control</span></div>
+        <div style="position:absolute;left:83.28px;top:167.60px" class="cls_007"><span class="cls_007">Objective:</span>
+        </div>
+        <div style="position:absolute;left:83.28px;top:180.80px" class="cls_004"><span class="cls_004">1.</span></div>
+        <div style="position:absolute;left:109.56px;top:180.80px" class="cls_004"><span class="cls_004">To perform an
+                experiment to control the speed of a 3-phase squirrel cage induction</span></div>
+        <div style="position:absolute;left:109.56px;top:194.24px" class="cls_004"><span class="cls_004">motor by varying
+                its supply voltage</span></div>
+        <div style="position:absolute;left:83.28px;top:221.36px" class="cls_007"><span class="cls_007">The Experiment
+                Covers the Course Outcomes:</span></div>
+        <div style="position:absolute;left:83.28px;top:248.24px" class="cls_007"><span class="cls_007">Bloom’s Cognitive
+                Domain:</span></div>
+        <div style="position:absolute;left:83.28px;top:288.38px" class="cls_005"><span class="cls_005">Basic
+                Theory:</span></div>
+        <div style="position:absolute;left:83.28px;top:319.76px" class="cls_004"><span class="cls_004">The operating
+                speed of a 3-phase induction motor is given by:</span></div>
+        <div style="position:absolute;left:85.56px;top:345.92px" class="cls_011"><span class="cls_011">N</span></div>
+        <div style="position:absolute;left:101.52px;top:345.92px" class="cls_012"><span class="cls_012">=</span></div>
+        <div style="position:absolute;left:110.40px;top:344.04px" class="cls_009"><span class="cls_009">(</span></div>
+        <div style="position:absolute;left:112.80px;top:345.92px" class="cls_013"><span class="cls_013">1</span><span
+                class="cls_012">−</span></div>
+        <div style="position:absolute;left:128.16px;top:345.92px" class="cls_011"><span class="cls_011">s</span></div>
+        <div style="position:absolute;left:133.44px;top:344.04px" class="cls_009"><span class="cls_009">)</span></div>
+        <div style="position:absolute;left:137.28px;top:345.92px" class="cls_011"><span class="cls_011">N</span></div>
+        <div style="position:absolute;left:94.44px;top:353.47px" class="cls_010"><span class="cls_010">r</span></div>
+        <div style="position:absolute;left:146.16px;top:353.47px" class="cls_010"><span class="cls_010">S</span></div>
+        <div style="position:absolute;left:83.28px;top:373.40px" class="cls_004"><span class="cls_004">Where, the
+                synchronous speed </span><span class="cls_014">N</span><span class="cls_015"><sub>S</sub></span><span
+                class="cls_004"> is related to the supply frequency </span><span class="cls_014">f</span><span
+                class="cls_004"> and number of poles </span><span class="cls_014">P</span></div>
+        <div style="position:absolute;left:83.28px;top:388.88px" class="cls_004"><span class="cls_004">by the
+                equation:</span></div>
+        <div style="position:absolute;left:109.92px;top:414.60px" class="cls_018"><span class="cls_018">120</span></div>
+        <div style="position:absolute;left:129.36px;top:414.60px" class="cls_016"><span class="cls_016">f</span></div>
+        <div style="position:absolute;left:85.56px;top:421.80px" class="cls_016"><span class="cls_016">N</span></div>
+        <div style="position:absolute;left:93.84px;top:429.26px" class="cls_017"><span class="cls_017">S</span></div>
+        <div style="position:absolute;left:101.40px;top:421.80px" class="cls_019"><span class="cls_019">=</span></div>
+        <div style="position:absolute;left:119.76px;top:430.68px" class="cls_016"><span class="cls_016">P</span></div>
+        <div style="position:absolute;left:83.28px;top:455.00px" class="cls_004"><span class="cls_004">The above
+                expressions indicates that the speed </span><span class="cls_014">N</span><span
+                class="cls_015"><sub>r</sub></span><span class="cls_004"> of an induction motor can be controlled
+                by</span></div>
+        <div style="position:absolute;left:83.28px;top:470.36px" class="cls_004"><span class="cls_004">varying the
+                synchronous speed </span><span class="cls_014">N</span><span class="cls_015"><sub>S</sub></span><span
+                class="cls_004"> or the slip </span><span class="cls_014">s</span><span class="cls_004">.</span></div>
+        <div style="position:absolute;left:83.28px;top:495.56px" class="cls_004"><span class="cls_004">The synchronous
+                speed can be changed by varying either the frequency </span><span class="cls_014">f</span><span
+                class="cls_004">, or the number of</span></div>
+        <div style="position:absolute;left:83.28px;top:511.04px" class="cls_004"><span class="cls_004">poles
+            </span><span class="cls_014">P</span><span class="cls_004"> of the motor. On the other hand, the slip
+            </span><span class="cls_014">s</span><span class="cls_004"> can be controlled by varying the supply</span>
+        </div>
+        <div style="position:absolute;left:83.28px;top:526.40px" class="cls_004"><span class="cls_004">voltage, or by
+                varying the motor circuit resistance or reactance. Accordingly, the practical</span></div>
+        <div style="position:absolute;left:83.28px;top:542.00px" class="cls_004"><span class="cls_004">methods of speed
+                control of a 3-phase induction motor can be listed as:</span></div>
+        <div style="position:absolute;left:83.28px;top:566.96px" class="cls_004"><span class="cls_004">(a) Variation of
+                supply voltage</span></div>
+        <div style="position:absolute;left:83.28px;top:580.40px" class="cls_004"><span class="cls_004">(b) Variation of
+                supply frequency</span></div>
+        <div style="position:absolute;left:83.28px;top:593.84px" class="cls_004"><span class="cls_004">(c) Variation of
+                number of poles</span></div>
+        <div style="position:absolute;left:83.28px;top:607.28px" class="cls_004"><span class="cls_004">(d) Variation of
+                rotor circuit resistance or reactance</span></div>
+        <div style="position:absolute;left:83.28px;top:646.04px" class="cls_004"><span class="cls_004">Since poles can
+                only be integers, speed control by pole changing method only provides</span></div>
+        <div style="position:absolute;left:83.28px;top:661.52px" class="cls_004"><span class="cls_004">discrete steps of
+                speed variation. One of the simplest methods of controlling the speed is thus</span></div>
+        <div style="position:absolute;left:83.28px;top:676.88px" class="cls_004"><span class="cls_004">by varying the
+                supply voltage.</span></div>
+        <div style="position:absolute;left:83.28px;top:702.08px" class="cls_004"><span class="cls_004">Recall the
+                expression for developed torque in a 3-phase induction motor:</span></div>
+    </div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:932px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp2and3/background02.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:182.88px;top:107.24px" class="cls_024"><span class="cls_024">2</span></div>
+        <div style="position:absolute;left:108.48px;top:108.41px" class="cls_023"><span class="cls_023">3</span></div>
+        <div style="position:absolute;left:172.92px;top:108.41px" class="cls_021"><span class="cls_021">V</span></div>
+        <div style="position:absolute;left:179.28px;top:116.12px" class="cls_024"><span class="cls_024">1</span></div>
+        <div style="position:absolute;left:244.20px;top:108.41px" class="cls_021"><span class="cls_021">r</span></div>
+        <div style="position:absolute;left:247.92px;top:116.12px" class="cls_120"><span class="cls_120">2</span></div>
+        <div style="position:absolute;left:252.72px;top:108.41px" class="cls_023"><span class="cls_023">'</span></div>
+        <div style="position:absolute;left:84.36px;top:115.61px" class="cls_021"><span class="cls_021">T</span></div>
+        <div style="position:absolute;left:95.16px;top:115.61px" class="cls_025"><span class="cls_025">=</span></div>
+        <div style="position:absolute;left:119.88px;top:115.61px" class="cls_025"><span class="cls_025">×</span></div>
+        <div style="position:absolute;left:234.84px;top:115.61px" class="cls_025"><span class="cls_025">×</span></div>
+        <div style="position:absolute;left:171.36px;top:124.16px" class="cls_024"><span class="cls_024">2</span></div>
+        <div style="position:absolute;left:104.76px;top:124.61px" class="cls_026"><span class="cls_026">ω</span></div>
+        <div style="position:absolute;left:128.88px;top:127.25px" class="cls_025"><span class="cls_025">/</span></div>
+        <div style="position:absolute;left:154.08px;top:126.41px" class="cls_021"><span class="cls_021">r</span></div>
+        <div style="position:absolute;left:162.48px;top:126.41px" class="cls_023"><span class="cls_023">'</span><span
+                class="cls_025">\</span></div>
+        <div style="position:absolute;left:246.96px;top:124.61px" class="cls_021"><span class="cls_021">s</span></div>
+        <div style="position:absolute;left:157.68px;top:134.12px" class="cls_120"><span class="cls_120">2</span></div>
+        <div style="position:absolute;left:113.16px;top:132.32px" class="cls_022"><span class="cls_022">s</span></div>
+        <div style="position:absolute;left:227.64px;top:132.32px" class="cls_024"><span class="cls_024">2</span></div>
+        <div style="position:absolute;left:128.88px;top:134.69px" class="cls_025"><span class="cls_025">|</span><span
+                class="cls_021">r</span></div>
+        <div style="position:absolute;left:144.12px;top:133.61px" class="cls_025"><span class="cls_025">+</span></div>
+        <div style="position:absolute;left:166.20px;top:134.69px" class="cls_025"><span class="cls_025">|</span></div>
+        <div style="position:absolute;left:178.32px;top:133.61px" class="cls_025"><span class="cls_025">+</span></div>
+        <div style="position:absolute;left:186.96px;top:131.76px" class="cls_020"><span class="cls_020">(</span></div>
+        <div style="position:absolute;left:191.28px;top:133.61px" class="cls_021"><span class="cls_021">x</span></div>
+        <div style="position:absolute;left:202.20px;top:133.61px" class="cls_025"><span class="cls_025">+</span></div>
+        <div style="position:absolute;left:211.80px;top:133.61px" class="cls_021"><span class="cls_021">x</span></div>
+        <div style="position:absolute;left:221.88px;top:133.61px" class="cls_023"><span class="cls_023">'</span></div>
+        <div style="position:absolute;left:224.04px;top:131.76px" class="cls_020"><span class="cls_020">)</span></div>
+        <div style="position:absolute;left:137.64px;top:141.32px" class="cls_024"><span class="cls_024">1</span></div>
+        <div style="position:absolute;left:195.84px;top:141.32px" class="cls_024"><span class="cls_024">1</span></div>
+        <div style="position:absolute;left:217.08px;top:141.32px" class="cls_024"><span class="cls_024">2</span></div>
+        <div style="position:absolute;left:128.88px;top:143.93px" class="cls_025"><span class="cls_025">\</span></div>
+        <div style="position:absolute;left:156.84px;top:142.61px" class="cls_021"><span class="cls_021">s</span></div>
+        <div style="position:absolute;left:166.20px;top:143.93px" class="cls_025"><span class="cls_025">/</span></div>
+        <div style="position:absolute;left:105.12px;top:185.30px" class="cls_005"><span class="cls_005">Variation of
+                supply voltage</span></div>
+        <div style="position:absolute;left:83.28px;top:212.96px" class="cls_004"><span class="cls_004">It is thus seen
+                that the developed torque is proportional to square of the supply voltage. Figure</span></div>
+        <div style="position:absolute;left:83.28px;top:228.44px" class="cls_004"><span class="cls_004">5.2.1 shows the
+                nature of variation of developed torque with change in supply voltage. One</span></div>
+        <div style="position:absolute;left:83.28px;top:243.92px" class="cls_004"><span class="cls_004">possible example
+                of load-torque characteristic is also included in the plot. The intersection</span></div>
+        <div style="position:absolute;left:83.28px;top:259.28px" class="cls_004"><span class="cls_004">points between
+                the load torque line and the developed torque curves at different voltages</span></div>
+        <div style="position:absolute;left:83.28px;top:274.76px" class="cls_004"><span class="cls_004">indicate the
+                stable operating points of the motor at those different supply voltages and the</span></div>
+        <div style="position:absolute;left:83.28px;top:290.24px" class="cls_004"><span class="cls_004">corresponding
+                stable running speeds.</span></div>
+        <div style="position:absolute;left:83.28px;top:514.76px" class="cls_004"><span class="cls_004">Figure 5.2.1
+                Speed control of induction motor by supply voltage variation</span></div>
+        <div style="position:absolute;left:83.28px;top:539.96px" class="cls_004"><span class="cls_004">The experimental
+                setup is shown in Figure 5.2.2.</span></div>
+        <div style="position:absolute;left:295.32px;top:575.22px" class="cls_027"><span class="cls_027">A</span></div>
+        <div style="position:absolute;left:240.96px;top:615.30px" class="cls_027"><span class="cls_027">V</span></div>
+        <div style="position:absolute;left:83.28px;top:703.16px" class="cls_004"><span class="cls_004">Figure 5.2.2
+                Circuit diagram for speed control of squirrel cage induction motor by supply</span></div>
+        <div style="position:absolute;left:83.28px;top:718.52px" class="cls_004"><span class="cls_004">voltage
+                variation</span></div>
+    </div>
 
 
-<div style="position:absolute;left:50%;margin-left:-297px;top:1786px;width:595px;height:842px;border-style:outset;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="/static/images/exp2and3/background04.jpg" width=595 height=842></div>
-<div style="position:absolute;left:129.00px;top:109.70px" class="cls_029"><span class="cls_029">Supply voltage vs. speed graph of 3-phase squirrel cage induction motor</span></div>
-<div style="position:absolute;left:106.68px;top:125.91px" class="cls_030"><span class="cls_030">1500</span></div>
-<div style="position:absolute;left:106.68px;top:143.67px" class="cls_030"><span class="cls_030">1498</span></div>
-<div style="position:absolute;left:106.68px;top:161.43px" class="cls_030"><span class="cls_030">1496</span></div>
-<div style="position:absolute;left:106.68px;top:179.19px" class="cls_030"><span class="cls_030">1494</span></div>
-<div style="position:absolute;left:106.68px;top:196.95px" class="cls_030"><span class="cls_030">1492</span></div>
-<div style="position:absolute;left:106.68px;top:214.71px" class="cls_030"><span class="cls_030">1490</span></div>
-<div style="position:absolute;left:106.68px;top:232.59px" class="cls_030"><span class="cls_030">1488</span></div>
-<div style="position:absolute;left:106.68px;top:250.35px" class="cls_030"><span class="cls_030">1486</span></div>
-<div style="position:absolute;left:106.68px;top:268.11px" class="cls_030"><span class="cls_030">1484</span></div>
-<div style="position:absolute;left:106.68px;top:285.87px" class="cls_030"><span class="cls_030">1482</span></div>
-<div style="position:absolute;left:106.68px;top:303.63px" class="cls_030"><span class="cls_030">1480</span></div>
-<div style="position:absolute;left:106.68px;top:321.39px" class="cls_030"><span class="cls_030">1478</span></div>
-<div style="position:absolute;left:130.20px;top:335.31px" class="cls_030"><span class="cls_030">0</span></div>
-<div style="position:absolute;left:166.08px;top:335.31px" class="cls_030"><span class="cls_030">50</span></div>
-<div style="position:absolute;left:201.48px;top:335.31px" class="cls_030"><span class="cls_030">100</span></div>
-<div style="position:absolute;left:239.41px;top:335.31px" class="cls_030"><span class="cls_030">150</span></div>
-<div style="position:absolute;left:277.33px;top:335.31px" class="cls_030"><span class="cls_030">200</span></div>
-<div style="position:absolute;left:315.14px;top:335.31px" class="cls_030"><span class="cls_030">250</span></div>
-<div style="position:absolute;left:353.06px;top:335.31px" class="cls_030"><span class="cls_030">300</span></div>
-<div style="position:absolute;left:390.99px;top:335.31px" class="cls_030"><span class="cls_030">350</span></div>
-<div style="position:absolute;left:428.91px;top:335.31px" class="cls_030"><span class="cls_030">400</span></div>
-<div style="position:absolute;left:466.71px;top:335.31px" class="cls_030"><span class="cls_030">450</span></div>
-<div style="position:absolute;left:283.44px;top:350.07px" class="cls_031"><span class="cls_031">Voltage (V)</span></div>
-<div style="position:absolute;left:92.04px;top:376.81px" class="cls_122"><span class="cls_122">Devices, Apparatus and Equipment used:</span></div>
-<div style="position:absolute;left:83.28px;top:410.12px" class="cls_123"><span class="cls_123">Devices under test:</span></div>
-<div style="position:absolute;left:92.88px;top:435.32px" class="cls_004"><span class="cls_004">SL.</span></div>
-<div style="position:absolute;left:134.64px;top:442.16px" class="cls_004"><span class="cls_004">Name of the Devices</span></div>
-<div style="position:absolute;left:273.35px;top:442.16px" class="cls_004"><span class="cls_004">Specifications</span></div>
-<div style="position:absolute;left:417.84px;top:441.20px" class="cls_004"><span class="cls_004">Quantity</span></div>
-<div style="position:absolute;left:474.83px;top:441.20px" class="cls_004"><span class="cls_004">Maker’s Name</span></div>
-<div style="position:absolute;left:92.88px;top:448.76px" class="cls_004"><span class="cls_004">NO.</span></div>
-<div style="position:absolute;left:474.84px;top:462.80px" class="cls_004"><span class="cls_004">NEC Motor</span></div>
-<div style="position:absolute;left:273.36px;top:466.76px" class="cls_004"><span class="cls_004">2.2 K.W, 3 H.P, 1425 rpm</span></div>
-<div style="position:absolute;left:134.64px;top:480.20px" class="cls_004"><span class="cls_004">3Phase    Squirrel    cage</span></div>
-<div style="position:absolute;left:273.36px;top:480.20px" class="cls_004"><span class="cls_004">,415  V</span></div>
-<div style="position:absolute;left:316.68px;top:480.20px" class="cls_004"><span class="cls_004">,</span></div>
-<div style="position:absolute;left:326.76px;top:480.20px" class="cls_004"><span class="cls_004">5Amp,50  Hz,  3</span></div>
-<div style="position:absolute;left:92.88px;top:486.80px" class="cls_004"><span class="cls_004">1</span></div>
-<div style="position:absolute;left:417.84px;top:486.08px" class="cls_004"><span class="cls_004">1</span></div>
-<div style="position:absolute;left:134.64px;top:493.64px" class="cls_004"><span class="cls_004">Induction Motor</span></div>
-<div style="position:absolute;left:273.36px;top:493.64px" class="cls_004"><span class="cls_004">phase</span></div>
-<div style="position:absolute;left:309.00px;top:493.64px" class="cls_004"><span class="cls_004">,  Delta,  Efficiency</span></div>
-<div style="position:absolute;left:273.36px;top:507.08px" class="cls_004"><span class="cls_004">79%</span></div>
-<div style="position:absolute;left:83.28px;top:550.52px" class="cls_123"><span class="cls_123">Instruments / Equipment used:</span></div>
-<div style="position:absolute;left:92.88px;top:575.84px" class="cls_004"><span class="cls_004">SL.</span></div>
-<div style="position:absolute;left:134.64px;top:582.56px" class="cls_004"><span class="cls_004">Name of the Devices</span></div>
-<div style="position:absolute;left:273.35px;top:582.56px" class="cls_004"><span class="cls_004">Specifications</span></div>
-<div style="position:absolute;left:417.84px;top:581.72px" class="cls_004"><span class="cls_004">Quantity</span></div>
-<div style="position:absolute;left:474.83px;top:581.72px" class="cls_004"><span class="cls_004">Maker’s Name</span></div>
-<div style="position:absolute;left:92.88px;top:589.28px" class="cls_004"><span class="cls_004">NO.</span></div>
-<div style="position:absolute;left:273.36px;top:603.20px" class="cls_004"><span class="cls_004">Input Voltage- 0-415V</span></div>
-<div style="position:absolute;left:273.36px;top:616.64px" class="cls_004"><span class="cls_004">Output Voltage- 0-470V,50</span></div>
-<div style="position:absolute;left:92.88px;top:623.24px" class="cls_004"><span class="cls_004">1</span></div>
-<div style="position:absolute;left:134.64px;top:623.24px" class="cls_004"><span class="cls_004">3Phase Variac</span></div>
-<div style="position:absolute;left:417.84px;top:622.40px" class="cls_004"><span class="cls_004">1</span></div>
-<div style="position:absolute;left:474.84px;top:622.40px" class="cls_004"><span class="cls_004">A.E</span></div>
-<div style="position:absolute;left:273.36px;top:630.08px" class="cls_004"><span class="cls_004">Hz</span></div>
-<div style="position:absolute;left:92.88px;top:659.36px" class="cls_004"><span class="cls_004">2</span></div>
-<div style="position:absolute;left:134.64px;top:659.36px" class="cls_004"><span class="cls_004">Tachometer</span></div>
-<div style="position:absolute;left:273.35px;top:659.36px" class="cls_004"><span class="cls_004">0-9999.99 rpm</span></div>
-<div style="position:absolute;left:417.84px;top:658.52px" class="cls_004"><span class="cls_004">1</span></div>
-<div style="position:absolute;left:474.84px;top:658.52px" class="cls_004"><span class="cls_004">Fuji Kogyo</span></div>
-<div style="position:absolute;left:273.36px;top:675.32px" class="cls_004"><span class="cls_004">Moving  Iron</span></div>
-<div style="position:absolute;left:346.80px;top:675.32px" class="cls_004"><span class="cls_004">(Analog)</span></div>
-<div style="position:absolute;left:397.56px;top:675.32px" class="cls_004"><span class="cls_004">0-</span></div>
-<div style="position:absolute;left:92.88px;top:682.04px" class="cls_004"><span class="cls_004">3</span></div>
-<div style="position:absolute;left:134.64px;top:682.04px" class="cls_004"><span class="cls_004">Ammeter</span></div>
-<div style="position:absolute;left:417.84px;top:681.20px" class="cls_004"><span class="cls_004">1</span></div>
-<div style="position:absolute;left:474.84px;top:681.20px" class="cls_004"><span class="cls_004">A.E</span></div>
-<div style="position:absolute;left:273.36px;top:688.76px" class="cls_004"><span class="cls_004">5Amp</span></div>
-<div style="position:absolute;left:273.36px;top:702.68px" class="cls_004"><span class="cls_004">Moving  Iron</span></div>
-<div style="position:absolute;left:346.80px;top:702.68px" class="cls_004"><span class="cls_004">(Analog)</span></div>
-<div style="position:absolute;left:397.56px;top:702.68px" class="cls_004"><span class="cls_004">0-</span></div>
-<div style="position:absolute;left:92.88px;top:709.52px" class="cls_004"><span class="cls_004">4</span></div>
-<div style="position:absolute;left:134.64px;top:709.52px" class="cls_004"><span class="cls_004">Voltmeter</span></div>
-<div style="position:absolute;left:417.84px;top:708.56px" class="cls_004"><span class="cls_004">1</span></div>
-<div style="position:absolute;left:474.84px;top:708.56px" class="cls_004"><span class="cls_004">A.E</span></div>
-<div style="position:absolute;left:273.36px;top:716.12px" class="cls_004"><span class="cls_004">500Volt</span></div>
-</div>
-<div style="text-align: center; position: relative; font-size: 30px; top: 2625; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="/speed_control_of_3-phase_squirrel_cage_induction_motor_by_voltage_control/simulation">Go to Simulation</a></div>
-<div style="text-align: center; position: relative; top: 2650;">____________O____________</div>
+    <div
+        style="position:absolute;left:50%;margin-left:-297px;top:1786px;width:595px;height:842px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+            <img src="/static/images/exp2and3/background04.jpg" width=595 height=842>
+        </div>
+        <div style="position:absolute;left:129.00px;top:109.70px" class="cls_029"><span class="cls_029">Supply voltage
+                vs. speed graph of 3-phase squirrel cage induction motor</span></div>
+        <div style="position:absolute;left:106.68px;top:125.91px" class="cls_030"><span class="cls_030">1500</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:143.67px" class="cls_030"><span class="cls_030">1498</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:161.43px" class="cls_030"><span class="cls_030">1496</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:179.19px" class="cls_030"><span class="cls_030">1494</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:196.95px" class="cls_030"><span class="cls_030">1492</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:214.71px" class="cls_030"><span class="cls_030">1490</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:232.59px" class="cls_030"><span class="cls_030">1488</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:250.35px" class="cls_030"><span class="cls_030">1486</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:268.11px" class="cls_030"><span class="cls_030">1484</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:285.87px" class="cls_030"><span class="cls_030">1482</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:303.63px" class="cls_030"><span class="cls_030">1480</span>
+        </div>
+        <div style="position:absolute;left:106.68px;top:321.39px" class="cls_030"><span class="cls_030">1478</span>
+        </div>
+        <div style="position:absolute;left:130.20px;top:335.31px" class="cls_030"><span class="cls_030">0</span></div>
+        <div style="position:absolute;left:166.08px;top:335.31px" class="cls_030"><span class="cls_030">50</span></div>
+        <div style="position:absolute;left:201.48px;top:335.31px" class="cls_030"><span class="cls_030">100</span></div>
+        <div style="position:absolute;left:239.41px;top:335.31px" class="cls_030"><span class="cls_030">150</span></div>
+        <div style="position:absolute;left:277.33px;top:335.31px" class="cls_030"><span class="cls_030">200</span></div>
+        <div style="position:absolute;left:315.14px;top:335.31px" class="cls_030"><span class="cls_030">250</span></div>
+        <div style="position:absolute;left:353.06px;top:335.31px" class="cls_030"><span class="cls_030">300</span></div>
+        <div style="position:absolute;left:390.99px;top:335.31px" class="cls_030"><span class="cls_030">350</span></div>
+        <div style="position:absolute;left:428.91px;top:335.31px" class="cls_030"><span class="cls_030">400</span></div>
+        <div style="position:absolute;left:466.71px;top:335.31px" class="cls_030"><span class="cls_030">450</span></div>
+        <div style="position:absolute;left:283.44px;top:350.07px" class="cls_031"><span class="cls_031">Voltage
+                (V)</span></div>
+        <div style="position:absolute;left:92.04px;top:376.81px" class="cls_122"><span class="cls_122">Devices,
+                Apparatus and Equipment used:</span></div>
+        <div style="position:absolute;left:83.28px;top:410.12px" class="cls_123"><span class="cls_123">Devices under
+                test:</span></div>
+        <div style="position:absolute;left:92.88px;top:435.32px" class="cls_004"><span class="cls_004">SL.</span></div>
+        <div style="position:absolute;left:134.64px;top:442.16px" class="cls_004"><span class="cls_004">Name of the
+                Devices</span></div>
+        <div style="position:absolute;left:273.35px;top:442.16px" class="cls_004"><span
+                class="cls_004">Specifications</span></div>
+        <div style="position:absolute;left:417.84px;top:441.20px" class="cls_004"><span class="cls_004">Quantity</span>
+        </div>
+        <div style="position:absolute;left:474.83px;top:441.20px" class="cls_004"><span class="cls_004">Maker’s
+                Name</span></div>
+        <div style="position:absolute;left:92.88px;top:448.76px" class="cls_004"><span class="cls_004">NO.</span></div>
+        <div style="position:absolute;left:474.84px;top:462.80px" class="cls_004"><span class="cls_004">NEC Motor</span>
+        </div>
+        <div style="position:absolute;left:273.36px;top:466.76px" class="cls_004"><span class="cls_004">2.2 K.W, 3 H.P,
+                1425 rpm</span></div>
+        <div style="position:absolute;left:134.64px;top:480.20px" class="cls_004"><span class="cls_004">3Phase Squirrel
+                cage</span></div>
+        <div style="position:absolute;left:273.36px;top:480.20px" class="cls_004"><span class="cls_004">,415 V</span>
+        </div>
+        <div style="position:absolute;left:316.68px;top:480.20px" class="cls_004"><span class="cls_004">,</span></div>
+        <div style="position:absolute;left:326.76px;top:480.20px" class="cls_004"><span class="cls_004">5Amp,50 Hz,
+                3</span></div>
+        <div style="position:absolute;left:92.88px;top:486.80px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:417.84px;top:486.08px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:134.64px;top:493.64px" class="cls_004"><span class="cls_004">Induction
+                Motor</span></div>
+        <div style="position:absolute;left:273.36px;top:493.64px" class="cls_004"><span class="cls_004">phase</span>
+        </div>
+        <div style="position:absolute;left:309.00px;top:493.64px" class="cls_004"><span class="cls_004">, Delta,
+                Efficiency</span></div>
+        <div style="position:absolute;left:273.36px;top:507.08px" class="cls_004"><span class="cls_004">79%</span></div>
+        <div style="position:absolute;left:83.28px;top:550.52px" class="cls_123"><span class="cls_123">Instruments /
+                Equipment used:</span></div>
+        <div style="position:absolute;left:92.88px;top:575.84px" class="cls_004"><span class="cls_004">SL.</span></div>
+        <div style="position:absolute;left:134.64px;top:582.56px" class="cls_004"><span class="cls_004">Name of the
+                Devices</span></div>
+        <div style="position:absolute;left:273.35px;top:582.56px" class="cls_004"><span
+                class="cls_004">Specifications</span></div>
+        <div style="position:absolute;left:417.84px;top:581.72px" class="cls_004"><span class="cls_004">Quantity</span>
+        </div>
+        <div style="position:absolute;left:474.83px;top:581.72px" class="cls_004"><span class="cls_004">Maker’s
+                Name</span></div>
+        <div style="position:absolute;left:92.88px;top:589.28px" class="cls_004"><span class="cls_004">NO.</span></div>
+        <div style="position:absolute;left:273.36px;top:603.20px" class="cls_004"><span class="cls_004">Input Voltage-
+                0-415V</span></div>
+        <div style="position:absolute;left:273.36px;top:616.64px" class="cls_004"><span class="cls_004">Output Voltage-
+                0-470V,50</span></div>
+        <div style="position:absolute;left:92.88px;top:623.24px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:134.64px;top:623.24px" class="cls_004"><span class="cls_004">3Phase
+                Variac</span></div>
+        <div style="position:absolute;left:417.84px;top:622.40px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:474.84px;top:622.40px" class="cls_004"><span class="cls_004">A.E</span></div>
+        <div style="position:absolute;left:273.36px;top:630.08px" class="cls_004"><span class="cls_004">Hz</span></div>
+        <div style="position:absolute;left:92.88px;top:659.36px" class="cls_004"><span class="cls_004">2</span></div>
+        <div style="position:absolute;left:134.64px;top:659.36px" class="cls_004"><span
+                class="cls_004">Tachometer</span></div>
+        <div style="position:absolute;left:273.35px;top:659.36px" class="cls_004"><span class="cls_004">0-9999.99
+                rpm</span></div>
+        <div style="position:absolute;left:417.84px;top:658.52px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:474.84px;top:658.52px" class="cls_004"><span class="cls_004">Fuji
+                Kogyo</span></div>
+        <div style="position:absolute;left:273.36px;top:675.32px" class="cls_004"><span class="cls_004">Moving
+                Iron</span></div>
+        <div style="position:absolute;left:346.80px;top:675.32px" class="cls_004"><span class="cls_004">(Analog)</span>
+        </div>
+        <div style="position:absolute;left:397.56px;top:675.32px" class="cls_004"><span class="cls_004">0-</span></div>
+        <div style="position:absolute;left:92.88px;top:682.04px" class="cls_004"><span class="cls_004">3</span></div>
+        <div style="position:absolute;left:134.64px;top:682.04px" class="cls_004"><span class="cls_004">Ammeter</span>
+        </div>
+        <div style="position:absolute;left:417.84px;top:681.20px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:474.84px;top:681.20px" class="cls_004"><span class="cls_004">A.E</span></div>
+        <div style="position:absolute;left:273.36px;top:688.76px" class="cls_004"><span class="cls_004">5Amp</span>
+        </div>
+        <div style="position:absolute;left:273.36px;top:702.68px" class="cls_004"><span class="cls_004">Moving
+                Iron</span></div>
+        <div style="position:absolute;left:346.80px;top:702.68px" class="cls_004"><span class="cls_004">(Analog)</span>
+        </div>
+        <div style="position:absolute;left:397.56px;top:702.68px" class="cls_004"><span class="cls_004">0-</span></div>
+        <div style="position:absolute;left:92.88px;top:709.52px" class="cls_004"><span class="cls_004">4</span></div>
+        <div style="position:absolute;left:134.64px;top:709.52px" class="cls_004"><span class="cls_004">Voltmeter</span>
+        </div>
+        <div style="position:absolute;left:417.84px;top:708.56px" class="cls_004"><span class="cls_004">1</span></div>
+        <div style="position:absolute;left:474.84px;top:708.56px" class="cls_004"><span class="cls_004">A.E</span></div>
+        <div style="position:absolute;left:273.36px;top:716.12px" class="cls_004"><span class="cls_004">500Volt</span>
+        </div>
+    </div>
+    <div
+        style="text-align: center; position: relative; font-size: 30px; top: 2625; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <a href="/speed_control_of_3-phase_squirrel_cage_induction_motor_by_voltage_control/simulation#wrapper">Go to
+            Simulation</a></div>
+    <div style="text-align: center; position: relative; top: 2650;">____________O____________</div>
 
 </body>
+
 </html>

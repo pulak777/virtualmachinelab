@@ -456,9 +456,10 @@ jsPlumb.ready(function () {
         if (is_connected_17_18 && !unallowed_connection_present) {
             alert("Alert ! Correct connection proceed to take reading.");
             document.getElementById("check-button").disabled = true;
+            document.querySelector("#connection-table").innerHTML = "";
             rightconnection = true;
             disable_all();
-            setTimeout(function(){
+            setTimeout(function () {
                 alert("Now turn on the power supply to perform No-load test on single phase induction motor");
             }, 2000);
         }
@@ -601,9 +602,9 @@ function mcbonoff() {
             rangeShow4.value = 0;
             rangeShow5.value = 0;
             rangeClock1.style.transform = 'rotate(' + (-62) + 'deg)';
-            rangeClock2.style.transform ='rotate(' + (-62) + 'deg)';
+            rangeClock2.style.transform = 'rotate(' + (-62) + 'deg)';
             rangeClock3.style.transform = 'rotate(' + (-62) + 'deg)';
-            document.getElementById("rotor_blocker").src="/static/images/rotor_blocker.jfif";
+            document.getElementById("rotor_blocker").src = "/static/images/rotor_blocker.jfif";
         }
         else {
             return;
@@ -642,10 +643,10 @@ function rotaronoff() {
             }
             document.getElementById("range").disabled = false;
 
-            if(blocked_rotor){
+            if (blocked_rotor) {
                 rangeMeter.value = 0;
             }
-            else{
+            else {
                 rangeMeter.value = 1;
             }
             rangeChange();
@@ -680,10 +681,10 @@ function rangeChange() {
         rangeShow4.value = blocked_watt[val];
         rangeClock3.style.transform = 'rotate(' + (-62 + (((blocked_watt[val] / 10) * 1000) / 100)) + 'deg)';
         rangeShow0.value = String(blocked_volt[val]) + "V";
-        if(val == 1){
+        if (val == 1) {
             document.getElementById("range").disabled = true;
             blocked_rotor = false;
-            setTimeout(function(){
+            setTimeout(function () {
                 alert("Both experiments are completed. Hope you have noted down the final values.");
             }, 2000);
         }
@@ -723,7 +724,7 @@ function rangeChange() {
             document.getElementById('cirmover').style.animation = "rotation 0.5s infinite linear";
             document.getElementById("range").disabled = true;
             blocked_rotor = true;
-            setTimeout(function(){
+            setTimeout(function () {
                 alert("Now turn off then turn on the power supply to perform *Block rotor* test on single phase induction motor");
             }, 2000);
 

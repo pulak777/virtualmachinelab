@@ -15,7 +15,41 @@
 </head>
 
 <body style="background-color: rgb(236, 228, 180);">
-    <div id="wrapper" style="position:absolute; top:10px; width:1360px; left:50px; background-color: rgb(255, 255, 255);">
+    <div id="connection-table">
+        <table>
+            <tr>
+                <td><B>From</B></td>
+                <td>7</td>
+                <td>8</td>
+                <td>2</td>
+                <td>18</td>
+                <td>25</td>
+                <td>3</td>
+                <td>4</td>
+                <td>12</td>
+                <td>14</td>
+                <td>10</td>
+                <td>12</td>
+
+            </tr>
+            <tr>
+                <td><B>To</B></td>
+                <td>1</td>
+                <td>19</td>
+                <td>17</td>
+                <td>24</td>
+                <td>20</td>
+                <td>10</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>5</td>
+                <td>6</td>
+
+            </tr>
+        </table>
+    </div>
+    <div id="wrapper" style="position:relative; width:1360px; background-color: rgb(255, 255, 255);">
         <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a>
         </div>
         <div class="littledot" id="ld2"></br><a href="#" class="cmdLink detach" rel="ld2">2</a>
@@ -34,7 +68,7 @@
         </div>
         <div class="littledot" id="ld9"></br><a href="#" class="cmdLink detach" rel="ld9">9</a>
         </div>
-        <div class="littledot" id="ld10"></br><a href="#" class="cmdLink detach" rel="ld10">10</a> 
+        <div class="littledot" id="ld10"></br><a href="#" class="cmdLink detach" rel="ld10">10</a>
         </div>
         <div class="littledot" id="ld11"></br><a href="#" class="cmdLink detach" rel="ld11">11</a>
         </div>
@@ -66,7 +100,7 @@
         </div>
         <div class="littledot" id="ld25"></br><a href="#" class="cmdLink detach" rel="ld25">25</a>
         </div>
-      
+
 
 
         <div class="row">
@@ -77,22 +111,25 @@
                         <button id="check-button"
                             style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Check</button>
                     </div>
+                    <br>
                     <div>
                         <button id="add" disabled="true"
-                            style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Add to table</button>
+                            style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Add to
+                            table</button>
                     </div>
+                    <br>
                     <div>
-                        <button id="graph" disabled="true" onclick="drawgraph()";
+                        <button id="graph" disabled="true" onclick="drawgraph()" ;
                             style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Graph
                         </button>
                     </div>
-    
+                    <br>
                     <div>
                         <button id="print" onclick="window.print();"
                             style="background-color:#27D447; border:none; padding: 5px; border-radius:5px">Print
                         </button>
                     </div>
-
+                    <br>
                     <div>
                         <button id="reset" type="reset" onclick="window.location.reload();"
                             style="background-color:#f82d12; border:none; padding: 5px; border-radius:5px">Reset</button>
@@ -116,8 +153,7 @@
 
                 <!--AMMETER-->
                 <div style="position: absolute;left: 9em; top: 3.25em;">
-                    <img style="padding-left: 60px"src="/static/images/Ammeter.png" alt="Ammeter"
-                        width="20%">
+                    <img style="padding-left: 60px" src="/static/images/Ammeter.png" alt="Ammeter" width="20%">
                     <div class="meter2" style="position: absolute; left: -17em; top: -3.8em;">
                         <div class="rang" style="position: absolute;top: -1em;left: 17.9em;">
                             <div class="rang-title">
@@ -128,15 +164,14 @@
                             <svg style="position: absolute;top: -10em;left: 15.7em;">
                                 <polygon class="meter-clock" id="meter2" points="133,150 137,110 142,142"></polygon>
                                 <circle class="meter-circle" r="6" cx="137" cy="145"></circle>
-                            </svg>   
+                            </svg>
                         </div>
                     </div>
                 </div>
 
                 <!--AMMETER-->
                 <div style="position: absolute;left: 18.5em; top: 3.20em;">
-                    <img style="padding-left: 60px"src="/static/images/Ammeter.png" alt="Ammeter"
-                        width="20%">
+                    <img style="padding-left: 60px" src="/static/images/Ammeter.png" alt="Ammeter" width="20%">
                     <div class="meter2" style="position: absolute; left: -17em; top: -3.8em;">
                         <div class="rang" style="position: absolute;top: -1em;left: 17.9em;">
                             <div class="rang-title">
@@ -147,15 +182,14 @@
                             <svg style="position: absolute;top: -10em;left: 15.7em;">
                                 <polygon class="meter-clock" id="meter2" points="133,150 137,110 142,142"></polygon>
                                 <circle class="meter-circle" r="6" cx="137" cy="145"></circle>
-                            </svg>   
+                            </svg>
                         </div>
                     </div>
                 </div>
 
                 <!--VOLTMETER-->
                 <div style="position: absolute;left: 28.5em; top: 3.20em;">
-                    <img style="padding-left: 60px"src="/static/images/Voltmeter.png" alt="Ammeter"
-                        width="20%">
+                    <img style="padding-left: 60px" src="/static/images/Voltmeter.png" alt="Ammeter" width="20%">
                     <div class="meter2" style="position: absolute; left: -17em; top: -3.8em;">
                         <div class="rang" style="position: absolute;top: -1em;left: 17.9em;">
                             <div class="rang-title">
@@ -166,29 +200,29 @@
                             <svg style="position: absolute;top: -10em;left: 15.7em;">
                                 <polygon class="meter-clock" id="meter2" points="133,150 137,110 142,142"></polygon>
                                 <circle class="meter-circle" r="6" cx="137" cy="145"></circle>
-                            </svg>   
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <!--SLIDER-->
                 <div style="z-index: 4; position: absolute; top: 31.5em; left: 12.4em;"><b>Move the slider ➤</b></div>
-                    <div class="slidecontainer" style="z-index: 100; position: absolute; top:42em; left: 13em">
-                        <input class="rang-slider" disabled="true" id="range" type="range" min="0" max="12" value="0" />
+                <div class="slidecontainer" style="z-index: 100; position: absolute; top:42em; left: 13em">
+                    <input class="rang-slider" disabled="true" id="range" type="range" min="0" max="12" value="0" />
                 </div>
 
                 <!--MAIN MACHINE-->
                 <div style="position: absolute;left: -3em; top: -4.5em;">
-                    <div style="left: 1em;"><b>Single Phrase <br> Auto Transformer</b>
+                    <div style="left: 1em;"><b>.................<br>................</b>
                     </div>
                     <img style="width:75%;" class="variacBox"
                         srcset="/static/images/e6_main_l.png, /static/images/e6_main-min.png" alt="3 phase variac">
-                        
+
                 </div>
 
                 <!--MOTOR-->
                 <div style="position: absolute;left: 28.5em; top: 25.5em;">
                     <div style="left: 30.1em; top:-21.8em;">
-                        <img style="width:45%;" src="/static/images/e6_machine.png"/>
+                        <img style="width:45%;" src="/static/images/e6_machine.png" />
                     </div>
                 </div>
 
@@ -197,23 +231,23 @@
         <script src="/static/js/jsplumb1.js"></script>
         <script src="/static/js/exp6.js"></script>
 
-   <div style="position:absolute;left:56em;top: 0.5em;">
-              <table id="table" class="table">
-              <tr>
-              <th>SN</th>
-              <th>Supply Voltage (V)</th>
-              <th>Field Current I<sub>f</sub>(A)</th>
-              <th>Armature Current I<sub>a</sub>(A)</th>
-              </tr>
-              </table>
-    </div> 
+        <div style="position:absolute;left:56em;top: 0.5em;">
+            <table id="table" class="table">
+                <tr>
+                    <th>SN</th>
+                    <th>Supply Voltage (V)</th>
+                    <th>Field Current I<sub>f</sub>(A)</th>
+                    <th>Armature Current I<sub>a</sub>(A)</th>
+                </tr>
+            </table>
+        </div>
 
-    <div style="position:absolute;left:57em;top:22em;">
-        <b>Armature Current vs Field Current</b>
-        <div class="container" style="position:absolute; top: 1.5em; left: 0.5em;">
-            <div class="box" id="myDiv" style="width:400px;height:300px;"></div>
-        </div>  
-    </div>
+        <div style="position:absolute;left:57em;top:22em;">
+            <b>Armature Current vs Field Current</b>
+            <div class="container" style="position:absolute; top: 1.5em; left: 0.5em;">
+                <div class="box" id="myDiv" style="width:400px;height:300px;"></div>
+            </div>
+        </div>
 
         <div style="position: relative; top: 1em; ">
             <div><u><B>Instructions</B></u><br>
@@ -262,14 +296,6 @@
                     <B>Step 6: </B> Click "Print" button, to print the full connections with graph and table in
                     landscape mode.
                     <br>
-                    ___________________________________________________<br>
-                    ___________________________________________________<br>
-                    ___________________________________________________ <br>
-                    ___________________________________________________<br>
-                    ___________________________________________________ <br>
-                    ___________________________________________________<br>
-                    ___________________________________________________ <br>
-                    ___________________________________________________
 
                 </span>
                 <br>
