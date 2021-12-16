@@ -1,42 +1,59 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory, request
 
 app = Flask(__name__)
+
+
+@app.route('/ads.txt')
+def ads():
+    return send_from_directory(app.static_folder, request.path[1:])
+
 
 @app.route('/')
 @app.route('/home')
 def home():
     return render_template('index.html')
 
+
 @app.route('/load_test_on_single_phase_induction_motor_to_obtain_the_performance_charecteristics/simulation')
 def exp9():
     return render_template('simulations/sim9.html')
+
 
 @app.route('/speed_control_of_3-phase_squirrel_cage_induction_motor_by_voltage_control')
 def theo2():
     return render_template('theories/theo2.html')
 
+
 @app.route('/speed_control_of_3-phase_squirrel_cage_induction_motor_by_voltage_control/simulation')
 def exp2():
     return render_template('simulations/sim2.html')
+
 
 @app.route('/speed_control_of_3-phase_squirrel_cage_induction_motor_by_frequency_control')
 def theo3():
     return render_template('theories/theo3.html')
 
+
 @app.route('/speed_control_of_3-phase_squirrel_cage_induction_motor_by_frequency_control/simulation')
 def exp3():
     return render_template('simulations/sim3.html')
 
+
 @app.route('/determination_of_regulation_of_synchronous_machine_by_synchronous_impedance_method')
 def theo7():
     return render_template('theories/theo7.html')
+
+
 @app.route('/determination_of_regulation_of_synchronous_machine_by_synchronous_impedance_method/simulation')
 def exp7():
     return render_template('simulations/sim7.html')
 
+
 @app.route('/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test')
 def theo8():
     return render_template('theories/theo8.html')
+
+
 @app.route('/To_determine_the_direct_axis_reactance_Xd_&_quadrature_axis_reactance_Xq_of_a_3_phase_synchronous_machine_by_slip_test/simulation')
 def exp8():
     return render_template('simulations/sim8.html')
@@ -46,24 +63,23 @@ def exp8():
 def exp5():
     return render_template('simulations/sim5.html')
 
+
 @app.route('/v-curve_of_synchronous_motor')
 def exp6():
     return render_template('simulations/sim6.html')
+
 
 @app.route('/Study_of_Performance_of_Wound_Rotor_Induction_Motor_under_Load')
 def exp10():
     return render_template('simulations/sim10.html')
 
-#for 4th sem experiments 
+# for 4th sem experiments
+
 
 @app.route('/Study_of_the_Magnetization_Characteristics_of_a_Separately_Excited_DC_Generator/simulation')
 def s4sim1a():
     return render_template('sem4/simulations/exp1a.html')
 
+
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-
-    
