@@ -1,9 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 1360px;
-  padding: 50px;
-  padding-top: 0;
+  justify-content: center;
   border: 0;
 }
 body > div:nth-child(3) {
@@ -334,7 +332,6 @@ td {
   left: 55em;
   top: 0.5em;
   background-color: white;
-  padding: 5px;
   width: 200px;
   height: 235px;
 }
